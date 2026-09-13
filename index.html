@@ -65,5 +65,14 @@
       Sep 14, Sep 16, and Sep 24.
     </p>
   </div>
+
+  <script>
+    // Site-wide offline support (covers Game Day, this hub and the PDF).
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      });
+    }
+  </script>
 </body>
 </html>

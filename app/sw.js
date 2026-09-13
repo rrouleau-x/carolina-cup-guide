@@ -6,7 +6,12 @@ self.addEventListener('install', e => {
 
 self.addEventListener('activate', e => {
   e.waitUntil(
-    caches.keys().then(keys => Promise.all(keys.map(k => k !== CACHE ? caches.delete(k) : null)))
+    caches.keys()
+      // Only clean our own family — never delete the site-wide shell cache.
+      .then(keys => Promise.all(
+        keys.filter(k => k.startsWith('carolina-cup-v') && k !== CACHE)
+            .map(k => caches.delete(k))
+      ))
       .then(() => self.clients.claim())
   );
 });

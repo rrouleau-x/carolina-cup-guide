@@ -868,5 +868,11 @@ document.addEventListener('visibilitychange',()=>{ if(!document.hidden) loadWeat
 // state actually changes (cheap + consistent).
 setInterval(refreshAll,1000);
 </script>
+<script>
+// Site-wide offline support — covers this page, the hub and the PDF.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js').catch(() => {}); });
+}
+</script>
 </body>
 </html>
