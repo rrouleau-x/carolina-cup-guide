@@ -294,7 +294,8 @@
     }
   },
   "offline": {
-    "pdfGuideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/",
+    "pdfGuideUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide.pdf",
+    "icsUrl": "https://rrouleau-x.github.io/carolina-cup-guide/carolina-cup.ics",
     "lastCached": ""
   }
 }

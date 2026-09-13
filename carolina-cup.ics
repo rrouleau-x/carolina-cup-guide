@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Savannah United 17/18B//Carolina Cup 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Carolina Cup 2026 - SU 17/18B
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+UID:carolinacup-2026-tournament@savannahunited-su1718b
+DTSTAMP:20260913T130000Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261005
+SUMMARY:Carolina Cup - Savannah United 17/18B
+LOCATION:Ballentine Park Complex\, 1009 Bickley Road\, Irmo\, SC 29063
+DESCRIPTION:26th Annual Carolina Cup\, hosted by South Carolina United FC. Fri Oct 2 - Sun Oct 4\, 2026. Drive from Savannah is about 169 miles / 3h 15min. Online check-in only - no on-site check-in. Companion app: https://rrouleau-x.github.io/carolina-cup-guide/app/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/app/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:Carolina Cup is in 2 days - check the schedule and hotel
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carolinacup-2026-accepted@savannahunited-su1718b
+DTSTAMP:20260913T130000Z
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+SUMMARY:Carolina Cup: accepted team list posts - complete online check-in
+DESCRIPTION:SCUFC posts the accepted team list today. Online check-in opens after this and every team must complete it. There is NO on-site check-in at this tournament.
+URL:https://soccer.sincsports.com/TTContent.aspx?tid=CARCUP
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:carolinacup-2026-brackets@savannahunited-su1718b
+DTSTAMP:20260913T130000Z
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:Carolina Cup: brackets posted
+DESCRIPTION:SCUFC posts bracket placement for the U9 age group today.
+URL:https://soccer.sincsports.com/TTContent.aspx?tid=CARCUP
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:carolinacup-2026-schedule@savannahunited-su1718b
+DTSTAMP:20260913T130000Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:Carolina Cup: game schedule posted - check departure times
+DESCRIPTION:SCUFC posts the full schedule\, field assignments and opponents today. Once live\, the companion app shows game times\, fields and a calculated departure time for each family.
+URL:https://rrouleau-x.github.io/carolina-cup-guide/app/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
