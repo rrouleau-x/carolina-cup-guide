@@ -5,12 +5,16 @@
 
    Strategy: network-first (always prefer fresh), fall back to cache offline. */
 
-const CACHE = 'carolina-cup-shell-v1';
+const CACHE = 'carolina-cup-shell-v2';
 
 const PRECACHE = [
   './',
   'index.html',
   'game-day.html',
+  'app/',
+  'app/index.html',
+  'app/data.json',
+  'app/manifest.json',
   'guide.pdf',
   'carolina-cup.ics',
   'qr-guide.png',
