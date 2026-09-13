@@ -518,6 +518,14 @@ function adaptData(d, team){
       T.hotels=hs;
     }
 
+    // per-team venue override — teams can play at different SCUFC complexes
+    if(team.venue && (team.venue.assigned || team.venue.name)){
+      T.venue=Object.assign({}, T.venue, team.venue);
+      if(team.venue.address && team.venue.city){
+        T.venue.address=team.venue.address; T.venue.city=team.venue.city;
+      }
+    }
+
     // nearby
     if(d.nearby){
       var groups=[]; var cur=[];
@@ -923,6 +931,15 @@ function renderSchedule(state){
 }
 
 // ---- VENUE ----
+// Per-complex official field layouts (SCUFC publishes one per complex).
+// Using the Ballentine map for a team playing elsewhere would be wrong.
+var COMPLEX_MAPS={
+  'Ballentine Park Complex':'https://irp.cdn-website.com/44ba685a/files/uploaded/Ballentine_Park_field_layout_2025.pdf',
+  'SCUFC West Soccer Complex':'https://irp.cdn-website.com/44ba685a/files/uploaded/SCUFC%20West%20all%2011v11AB%20practice.pdf',
+  'Polo Road Park':'https://irp.cdn-website.com/44ba685a/files/uploaded/Polo+Road+field+layout+2026-0124803d.pdf',
+  'Southeastern Freight Lines Soccer Center':'https://irp.cdn-website.com/44ba685a/files/uploaded/SEFL%20tournament%20all%2011v11.pdf',
+  'SV Presbyterian Church Fields':'https://irp.cdn-website.com/44ba685a/files/uploaded/sv%20church%20regular%20layout.pdf'
+};
 function renderVenue(){
   const v=TOURNAMENT.venue;
   // Never imply a venue the tournament has not assigned yet — naming a single
@@ -943,7 +960,7 @@ function renderVenue(){
     document.getElementById('venueInfoCard').innerHTML='<div class="card"><div class="label" style="margin-bottom:6px">Parking &amp; Amenities</div><p class="small" style="margin:0 0 10px;line-height:1.55">'+v.parking+'</p><div class="amenities">'+amen0+'</div><p class="small muted" style="margin:12px 0 0">'+v.bring+'</p></div>';
     return;
   }
-  document.getElementById('venueCard').innerHTML='<div class="card" style="border-top:4px solid var(--su)"><div class="label">'+v.name+'</div><div style="font-size:16px;font-weight:700;margin:2px 0 2px">'+v.address+'</div><div class="muted" style="margin-bottom:12px">'+v.city+'</div><a class="btn" style="flex-direction:row;font-size:14px;gap:8px" href="'+v.mapsUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Directions</a>'+((v.fieldCount===0||!v.ourFields||!v.ourFields.length)?'<div style="margin-top:12px;padding:10px 12px;background:var(--amber-bg);border-radius:10px"><div style="font-size:12.5px;font-weight:700;color:var(--amber);line-height:1.5">Complex not yet assigned. The Carolina Cup is played across five SCUFC complexes — ours is confirmed when the schedule posts on Sep 24.</div><div style="margin-top:8px"><a href="'+TOURNAMENT.rules.fullRulesUrl+'" target="_blank" rel="noopener" style="font-size:12px;font-weight:800;color:var(--link)">Official tournament page &rsaquo;</a></div></div>':'')+'</div>';
+  document.getElementById('venueCard').innerHTML='<div class="card" style="border-top:4px solid var(--su)"><div class="label">'+v.name+'</div><div style="font-size:16px;font-weight:700;margin:2px 0 2px">'+v.address+'</div><div class="muted" style="margin-bottom:12px">'+v.city+'</div><a class="btn" style="flex-direction:row;font-size:14px;gap:8px" href="'+v.mapsUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Directions</a>'+((v.assigned===false)?'<div style="margin-top:12px;padding:10px 12px;background:var(--amber-bg);border-radius:10px"><div style="font-size:12.5px;font-weight:700;color:var(--amber);line-height:1.5">Complex not yet assigned. The Carolina Cup is played across five SCUFC complexes — ours is confirmed when the schedule posts on Sep 24.</div><div style="margin-top:8px"><a href="'+TOURNAMENT.rules.fullRulesUrl+'" target="_blank" rel="noopener" style="font-size:12px;font-weight:800;color:var(--link)">Official tournament page &rsaquo;</a></div></div>':'')+'</div>';
   // fields grid — only render once fields are actually assigned by the tournament
   const hasFields=(v.fieldCount>0 && v.ourFields && v.ourFields.length>0);
   let grid='';
@@ -959,7 +976,11 @@ function renderVenue(){
   grid+='</div><p class="small" style="margin:10px 0 0;text-align:center;color:var(--su);font-weight:800;letter-spacing:.5px">'+v.ourFields.map(f=>f.f).join(' → ')+'</p>';
   grid+='<a class="btn ghost" style="margin-top:10px;flex-direction:row;gap:7px" href="'+v.fieldMapUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-4 9a3 3 0 0 0 2.6 1.5h6.8A3 3 0 0 0 18 18l-4-9V3"/></svg>Official field map</a>';
   } else {
-    grid='<div class="card" style="text-align:center;padding:22px"><div class="label" style="margin-bottom:6px">Field map</div><p class="small muted" style="margin:0">Field and complex assignments are published with the schedule on September 24.</p>'+(v.fieldMapUrl?'<a class="btn ghost" style="margin-top:12px;flex-direction:row;gap:7px" href="'+v.fieldMapUrl+'" target="_blank" rel="noopener">Official Ballentine Park layout (PDF)</a>':'')+'</div>';
+    var fmsg=(v.assigned===false)
+      ? 'Field and complex assignments are published with the schedule on September 24.'
+      : 'Field numbers for our games are on the Schedule tab.';
+    var fmap=COMPLEX_MAPS[v.name]||v.fieldMapUrl;
+    grid='<div class="card" style="text-align:center;padding:22px"><div class="label" style="margin-bottom:6px">Field map</div><p class="small muted" style="margin:0">'+fmsg+'</p>'+(fmap?'<a class="btn ghost" style="margin-top:12px;flex-direction:row;gap:7px" href="'+fmap+'" target="_blank" rel="noopener">'+(v.assigned===false?'Official Ballentine Park layout (PDF)':(v.name+' layout (PDF)'))+'</a>':'')+'</div>';
   }
   document.getElementById('fieldsCard').innerHTML=grid;
   // amenities
