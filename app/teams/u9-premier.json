@@ -1,0 +1,69 @@
+{
+  "slug": "u9-premier",
+  "name": "Savannah United 17/18B Premier",
+  "shortName": "SU 17/18B Premier",
+  "label": "U9 Premier",
+  "ageGroup": "09U",
+  "gender": "Boys",
+  "format": "7v7",
+  "sincTeamId": "GAM18001F6",
+  "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM18001F6",
+  "accepted": true,
+  "coach": {
+    "name": "Keith Gunn",
+    "role": "Director of Coaching",
+    "phone": "912-856-9442",
+    "email": "keith.gunn@savannahunited.com"
+  },
+  "manager": {
+    "name": "Victoria",
+    "role": "Parent Team Manager",
+    "phone": "",
+    "email": ""
+  },
+  "games": [],
+  "scheduleStatus": "pending",
+  "scheduleExpected": "The tournament posts brackets September 16 and the full schedule September 24, 2026. Game times, field assignments and opponents all arrive then \u2014 and this app updates itself the moment they do",
+  "updates": [
+    {
+      "type": "warning",
+      "title": "Book your hotel now \u2014 the Irmo area is 80% sold out",
+      "description": "We checked availability for October 2\u20134 and 80% of properties in Irmo were already unavailable. The Harbison cluster to the northwest still has rooms, with verified rates from $100 to $399 per night. A free-cancellation rate costs nothing to hold while you decide.",
+      "time": "Sep 13 \u00b7 8:00 AM",
+      "posted": "Parent Manager",
+      "actionRequired": true
+    },
+    {
+      "type": "info",
+      "title": "No stay-to-play policy published for this event",
+      "description": "We checked the official tournament page, the SCUFC host site, and the registration portal, and found no stated housing requirement or approved-hotel list for the Carolina Cup. We have asked the tournament director to confirm. In the meantime, our hotel picks are simply the closest verified options \u2014 there is no housing portal to book through.",
+      "time": "Sep 13 \u00b7 8:00 AM",
+      "posted": "Parent Manager",
+      "actionRequired": false
+    },
+    {
+      "type": "warning",
+      "title": "Accepted team list posts September 14 \u2014 then complete online check-in",
+      "description": "The tournament posts accepted teams on September 14. Online check-in opens after that, and every team must complete it. There is no on-site check-in at this event, so this is not something that can be handled at the field.",
+      "time": "Sep 13 \u00b7 8:00 AM",
+      "posted": "SCUFC",
+      "actionRequired": true
+    },
+    {
+      "type": "info",
+      "title": "Brackets September 16 \u00b7 Schedule September 24",
+      "description": "Brackets post September 16 and the full schedule posts September 24. Until the schedule lands we do not know which of SCUFC's five complexes our team plays at, what field, or what times. As soon as those are live, this app will show game times, fields, opponents, and a calculated departure time for each family.",
+      "time": "Sep 13 \u00b7 8:00 AM",
+      "posted": "SCUFC",
+      "actionRequired": false
+    },
+    {
+      "type": "info",
+      "title": "2026 rules document not yet published",
+      "description": "SCUFC has not released the 2026 Carolina Cup rules. Game length, mercy rule, substitutions, and the tiebreaker order are all unconfirmed. Rather than fill these in from another tournament's rulebook, we have left them marked as pending. Rules questions can go to Tournament Director Tripp Miller at tripp@scufc.com.",
+      "time": "Sep 13 \u00b7 8:00 AM",
+      "posted": "Parent Manager",
+      "actionRequired": false
+    }
+  ]
+}

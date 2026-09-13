@@ -31,6 +31,9 @@
   .hero .meta{font-size:12.5px;color:#cfe0f5;margin:7px 0 0;letter-spacing:.3px}
   .hero .crest{position:absolute;right:-18px;top:-18px;width:120px;height:120px;opacity:.10;pointer-events:none}
   .hero .crest svg{width:100%;height:100%}
+  .tpicks{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px;position:relative;z-index:2}
+  .tpick{background:rgba(255,255,255,.16);color:#fff;text-decoration:none;font-size:11.5px;font-weight:700;padding:5px 12px;border-radius:20px;letter-spacing:.2px;border:1px solid rgba(255,255,255,.25)}
+  .tpick.on{background:#fff;color:var(--su);border-color:#fff}
 
   /* CONTEXT STRIP + COUNTDOWN */
   .context{background:var(--su);color:#fff;padding:10px 18px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
@@ -216,6 +219,7 @@
     <h1 id="heroTitle"></h1>
     <p class="team" id="heroTeam"></p>
     <p class="meta" id="heroMeta"></p>
+    <div id="teamPicker" class="tpicks"></div>
   </header>
 
   <div class="context">
@@ -422,11 +426,13 @@ function isoDT(date,t){
   return date+'T'+(h<10?'0':'')+h+':'+m[2]+':00-04:00';
 }
 
-function adaptData(d){
+function adaptData(d, team){
   var T=TOURNAMENT;
+  team=team||{};
   try{
-    if(d.team && d.team.name){
-      T.tournament.team=(d.team.shortName||d.team.name)+' · U9 · 7v7';
+    if(team.name){
+      var age=(team.ageGroup||'U9').replace(/^0*(\d+)U$/,'U$1');
+      T.tournament.team=(team.shortName||team.name)+' · '+age+' · '+(team.format||'7v7');
     }
     if(d.tournament){
       if(d.tournament.name) T.tournament.name=d.tournament.name;
@@ -446,9 +452,9 @@ function adaptData(d){
     }
     if(d.offline && d.offline.pdfGuideUrl) T.tournament.fullGuideUrl=d.offline.pdfGuideUrl;
 
-    // games
-    if(Array.isArray(d.games) && d.games.length){
-      T.games=d.games.map(function(g,i){
+    // games (per team)
+    if(Array.isArray(team.games) && team.games.length){
+      T.games=team.games.map(function(g,i){
         return {
           id:g.id||('game'+(i+1)),
           label:(g.type==='final')?'Final':('Game '+(i+1)),
@@ -496,8 +502,8 @@ function adaptData(d){
       }
     }
 
-    // schedule-pending copy
-    if(d.scheduleExpected) T.schedulePending.detail=d.scheduleExpected;
+    // schedule-pending copy (per team)
+    if(team.scheduleExpected) T.schedulePending.detail=team.scheduleExpected;
 
     // weather note
     if(d.weather && d.weather.summary) T.weather.mini={ day:'Outlook', temp:'80°', feels:'low 63°', storm:'seasonal' };
@@ -545,8 +551,8 @@ function adaptData(d){
     }
 
     // contacts
-    if(d.contacts){
-      var C=[]; var c=d.contacts.coach, mgr=d.contacts.manager;
+    if(d.contacts || team.coach || team.manager){
+      var C=[]; var c=team.coach, mgr=team.manager;
       if(c&&c.name) C.push({name:c.name, role:(c.role||'Head Coach'), phone:(c.phone||'').replace(/[^0-9]/g,''), initial:c.name.charAt(0)});
       if(mgr&&mgr.name) C.push({name:mgr.name, role:mgr.role||'Parent Team Manager', phone:(mgr.phone||'').replace(/[^0-9]/g,''), initial:mgr.name.charAt(0)});
       (d.contacts.teamManagers||[]).forEach(function(m){ C.push({name:m.name, role:(m.role||'Team Manager'), phone:(m.phone||'').replace(/[^0-9]/g,''), initial:m.name.charAt(0)}); });
@@ -556,9 +562,10 @@ function adaptData(d){
       T.contacts=C;
     }
 
-    // changes / updates
-    if(Array.isArray(d.updates) && d.updates.length){
-      T.changes=d.updates.slice(0,6).map(function(u){ return {k:u.title, v:u.description}; });
+    // changes / updates (per team, falling back to shared)
+    var up=(Array.isArray(team.updates)&&team.updates.length)?team.updates:(d.updates||[]);
+    if(up.length){
+      T.changes=up.slice(0,6).map(function(u){ return {k:u.title, v:u.description}; });
     }
   }catch(e){ /* keep fallback on any shape mismatch */ }
 }
@@ -1050,13 +1057,37 @@ function renderAll(){
 renderVenue();renderBreak();renderNearby();renderContacts();renderRules();renderChanges();renderWeather();renderPack();renderHotels();
 }
 renderAll();
-// Load live data — overrides the fallback above so the cron job keeps this current.
+// ---- TEAM SELECTION ----
+var ACTIVE_TEAM=null;
+function teamFromUrl(){ try{ var m=location.search.match(/[?&]team=([^&]+)/); return m?decodeURIComponent(m[1]):null; }catch(e){ return null; } }
+function pickTeam(shared){
+  var list=(shared&&shared.teams)||[];
+  var slug=teamFromUrl();
+  if(!slug){ try{ slug=localStorage.getItem('cc-team'); }catch(e){} }
+  if(!slug||!list.some(function(t){return t.slug===slug;})) slug=(shared&&shared.defaultTeam)||(list[0]&&list[0].slug);
+  return slug;
+}
+function renderTeamPicker(shared){
+  var el=document.getElementById('teamPicker'); if(!el) return;
+  var list=(shared&&shared.teams)||[];
+  if(list.length<2){ el.innerHTML=''; return; }
+  el.innerHTML='<span style="font-size:10px;font-weight:800;letter-spacing:.8px;color:#cfe0f5;width:100%;text-transform:uppercase;margin-bottom:2px">Select your team</span>'
+    +list.map(function(t){
+      return '<a class="tpick'+(t.slug===ACTIVE_TEAM?' on':'')+'" href="?team='+encodeURIComponent(t.slug)+'">'+(t.label||t.shortName||t.name)+'</a>';
+    }).join('');
+}
+
+// Load shared data + the selected team, overriding the fallback above.
 (async function(){
   try{
-    var r=await fetch('data.json?_='+Date.now());
-    var d=await r.json();
-    adaptData(d);
-    renderHero(); renderAll();
+    var shared=await (await fetch('data.json?_='+Date.now())).json();
+    var slug=pickTeam(shared);
+    var team={};
+    if(slug){ try{ team=await (await fetch('teams/'+slug+'.json?_='+Date.now())).json(); }catch(e2){} }
+    ACTIVE_TEAM=slug;
+    try{ localStorage.setItem('cc-team',slug); }catch(e){}
+    adaptData(shared, team);
+    renderHero(); renderTeamPicker(shared); renderAll();
     lastStateKey=''; refreshAll();
   }catch(e){ /* keep fallback */ }
 })();

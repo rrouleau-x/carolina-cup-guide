@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0055A4">
-<title>Carolina Cup — Savannah United 17/18B</title>
+<title>Carolina Cup — Savannah United U9 &amp; U10</title>
 <style>
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
@@ -36,10 +36,12 @@
   <div class="card">
     <span class="badge">Oct 2&ndash;4, 2026</span>
     <h1>26th Annual Carolina Cup</h1>
-    <p class="sub">Ballentine Park &middot; Irmo, South Carolina</p>
-    <p class="team">Savannah United 17/18B Travel</p>
+    <p class="sub">Columbia &middot; Irmo, South Carolina</p>
+    <p class="team">Savannah United &middot; U9 &amp; U10</p>
 
-    <a class="btn" href="app/">Open the Carolina Cup Guide</a>
+    <div id="teamList">
+      <a class="btn" href="app/">Open the Carolina Cup Guide</a>
+    </div>
     <a class="ghost" href="guide.pdf">Download the Full Guide (PDF)</a>
 
     <div class="qr-row">
@@ -72,6 +74,23 @@
         navigator.serviceWorker.register('sw.js').catch(() => {});
       });
     }
+
+    // Team picker — populated from the app's shared data so there is one source of truth.
+    fetch('app/data.json')
+      .then(r => r.json())
+      .then(function (d) {
+        var list = (d && d.teams) || [];
+        if (list.length < 2) return;
+        var el = document.getElementById('teamList');
+        if (!el) return;
+        el.innerHTML =
+          '<p style="font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#86868b;margin:0 0 8px;">Select your team</p>' +
+          list.map(function (t) {
+            return '<a class="btn" href="app/?team=' + encodeURIComponent(t.slug) + '">' +
+                   (t.label || t.shortName || t.name) + '</a>';
+          }).join('');
+      })
+      .catch(function () { /* keep the single default button */ });
   </script>
 </body>
 </html>
