@@ -5,7 +5,7 @@
 
    Strategy: network-first (always prefer fresh), fall back to cache offline. */
 
-const CACHE = 'carolina-cup-shell-v2';
+const CACHE = 'carolina-cup-shell-v3';
 
 const PRECACHE = [
   './',
@@ -15,11 +15,14 @@ const PRECACHE = [
   'app/index.html',
   'app/data.json',
   'app/manifest.json',
-  'guide.pdf',
   'carolina-cup.ics',
   'qr-guide.png',
   'qr-app.png'
 ];
+// NOTE: guide.pdf (644 KB) is deliberately NOT precached. It is ~9x the size of
+// the whole app, and eager-caching it means every first visit pays 744 KB even
+// if nobody opens the PDF. The fetch handler below still caches it on first
+// view, so it works offline once opened — and the QR code saves it directly.
 
 self.addEventListener('install', e => {
   e.waitUntil(

@@ -422,7 +422,19 @@ function adaptData(d){
     }
     if(d.tournament){
       if(d.tournament.name) T.tournament.name=d.tournament.name;
-      if(d.tournament.shortName) T.tournament.meta=d.tournament.shortName.toUpperCase()+' · '+T.tournament.meta.split('·').pop().trim();
+      // Keep the date range in the hero, e.g. "OCT 2–4 · IRMO, SC"
+      var loc=T.tournament.meta.split('·').pop().trim();
+      var dt=d.tournament.dates;
+      if(dt&&dt.start&&dt.end){
+        var s=new Date(dt.start+'T12:00:00'), e=new Date(dt.end+'T12:00:00');
+        var mon=s.toLocaleDateString('en-US',{month:'short'}).toUpperCase();
+        var dstr=(s.getMonth()===e.getMonth())
+          ? (mon+' '+s.getDate()+'–'+e.getDate())
+          : (mon+' '+s.getDate()+'–'+e.toLocaleDateString('en-US',{month:'short'}).toUpperCase()+' '+e.getDate());
+        T.tournament.meta=dstr+' · '+loc;
+      }else{
+        T.tournament.meta=loc;
+      }
     }
     if(d.offline && d.offline.pdfGuideUrl) T.tournament.fullGuideUrl=d.offline.pdfGuideUrl;
 
@@ -781,7 +793,14 @@ function renderWeather(){
 document.querySelectorAll('[data-wxopen]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();wxFull.classList.toggle('open');}));
 
 // ---- LIVE WEATHER (fetches fresh forecast for the game dates) ----
+// Throttled: this is the slowest request on the page (~480ms) and it fires on
+// every tab focus. 10 min is plenty for a forecast that updates hourly.
+let lastWxLoad=0;
+const WX_MIN_INTERVAL=600000;
 function loadWeather(){
+  const now=Date.now();
+  if(now-lastWxLoad<WX_MIN_INTERVAL) return;
+  lastWxLoad=now;
   const src=TOURNAMENT.weather.source;
   if(!src||!src.enabled) return; // keep static data as fallback
   const url='https://api.open-meteo.com/v1/forecast'
