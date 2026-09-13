@@ -23,6 +23,11 @@
     padding:15px;border-radius:11px;font-weight:600;font-size:15px;margin-bottom:10px;}
   a.ghost{display:block;background:#f2f2f7;color:#0055A4;text-decoration:none;
     padding:15px;border-radius:11px;font-weight:600;font-size:15px;margin-bottom:22px;}
+  .trow{display:flex;gap:8px;margin-bottom:9px;}
+  .trow a.tapp{flex:1;background:#0055A4;color:#fff;text-decoration:none;padding:14px;
+    border-radius:11px;font-weight:700;font-size:15px;text-align:center;}
+  .trow a.tpdf{flex:0 0 82px;background:#e8eff8;color:#0055A4;text-decoration:none;padding:14px;
+    border-radius:11px;font-weight:700;font-size:13.5px;text-align:center;}
   .qr-row{display:flex;gap:14px;justify-content:center;margin-bottom:8px;}
   .qr{flex:1;max-width:170px;}
   .qr img{width:100%;height:auto;border:1px solid #e5e5ea;border-radius:10px;display:block;}
@@ -42,7 +47,7 @@
     <div id="teamList">
       <a class="btn" href="app/">Open the Carolina Cup Guide</a>
     </div>
-    <a class="ghost" href="guide.pdf">Download the Full Guide (PDF)</a>
+    <a class="ghost" href="https://rrouleau-x.github.io/tournament-guide-studio/sample/">Browse all team guides (PDF)</a>
 
     <div class="qr-row">
       <div class="qr">
@@ -86,8 +91,11 @@
         el.innerHTML =
           '<p style="font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#86868b;margin:0 0 8px;">Select your team</p>' +
           list.map(function (t) {
-            return '<a class="btn" href="app/?team=' + encodeURIComponent(t.slug) + '">' +
-                   (t.label || t.shortName || t.name) + '</a>';
+            var lab = t.label || t.shortName || t.name;
+            return '<div class="trow">' +
+                     '<a class="tapp" href="app/?team=' + encodeURIComponent(t.slug) + '">' + lab + '</a>' +
+                     (t.pdfUrl ? '<a class="tpdf" href="' + t.pdfUrl + '">PDF</a>' : '') +
+                   '</div>';
           }).join('');
       })
       .catch(function () { /* keep the single default button */ });

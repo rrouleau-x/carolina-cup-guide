@@ -451,6 +451,8 @@ function adaptData(d, team){
       }
     }
     if(d.offline && d.offline.pdfGuideUrl) T.tournament.fullGuideUrl=d.offline.pdfGuideUrl;
+    if(team.pdfUrl) T.tournament.fullGuideUrl=team.pdfUrl;
+    if(team.name) TEAM_LABEL_FOR_GUIDE=team.name;
 
     // games (per team)
     if(Array.isArray(team.games) && team.games.length){
@@ -997,11 +999,15 @@ function renderChanges(){
     +'</div>';
 }
 
-// ---- FULL GUIDE LINK ----
-const fg=document.getElementById('fullGuideLink');
-fg.href=TOURNAMENT.tournament.fullGuideUrl;
-document.getElementById('fg1').textContent='Full '+TOURNAMENT.tournament.name+' Guide';
-document.getElementById('fg2').textContent='Everything in one detailed document — hotel, travel scenarios, full rules, itinerary.';
+// ---- FULL GUIDE LINK (per team) ----
+var TEAM_LABEL_FOR_GUIDE='';
+function renderFullGuide(){
+  var fg=document.getElementById('fullGuideLink'); if(!fg) return;
+  fg.href=TOURNAMENT.tournament.fullGuideUrl||'#';
+  document.getElementById('fg1').textContent='Full '+(TEAM_LABEL_FOR_GUIDE||TOURNAMENT.tournament.name)+' Guide';
+  document.getElementById('fg2').textContent='Everything in one detailed document — hotel, travel scenarios, full rules, itinerary.';
+}
+renderFullGuide();
 
 // ---- PACKING (template-driven groups with kind badges) ----
 const KIND_LABEL={always:'Always',weather:'Weather',tournament:'Tournament'};
@@ -1054,7 +1060,7 @@ function renderHotels(){
 
 // ---- INIT + LIVE TICK ----
 function renderAll(){
-renderVenue();renderBreak();renderNearby();renderContacts();renderRules();renderChanges();renderWeather();renderPack();renderHotels();
+renderVenue();renderBreak();renderNearby();renderContacts();renderRules();renderChanges();renderWeather();renderPack();renderHotels();renderFullGuide();
 }
 renderAll();
 // ---- TEAM SELECTION ----

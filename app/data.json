@@ -378,7 +378,9 @@
       "label": "U9 Premier",
       "ageGroup": "09U",
       "gender": "Boys",
-      "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM18001F6"
+      "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM18001F6",
+      "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u9-premier.pdf",
+      "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u9-premier/"
     },
     {
       "slug": "u9-blue",
@@ -387,7 +389,9 @@
       "label": "U9 Blue",
       "ageGroup": "09U",
       "gender": "Boys",
-      "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM18001F7"
+      "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM18001F7",
+      "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u9-blue.pdf",
+      "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u9-blue/"
     },
     {
       "slug": "u10-premier",
@@ -396,7 +400,9 @@
       "label": "U10 Premier",
       "ageGroup": "10U",
       "gender": "Boys",
-      "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM1717298"
+      "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM1717298",
+      "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u10-premier.pdf",
+      "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u10-premier/"
     },
     {
       "slug": "u10-blue",
@@ -405,7 +411,9 @@
       "label": "U10 Blue",
       "ageGroup": "10U",
       "gender": "Boys",
-      "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM1717299"
+      "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM1717299",
+      "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u10-blue.pdf",
+      "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u10-blue/"
     }
   ],
   "defaultTeam": "u9-premier"
