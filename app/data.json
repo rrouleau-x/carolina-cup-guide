@@ -188,10 +188,10 @@
   ],
   "contacts": {
     "manager": {
-      "name": "Rich Rouleau",
+      "name": "Victoria",
       "role": "Parent Team Manager",
       "phone": "",
-      "email": "rrouleau@mac.com"
+      "email": ""
     },
     "coach": {
       "name": "Keith Gunn",
@@ -200,6 +200,7 @@
       "email": "keith.gunn@savannahunited.com"
     },
     "teamManagers": [
+      { "name": "Jenn", "phone": "", "email": "" },
       { "name": "Carson Gray", "phone": "770-757-1617", "email": "carson.gray@savannahunited.com" },
       { "name": "Mitchell Heath", "phone": "859-445-2028", "email": "mitchell.heath@savannahunited.com" }
     ],
