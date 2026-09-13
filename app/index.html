@@ -381,7 +381,7 @@ let TOURNAMENT = {
         ]}
     ] },
   contacts:[
-    { name:"Keith Gunn", role:"Head Coach · Soccer / team", phone:"9128569442", initial:"K" },
+    { name:"Keith Gunn", role:"Director of Coaching", phone:"9128569442", initial:"K" },
     { name:"Victoria", role:"Parent Team Manager · logistics", phone:"", initial:"V" },
     { name:"Jenn", role:"Parent Team Manager · logistics", phone:"", initial:"J" },
     { name:"Tournament HQ", role:"SCUFC · Tripp Miller", phone:"8774572832", initial:"H" },
@@ -537,7 +537,7 @@ function adaptData(d){
     // contacts
     if(d.contacts){
       var C=[]; var c=d.contacts.coach, mgr=d.contacts.manager;
-      if(c&&c.name) C.push({name:c.name, role:'Head Coach · Soccer / team', phone:(c.phone||'').replace(/[^0-9]/g,''), initial:c.name.charAt(0)});
+      if(c&&c.name) C.push({name:c.name, role:(c.role||'Head Coach'), phone:(c.phone||'').replace(/[^0-9]/g,''), initial:c.name.charAt(0)});
       if(mgr&&mgr.name) C.push({name:mgr.name, role:mgr.role||'Parent Team Manager', phone:(mgr.phone||'').replace(/[^0-9]/g,''), initial:mgr.name.charAt(0)});
       (d.contacts.teamManagers||[]).forEach(function(m){ C.push({name:m.name, role:(m.role||'Team Manager'), phone:(m.phone||'').replace(/[^0-9]/g,''), initial:m.name.charAt(0)}); });
       var td=d.contacts.tournamentDirector;
