@@ -23,10 +23,20 @@
     "logo": ""
   },
   "venue": {
-    "name": "Ballentine Park Complex",
-    "address": "1009 Bickley Road, Irmo, SC 29063",
+    "assigned": false,
+    "name": "Complex not yet assigned",
+    "address": "",
+    "city": "Columbia / Irmo, SC",
+    "mapsUrl": "",
     "coordinates": { "lat": 34.1269365, "lng": -81.2404227 },
-    "mapsUrl": "https://www.google.com/maps/dir/1009+Bickley+Road,+Irmo,+SC+29063",
+    "complexes": [
+      { "name": "Ballentine Park Complex", "address": "1009 Bickley Road, Irmo, SC 29063" },
+      { "name": "SCUFC West Soccer Complex", "address": "1053 Bird Road, Irmo, SC 29063" },
+      { "name": "Polo Road Park", "address": "730 Polo Road, Columbia, SC 29229" },
+      { "name": "Southeastern Freight Lines Soccer Center", "address": "115 Sunbelt Blvd, Columbia, SC 29203" },
+      { "name": "SV Presbyterian Church Fields", "address": "125 Sparkleberry Lane, Columbia, SC 29229" }
+    ],
+    "complexListUrl": "https://www.southcarolinaunitedfc.com/facilities",
     "parking": "Free on-site at SCUFC complexes. Arrive 30-45 min early — these are large, spread-out complexes and lots fill on tournament mornings.",
     "fields": {
       "count": 0,

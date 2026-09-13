@@ -339,8 +339,15 @@ let TOURNAMENT = {
     schedule: "Full schedule posts September 24"
   },
   venue: {
-    name:"Ballentine Park Complex", address:"1009 Bickley Road", city:"Irmo, SC 29063",
-    mapsUrl:"https://www.google.com/maps/dir/1009+Bickley+Road,+Irmo,+SC+29063",
+    assigned:false, name:"Complex not yet assigned", address:"", city:"Columbia / Irmo, SC", mapsUrl:"",
+    complexes:[
+      { name:"Ballentine Park Complex", address:"1009 Bickley Road, Irmo, SC 29063" },
+      { name:"SCUFC West Soccer Complex", address:"1053 Bird Road, Irmo, SC 29063" },
+      { name:"Polo Road Park", address:"730 Polo Road, Columbia, SC 29229" },
+      { name:"Southeastern Freight Lines Soccer Center", address:"115 Sunbelt Blvd, Columbia, SC 29203" },
+      { name:"SV Presbyterian Church Fields", address:"125 Sparkleberry Lane, Columbia, SC 29229" }
+    ],
+    complexListUrl:"https://www.southcarolinaunitedfc.com/facilities",
     fieldMapUrl:"https://irp.cdn-website.com/44ba685a/files/uploaded/Ballentine_Park_field_layout_2025.pdf",
     fieldCount:0, ourFields:[],
     parking:"Free on-site · arrive 30–45 min early (complexes are large and spread out)",
@@ -462,6 +469,9 @@ function adaptData(d){
 
     // venue
     if(d.venue){
+      if(typeof d.venue.assigned!=='undefined') T.venue.assigned=d.venue.assigned;
+      if(Array.isArray(d.venue.complexes)) T.venue.complexes=d.venue.complexes;
+      if(d.venue.complexListUrl) T.venue.complexListUrl=d.venue.complexListUrl;
       if(d.venue.name) T.venue.name=d.venue.name;
       if(d.venue.address){
         // data.json carries a full address ("1009 Bickley Road, Irmo, SC 29063").
@@ -707,7 +717,7 @@ function renderNextMatch(state){
       nextBody.innerHTML='<div class="day" style="color:var(--su)">SCHEDULE · '+(TOURNAMENT.tournament.meta||'')+'</div>'+
         '<div style="font-size:16px;font-weight:800;color:var(--ink);line-height:1.35;margin:2px 0 6px">'+(SP.headline||'Not released yet')+'</div>'+
         '<div class="vs">'+(SP.detail||'')+'</div>'+
-        '<div class="arrive" style="border-top:none;margin-top:10px;padding-top:0"><span class="dot" style="width:9px;height:9px;background:var(--link)"></span> '+venue.name+' · '+venue.address+', '+venue.city+'</div>'+
+        '<div class="arrive" style="border-top:none;margin-top:10px;padding-top:0"><span class="dot" style="width:9px;height:9px;background:var(--link)"></span> '+venue.name+(venue.address?' &middot; '+venue.address:'')+(venue.city?', '+venue.city:'')+'</div>'+
         '<div class="btn-row">'+
           '<a class="btn" href="'+venue.mapsUrl+'" target="_blank" rel="noopener">Directions</a>'+
           '<a class="btn ghost" href="'+(TOURNAMENT.tournament.fullGuideUrl||'#')+'" target="_blank" rel="noopener">Full Guide</a>'+
@@ -729,7 +739,7 @@ function renderNextMatch(state){
     '<div class="vs">vs '+g.opponent+'</div>'+
     '<div class="meta-line"><span class="pill field">FIELD '+g.field+'</span><span class="pill away">'+(g.home?'HOME':'AWAY')+'</span></div>'+
     (g.arrival&&!isLive?'<div class="arrive"><span class="dot" style="width:9px;height:9px;background:'+(g.arrivalStatus==='pending-coach'?'var(--amber)':'var(--green)')+'"></span> Player arrival <b>'+g.arrival+'</b>'+(g.arrivalStatus==='pending-coach'?' <span class="pend">· awaiting coach confirmation</span>':'')+'</div>':'')+
-    '<div class="arrive" style="border-top:none;margin-top:6px;padding-top:0"><span class="dot" style="width:9px;height:9px;background:var(--link)"></span> '+venue.name+' · '+venue.address+', '+venue.city+'</div>'+
+    '<div class="arrive" style="border-top:none;margin-top:6px;padding-top:0"><span class="dot" style="width:9px;height:9px;background:var(--link)"></span> '+venue.name+(venue.address?' &middot; '+venue.address:'')+(venue.city?', '+venue.city:'')+'</div>'+
     '<div class="wx-mini"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg> '+TOURNAMENT.weather.mini.day+' '+TOURNAMENT.weather.mini.temp+' · '+TOURNAMENT.weather.mini.feels+' · '+TOURNAMENT.weather.mini.storm+'</span><span class="exp" data-wxopen>Weekend forecast ›</span></div>'+
     '<div class="btn-row">'+
       '<a class="btn" href="'+venue.mapsUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Directions</a>'+
@@ -906,6 +916,24 @@ function renderSchedule(state){
 // ---- VENUE ----
 function renderVenue(){
   const v=TOURNAMENT.venue;
+  // Never imply a venue the tournament has not assigned yet — naming a single
+  // complex here would send families to the wrong place.
+  if(v.assigned===false){
+    const list=(v.complexes||[]).map(function(c){
+      return '<div style="padding:9px 0;border-top:1px solid var(--line)"><div style="font-weight:700;font-size:13.5px">'+c.name+'</div><div class="muted small">'+c.address+'</div></div>';
+    }).join('');
+    document.getElementById('venueCard').innerHTML='<div class="card" style="border-top:4px solid var(--amber)">'
+      +'<div class="label" style="color:var(--amber)">Venue</div>'
+      +'<div style="font-size:17px;font-weight:800;margin:3px 0 6px">Complex not yet assigned</div>'
+      +'<p class="muted small" style="margin:0;line-height:1.55">The Carolina Cup is played across five SCUFC complexes in the Columbia / Irmo area. Our team\'s complex and field are confirmed when the schedule posts on <b>September 24</b>.</p>'
+      +'<div style="margin-top:10px">'+list+'</div>'
+      +'<a class="btn ghost" style="margin-top:12px;flex-direction:row;gap:7px" href="'+(v.complexListUrl||'https://www.southcarolinaunitedfc.com/facilities')+'" target="_blank" rel="noopener">Complex addresses &mdash; SCUFC &rsaquo;</a>'
+      +'</div>';
+    document.getElementById('fieldsCard').innerHTML='<div class="card" style="text-align:center;padding:22px"><div class="label" style="margin-bottom:6px">Field map</div><p class="small muted" style="margin:0">Field and complex assignments are published with the schedule on September 24.</p></div>';
+    const amen0=(v.amenities||[]).map(function(a){return '<div class="amenity">'+a+'</div>';}).join('');
+    document.getElementById('venueInfoCard').innerHTML='<div class="card"><div class="label" style="margin-bottom:6px">Parking &amp; Amenities</div><p class="small" style="margin:0 0 10px;line-height:1.55">'+v.parking+'</p><div class="amenities">'+amen0+'</div><p class="small muted" style="margin:12px 0 0">'+v.bring+'</p></div>';
+    return;
+  }
   document.getElementById('venueCard').innerHTML='<div class="card" style="border-top:4px solid var(--su)"><div class="label">'+v.name+'</div><div style="font-size:16px;font-weight:700;margin:2px 0 2px">'+v.address+'</div><div class="muted" style="margin-bottom:12px">'+v.city+'</div><a class="btn" style="flex-direction:row;font-size:14px;gap:8px" href="'+v.mapsUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Directions</a>'+((v.fieldCount===0||!v.ourFields||!v.ourFields.length)?'<div style="margin-top:12px;padding:10px 12px;background:var(--amber-bg);border-radius:10px"><div style="font-size:12.5px;font-weight:700;color:var(--amber);line-height:1.5">Complex not yet assigned. The Carolina Cup is played across five SCUFC complexes — ours is confirmed when the schedule posts on Sep 24.</div><div style="margin-top:8px"><a href="'+TOURNAMENT.rules.fullRulesUrl+'" target="_blank" rel="noopener" style="font-size:12px;font-weight:800;color:var(--link)">Official tournament page &rsaquo;</a></div></div>':'')+'</div>';
   // fields grid — only render once fields are actually assigned by the tournament
   const hasFields=(v.fieldCount>0 && v.ourFields && v.ourFields.length>0);
