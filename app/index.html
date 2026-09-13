@@ -539,7 +539,7 @@ function adaptData(d){
       var C=[]; var c=d.contacts.coach, mgr=d.contacts.manager;
       if(c&&c.name) C.push({name:c.name, role:'Head Coach · Soccer / team', phone:(c.phone||'').replace(/[^0-9]/g,''), initial:c.name.charAt(0)});
       if(mgr&&mgr.name) C.push({name:mgr.name, role:mgr.role||'Parent Team Manager', phone:(mgr.phone||'').replace(/[^0-9]/g,''), initial:mgr.name.charAt(0)});
-      (d.contacts.teamManagers||[]).forEach(function(m){ C.push({name:m.name, role:'Team Manager', phone:(m.phone||'').replace(/[^0-9]/g,''), initial:m.name.charAt(0)}); });
+      (d.contacts.teamManagers||[]).forEach(function(m){ C.push({name:m.name, role:(m.role||'Team Manager'), phone:(m.phone||'').replace(/[^0-9]/g,''), initial:m.name.charAt(0)}); });
       var td=d.contacts.tournamentDirector;
       if(td&&(td.name||td.email)) C.push({name:td.name||'Tournament HQ', role:(td.email||'')+' · lost kid / injury / venue emergency', phone:(td.phone||'').replace(/[^0-9]/g,''), initial:'H'});
       C.push({name:'Team Updates', role:'PlayMetrics', url:'https://playmetrics.com', initial:'P'});

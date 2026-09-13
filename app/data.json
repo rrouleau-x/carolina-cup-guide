@@ -200,9 +200,9 @@
       "email": "keith.gunn@savannahunited.com"
     },
     "teamManagers": [
-      { "name": "Jenn", "phone": "", "email": "" },
-      { "name": "Carson Gray", "phone": "770-757-1617", "email": "carson.gray@savannahunited.com" },
-      { "name": "Mitchell Heath", "phone": "859-445-2028", "email": "mitchell.heath@savannahunited.com" }
+      { "name": "Jenn", "role": "Parent Team Manager", "phone": "", "email": "" },
+      { "name": "Carson Gray", "role": "Coach", "phone": "770-757-1617", "email": "carson.gray@savannahunited.com" },
+      { "name": "Mitchell Heath", "role": "Coach", "phone": "859-445-2028", "email": "mitchell.heath@savannahunited.com" }
     ],
     "tournamentDirector": {
       "name": "Tripp Miller",
