@@ -450,7 +450,17 @@ function adaptData(d){
     // venue
     if(d.venue){
       if(d.venue.name) T.venue.name=d.venue.name;
-      if(d.venue.address) T.venue.address=d.venue.address;
+      if(d.venue.address){
+        // data.json carries a full address ("1009 Bickley Road, Irmo, SC 29063").
+        // Split it so the renderer doesn't append the city a second time.
+        var parts=d.venue.address.split(',');
+        if(parts.length>=3){
+          T.venue.city=parts.slice(-2).join(',').trim();
+          T.venue.address=parts.slice(0,-2).join(',').trim();
+        }else{
+          T.venue.address=d.venue.address;
+        }
+      }
       if(d.venue.mapsUrl) T.venue.mapsUrl=d.venue.mapsUrl;
       if(d.venue.parking) T.venue.parking=d.venue.parking;
       if(d.venue.fields && d.venue.fields.map) T.venue.fieldMapUrl=d.venue.fields.map;
