@@ -49,7 +49,7 @@
       }
     ],
     "complexListUrl": "https://www.southcarolinaunitedfc.com/facilities",
-    "parking": "Free on-site at SCUFC complexes. Arrive 30-45 min early \u2014 these are large, spread-out complexes and lots fill on tournament mornings.",
+    "parking": "Free on-site at SCUFC complexes. Arrive 30-45 min early — these are large, spread-out complexes and lots fill on tournament mornings.",
     "fields": {
       "count": 0,
       "surface": "Grass",
@@ -59,7 +59,7 @@
     "amenities": {
       "concessions": true,
       "restrooms": true,
-      "shade": "Limited \u2014 open complexes",
+      "shade": "Limited — open complexes",
       "aed": false,
       "playground": false
     }
@@ -71,10 +71,10 @@
       {
         "name": "Hampton Inn Columbia I-26/Harbison Blvd",
         "chain": "Hilton",
-        "rate": "$284/night \u00b7 $568 for 2 nights",
+        "rate": "$284/night · $568 for 2 nights",
         "total2Nights": "$568",
         "rooms": "",
-        "drive": "7.0 mi \u00b7 13 min",
+        "drive": "7.0 mi · 13 min",
         "route": "Harbison Blvd, northwest Columbia",
         "amenities": [
           "Hot breakfast included",
@@ -89,10 +89,10 @@
       {
         "name": "Hyatt Place Columbia/Harbison",
         "chain": "Hyatt",
-        "rate": "$399/night \u00b7 $798 for 2 nights",
+        "rate": "$399/night · $798 for 2 nights",
         "total2Nights": "$798",
         "rooms": "",
-        "drive": "5.9 mi \u00b7 12 min",
+        "drive": "5.9 mi · 12 min",
         "route": "Closest of our picks to the venue",
         "amenities": [
           "Breakfast available",
@@ -106,10 +106,10 @@
       {
         "name": "Country Inn & Suites by Radisson, Columbia at Harbison",
         "chain": "Radisson",
-        "rate": "$161/night \u00b7 $321 for 2 nights",
+        "rate": "$161/night · $321 for 2 nights",
         "total2Nights": "$321",
         "rooms": "",
-        "drive": "8.2 mi \u00b7 15 min",
+        "drive": "8.2 mi · 15 min",
         "route": "Piney Grove Rd, Harbison area",
         "amenities": [
           "Breakfast included",
@@ -123,37 +123,37 @@
     ],
     "nonOfficial": [
       {
-        "name": "Ramada Limited \u2013 Columbia",
+        "name": "Ramada Limited – Columbia",
         "chain": "Wyndham",
-        "drive": "12.0 mi \u00b7 21 min",
-        "note": "$100/night \u00b7 $200 for 2 nights. Lowest rate we found. Further out, basic property."
+        "drive": "12.0 mi · 21 min",
+        "note": "$100/night · $200 for 2 nights. Lowest rate we found. Further out, basic property."
       },
       {
         "name": "TownePlace Suites by Marriott Columbia West/Lexington",
-        "chain": "Marriott \u2605 Points",
-        "drive": "13.7 mi \u00b7 22 min",
-        "note": "$299/night \u00b7 $611 for 2 nights. Kitchen suites \u2014 good for longer stays. Marriott Bonvoy eligible."
+        "chain": "Marriott ★ Points",
+        "drive": "13.7 mi · 22 min",
+        "note": "$299/night · $611 for 2 nights. Kitchen suites — good for longer stays. Marriott Bonvoy eligible."
       },
       {
         "name": "Residence Inn by Marriott Columbia West/Lexington",
-        "chain": "Marriott \u2605 Points",
-        "drive": "13.7 mi \u00b7 21 min",
-        "note": "$319/night \u00b7 $638 for 2 nights. Kitchen suites, hot breakfast. Marriott Bonvoy eligible."
+        "chain": "Marriott ★ Points",
+        "drive": "13.7 mi · 21 min",
+        "note": "$319/night · $638 for 2 nights. Kitchen suites, hot breakfast. Marriott Bonvoy eligible."
       },
       {
         "name": "Tru by Hilton Columbia Greystone",
         "chain": "Hilton",
-        "drive": "13.5 mi \u00b7 21 min",
-        "note": "$598/night \u00b7 $1,196 for 2 nights. Rates spike on this weekend \u2014 check current pricing."
+        "drive": "13.5 mi · 21 min",
+        "note": "$598/night · $1,196 for 2 nights. Rates spike on this weekend — check current pricing."
       }
     ],
     "updatedAt": "2026-09-13"
   },
   "weather": {
-    "summary": "Early October in Columbia averages a 63\u00b0F morning low and an 80\u00b0F afternoon high, with roughly a 1-in-6 chance of rain on any given day. Ten-year observed high range: 68\u00b0F to 95\u00b0F.",
-    "details": "This is a two-wardrobe weekend. Mornings at the first game are genuinely cool \u2014 bring a jacket or warm layer. Afternoons can still reach the low 90s, so bring the full heat kit as well: water, electrolytes, sunscreen, cooling towels. Rain is possible but not likely on any single day. Start hydrating the day before travel. Based on ten years of recorded daily observations for Columbia, SC (2016\u20132025, Open-Meteo historical archive). A reliable daily forecast becomes available around September 28\u201330.",
+    "summary": "Early October in Columbia averages a 63°F morning low and an 80°F afternoon high, with roughly a 1-in-6 chance of rain on any given day. Ten-year observed high range: 68°F to 95°F.",
+    "details": "This is a two-wardrobe weekend. Mornings at the first game are genuinely cool — bring a jacket or warm layer. Afternoons can still reach the low 90s, so bring the full heat kit as well: water, electrolytes, sunscreen, cooling towels. Rain is possible but not likely on any single day. Start hydrating the day before travel. Based on ten years of recorded daily observations for Columbia, SC (2016–2025, Open-Meteo historical archive). A reliable daily forecast becomes available around September 28–30.",
     "forecastLink": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
-    "source": "Open-Meteo historical archive (2016\u20132025) + NWS Columbia",
+    "source": "Open-Meteo historical archive (2016–2025) + NWS Columbia",
     "sourceApiUrl": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
     "updatedAt": "2026-09-13T08:00:00-04:00"
   },
@@ -162,11 +162,11 @@
     "keyRules": [
       {
         "label": "Format",
-        "value": "7v7 for U8\u2013U10 age groups"
+        "value": "7v7 for U8–U10 age groups"
       },
       {
         "label": "Age Groups",
-        "value": "U8\u2013U19, boys and girls"
+        "value": "U8–U19, boys and girls"
       },
       {
         "label": "Levels",
@@ -178,15 +178,15 @@
       },
       {
         "label": "Check-in",
-        "value": "Online check-in only \u2014 no on-site check-in"
+        "value": "Online check-in only — no on-site check-in"
       },
       {
         "label": "Accepted Teams",
-        "value": "Posted September 14, 2026"
+        "value": "Posted September 14, 2026 — confirmed"
       },
       {
         "label": "Brackets",
-        "value": "Posted September 16, 2026"
+        "value": "Posted September 16, 2026 — verified September 18 (see each team's division)"
       },
       {
         "label": "Schedule",
@@ -194,11 +194,11 @@
       },
       {
         "label": "Stay-to-Play",
-        "value": "No housing policy published \u2014 unconfirmed"
+        "value": "No housing policy published — unconfirmed"
       },
       {
         "label": "Rules Document",
-        "value": "Not yet published for 2026 \u2014 we will not guess"
+        "value": "Not yet published for 2026 — we will not guess"
       }
     ],
     "tiebreakers": [],
@@ -208,40 +208,48 @@
       "email": "tripp@scufc.com"
     },
     "bracketContact": {
-      "name": "Jamie McClendon (U8\u2013U12)",
+      "name": "Jamie McClendon (U8–U12)",
       "email": "jamie@scufc.com"
     }
   },
   "updates": [
     {
+      "type": "info",
+      "title": "Brackets are posted — our divisions are confirmed",
+      "description": "SCUFC published bracket placements on September 16 and we have now verified them at the source. Our four teams landed in four different divisions: U9 Premier is in Under 09 Boys Red (5 teams), U9 Blue in Under 09 Boys Green (8 teams), U10 Premier in Under 10 Boys Red (6 teams), and U10 Blue in Under 10 Boys Green (8 teams). Nobody in the same division — which means no cross-team matchups that weekend. Opponents are known now; game times, fields and the actual pairings post with the full schedule on September 24.",
+      "time": "Sep 18 · 8:00 AM",
+      "posted": "Parent Manager",
+      "actionRequired": false
+    },
+    {
       "type": "warning",
-      "title": "Book your hotel now \u2014 the Irmo area is 80% sold out",
-      "description": "We checked availability for October 2\u20134 and 80% of properties in Irmo were already unavailable. The Harbison cluster to the northwest still has rooms, with verified rates from $100 to $399 per night. A free-cancellation rate costs nothing to hold while you decide.",
-      "time": "Sep 13 \u00b7 8:00 AM",
+      "title": "Hotel rates: last verified September 13 — re-check before booking",
+      "description": "When we checked availability on September 13, 80% of properties in Irmo were already unavailable, and the Harbison cluster to the northwest still had rooms from $100 to $399 per night. Those rates were last verified on September 13, 2026 — we could not re-confirm them live today, so treat every figure as a guide and confirm the current price before booking. A free-cancellation rate costs nothing to hold while you decide.",
+      "time": "Sep 13 · 8:00 AM",
       "posted": "Parent Manager",
       "actionRequired": true
     },
     {
       "type": "info",
       "title": "No stay-to-play policy published for this event",
-      "description": "We checked the official tournament page, the SCUFC host site, and the registration portal, and found no stated housing requirement or approved-hotel list for the Carolina Cup. We have asked the tournament director to confirm. In the meantime, our hotel picks are simply the closest verified options \u2014 there is no housing portal to book through.",
-      "time": "Sep 13 \u00b7 8:00 AM",
+      "description": "We checked the official tournament page, the SCUFC host site, and the registration portal, and found no stated housing requirement or approved-hotel list for the Carolina Cup. We have asked the tournament director to confirm. In the meantime, our hotel picks are simply the closest verified options — there is no housing portal to book through.",
+      "time": "Sep 13 · 8:00 AM",
       "posted": "Parent Manager",
       "actionRequired": false
     },
     {
       "type": "warning",
-      "title": "Accepted team list posts September 14 \u2014 then complete online check-in",
+      "title": "Accepted team list posts September 14 — then complete online check-in",
       "description": "The tournament posts accepted teams on September 14. Online check-in opens after that, and every team must complete it. There is no on-site check-in at this event, so this is not something that can be handled at the field.",
-      "time": "Sep 13 \u00b7 8:00 AM",
+      "time": "Sep 13 · 8:00 AM",
       "posted": "SCUFC",
       "actionRequired": true
     },
     {
       "type": "info",
-      "title": "Brackets September 16 \u00b7 Schedule September 24",
+      "title": "Brackets September 16 · Schedule September 24",
       "description": "Brackets post September 16 and the full schedule posts September 24. Until the schedule lands we do not know which of SCUFC's five complexes our team plays at, what field, or what times. As soon as those are live, this app will show game times, fields, opponents, and a calculated departure time for each family.",
-      "time": "Sep 13 \u00b7 8:00 AM",
+      "time": "Sep 13 · 8:00 AM",
       "posted": "SCUFC",
       "actionRequired": false
     },
@@ -249,7 +257,7 @@
       "type": "info",
       "title": "2026 rules document not yet published",
       "description": "SCUFC has not released the 2026 Carolina Cup rules. Game length, mercy rule, substitutions, and the tiebreaker order are all unconfirmed. Rather than fill these in from another tournament's rulebook, we have left them marked as pending. Rules questions can go to Tournament Director Tripp Miller at tripp@scufc.com.",
-      "time": "Sep 13 \u00b7 8:00 AM",
+      "time": "Sep 13 · 8:00 AM",
       "posted": "Parent Manager",
       "actionRequired": false
     }
@@ -283,12 +291,12 @@
     "emergency": "911"
   },
   "venueRules": {
-    "tents": "Pending Confirmation \u2014 SCUFC has not published a tent or canopy policy for this event.",
-    "pets": "Pending Confirmation \u2014 pet policy not published.",
+    "tents": "Pending Confirmation — SCUFC has not published a tent or canopy policy for this event.",
+    "pets": "Pending Confirmation — pet policy not published.",
     "foodCooler": "Concessions available on-site at the complexes. Outside food and cooler policy not published.",
     "chairs": "Folding chairs are standard at youth soccer complexes. Stay behind the spectator line and do not block access paths or medical lanes.",
-    "alcohol": "Pending Confirmation \u2014 not published.",
-    "smoking": "Pending Confirmation \u2014 not published."
+    "alcohol": "Pending Confirmation — not published.",
+    "smoking": "Pending Confirmation — not published."
   },
   "checklist": {
     "player": [
@@ -380,7 +388,11 @@
       "gender": "Boys",
       "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM18001F6",
       "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u9-premier.pdf",
-      "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u9-premier/"
+      "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u9-premier/",
+      "division": "Under 09 Boys Red Division",
+      "divisionTeamCount": 5,
+      "bracketSource": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
+      "bracketVerified": "2026-09-18"
     },
     {
       "slug": "u9-blue",
@@ -391,7 +403,11 @@
       "gender": "Boys",
       "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM18001F7",
       "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u9-blue.pdf",
-      "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u9-blue/"
+      "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u9-blue/",
+      "division": "Under 09 Boys Green Division",
+      "divisionTeamCount": 8,
+      "bracketSource": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
+      "bracketVerified": "2026-09-18"
     },
     {
       "slug": "u10-premier",
@@ -402,7 +418,11 @@
       "gender": "Boys",
       "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM1717298",
       "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u10-premier.pdf",
-      "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u10-premier/"
+      "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u10-premier/",
+      "division": "Under 10 Boys Red Division",
+      "divisionTeamCount": 6,
+      "bracketSource": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
+      "bracketVerified": "2026-09-18"
     },
     {
       "slug": "u10-blue",
@@ -413,7 +433,11 @@
       "gender": "Boys",
       "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM1717299",
       "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u10-blue.pdf",
-      "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u10-blue/"
+      "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u10-blue/",
+      "division": "Under 10 Boys Green Division",
+      "divisionTeamCount": 8,
+      "bracketSource": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
+      "bracketVerified": "2026-09-18"
     }
   ],
   "defaultTeam": "u9-premier"
