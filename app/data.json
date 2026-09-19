@@ -69,7 +69,22 @@
       "Polo Road Park",
       "Southeastern Freight Lines Soccer Center",
       "SV Presbyterian Church Fields"
-    ]
+    ],
+    "likely": {
+      "status": "parent-manager research - NOT an official assignment",
+      "mostLikely": "Polo Road Park",
+      "secondCandidate": "Ballentine Park Complex",
+      "unlikely": [
+        "Southeastern Freight Lines Soccer Center",
+        "SV Presbyterian Church Fields",
+        "SCUFC West Soccer Complex"
+      ],
+      "evidence": "SCUFC's own field-layout PDFs label Polo Road's fields 3, 4, 7 and 8 as 7v7 - the only complex in the set with 7v7 fields. Our four teams are U9/U10, which the tournament's own format table lists as 7v7. Southeastern Freight, SV Presbyterian and SCUFC West are all-11v11 layouts, built for the older age groups.",
+      "secondEvidence": "Ballentine is the other small-field complex, and SCUFC's recreational program - our age group - runs out of Polo Road and Ballentine Park.",
+      "caveat": "Official complexes and field numbers are published with the schedule on September 24, 2026. Tournaments re-line fields and the layouts SCUFC publishes are regular/practice configurations, so this is a best guess and may be wrong.",
+      "source": "southcarolinaunitedfc.com/facilities field layouts + tournament format table",
+      "checked": "2026-09-19"
+    }
   },
   "hotels": {
     "stayToPlay": false,
@@ -122,7 +137,14 @@
           }
         },
         "nearest": "Southeastern Freight Lines Soccer Center",
-        "driveVerified": "2026-09-19"
+        "driveVerified": "2026-09-19",
+        "worstCase": {
+          "mi": 21.0,
+          "min": 25,
+          "complex": "SV Presbyterian Church Fields"
+        },
+        "bandAtLikely": "Secondary",
+        "everOutside": true
       },
       {
         "name": "WoodSpring Suites Columbia – Irmo",
@@ -170,7 +192,14 @@
           }
         },
         "nearest": "Ballentine Park Complex",
-        "driveVerified": "2026-09-19"
+        "driveVerified": "2026-09-19",
+        "worstCase": {
+          "mi": 24.3,
+          "min": 27,
+          "complex": "SV Presbyterian Church Fields"
+        },
+        "bandAtLikely": "Outside",
+        "everOutside": true
       },
       {
         "name": "Hilton Garden Inn Columbia/Harbison",
@@ -219,7 +248,14 @@
           }
         },
         "nearest": "Ballentine Park Complex",
-        "driveVerified": "2026-09-19"
+        "driveVerified": "2026-09-19",
+        "worstCase": {
+          "mi": 23.9,
+          "min": 27,
+          "complex": "SV Presbyterian Church Fields"
+        },
+        "bandAtLikely": "Outside",
+        "everOutside": true
       },
       {
         "name": "MainStay Suites Columbia Harbison",
@@ -267,7 +303,14 @@
           }
         },
         "nearest": "Ballentine Park Complex",
-        "driveVerified": "2026-09-19"
+        "driveVerified": "2026-09-19",
+        "worstCase": {
+          "mi": 23.1,
+          "min": 28,
+          "complex": "SV Presbyterian Church Fields"
+        },
+        "bandAtLikely": "Secondary",
+        "everOutside": true
       },
       {
         "name": "Hyatt Place Columbia/Harbison",
@@ -316,7 +359,14 @@
           }
         },
         "nearest": "Ballentine Park Complex",
-        "driveVerified": "2026-09-19"
+        "driveVerified": "2026-09-19",
+        "worstCase": {
+          "mi": 23.1,
+          "min": 26,
+          "complex": "SV Presbyterian Church Fields"
+        },
+        "bandAtLikely": "Secondary",
+        "everOutside": true
       }
     ],
     "nonOfficial": [
@@ -358,13 +408,20 @@
           }
         },
         "nearest": "Ballentine Park Complex",
-        "driveVerified": "2026-09-19"
+        "driveVerified": "2026-09-19",
+        "worstCase": {
+          "mi": 22.3,
+          "min": 25,
+          "complex": "SV Presbyterian Church Fields"
+        },
+        "bandAtLikely": "Secondary",
+        "everOutside": true
       },
       {
         "name": "LivSmart Studios by Hilton Columbia Greystone",
         "chain": "Hilton",
         "drive": "6.3 mi &middot; ~13 min to Southeastern Freight Lines Soccer Center (closest of five)",
-        "note": "$315 per night · $718 for two nights. Extended-stay studios.",
+        "note": "$313 per night · $713 for two nights. Re-checked live September 19, 2026. Extended-stay studios; only 9 reviews so far, and 2 rooms left at this rate.",
         "distances": {
           "Southeastern Freight Lines Soccer Center": {
             "mi": 6.3,
@@ -398,7 +455,15 @@
           }
         },
         "nearest": "Southeastern Freight Lines Soccer Center",
-        "driveVerified": "2026-09-19"
+        "driveVerified": "2026-09-19",
+        "worstCase": {
+          "mi": 17.8,
+          "min": 24,
+          "complex": "SV Presbyterian Church Fields"
+        },
+        "bandAtLikely": "Primary",
+        "everOutside": false,
+        "rateChecked": "2026-09-19"
       },
       {
         "name": "Tru by Hilton Harbison Columbia",
@@ -438,13 +503,20 @@
           }
         },
         "nearest": "Ballentine Park Complex",
-        "driveVerified": "2026-09-19"
+        "driveVerified": "2026-09-19",
+        "worstCase": {
+          "mi": 22.8,
+          "min": 27,
+          "complex": "SV Presbyterian Church Fields"
+        },
+        "bandAtLikely": "Secondary",
+        "everOutside": true
       },
       {
         "name": "La Quinta Inn by Wyndham Columbia SE / Fort Jackson",
         "chain": "Wyndham",
         "drive": "11.2 mi &middot; ~14 min to Polo Road Park (closest of five)",
-        "note": "$171 per night · $479 for two nights. Cheapest branded room we found, but a longer drive.",
+        "note": "$171 per night · $383 for two nights. Re-checked live September 19, 2026 (fall sale; was $479). Closest branded hotel to Polo Road Park, and fully refundable.",
         "distances": {
           "Polo Road Park": {
             "mi": 11.2,
@@ -478,7 +550,15 @@
           }
         },
         "nearest": "Polo Road Park",
-        "driveVerified": "2026-09-19"
+        "driveVerified": "2026-09-19",
+        "worstCase": {
+          "mi": 29.6,
+          "min": 32,
+          "complex": "SCUFC West Soccer Complex"
+        },
+        "bandAtLikely": "Primary",
+        "everOutside": true,
+        "rateChecked": "2026-09-19"
       },
       {
         "name": "SpringHill Suites by Marriott Camden",
@@ -518,7 +598,14 @@
           }
         },
         "nearest": "SV Presbyterian Church Fields",
-        "driveVerified": "2026-09-19"
+        "driveVerified": "2026-09-19",
+        "worstCase": {
+          "mi": 46.8,
+          "min": 46,
+          "complex": "SCUFC West Soccer Complex"
+        },
+        "bandAtLikely": "Outside",
+        "everOutside": true
       },
       {
         "name": "Leesville Lodge",
@@ -558,7 +645,14 @@
           }
         },
         "nearest": "Ballentine Park Complex",
-        "driveVerified": "2026-09-19"
+        "driveVerified": "2026-09-19",
+        "worstCase": {
+          "mi": 46.7,
+          "min": 49,
+          "complex": "SV Presbyterian Church Fields"
+        },
+        "bandAtLikely": "Outside",
+        "everOutside": true
       },
       {
         "name": "Motel 6 West Columbia – Airport",
@@ -598,7 +692,14 @@
           }
         },
         "nearest": "Southeastern Freight Lines Soccer Center",
-        "driveVerified": "2026-09-19"
+        "driveVerified": "2026-09-19",
+        "worstCase": {
+          "mi": 24.8,
+          "min": 28,
+          "complex": "SV Presbyterian Church Fields"
+        },
+        "bandAtLikely": "Outside",
+        "everOutside": true
       }
     ],
     "updatedAt": "2026-09-18",
@@ -606,7 +707,18 @@
     "sourceNote": "Hotels.com search (Oct 2-4 2026, 1 room, 2 adults + 1 child), checked live 2026-09-18",
     "caveat": "Partial result set, not full inventory. Rate is the nightly price shown for October 2-4 for one room, two adults and one child. Absence from this list does NOT mean a hotel is sold out.",
     "distanceNote": "Every distance in this section is a Google Maps driving distance for that hotel's verified street address, re-checked September 19, 2026. All five possible complexes are listed, nearest first, for every hotel. Driving distances only - not straight-line, and not copied from a listing site. The Carolina Cup runs across five SCUFC complexes and assigns our teams on September 24, so until then we show every complex rather than guess; once a team's complex is known, that team's guide and app will lead with the hotel closest to its field. Rates in this section were pulled live on September 18, 2026 and were not re-checked on September 19.",
-    "distanceVerified": "2026-09-19"
+    "distanceVerified": "2026-09-19",
+    "hedge": {
+      "pick": "LivSmart Studios by Hilton Columbia Greystone",
+      "why": "The only one of the twelve hotels that is Primary or Secondary at EVERY complex - worst case 17.8 mi / ~24 min (SV Presbyterian Church Fields). Every other hotel, including all five featured official hotels, lands Outside range at at least one complex, so this is the one booking that survives whichever complex our teams are assigned.",
+      "worst": {
+        "mi": 17.8,
+        "min": 24,
+        "complex": "SV Presbyterian Church Fields"
+      },
+      "checked": "2026-09-19"
+    },
+    "rateVerifiedNote": "La Quinta SE and LivSmart Greystone were re-checked live on September 19, 2026. The other ten hotels carry their September 18, 2026 figures."
   },
   "weather": {
     "summary": "Early October in Columbia averages an 80°F afternoon high and a 63°F morning low. Ten-year observed range for these dates: 68°F to 97°F highs, 48°F to 77°F lows. Measurable rain on about 1 day in 5, but the shoulder-season swings are real.",
