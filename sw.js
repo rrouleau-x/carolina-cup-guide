@@ -5,7 +5,7 @@
 
    Strategy: network-first (always prefer fresh), fall back to cache offline. */
 
-const CACHE = 'carolina-cup-shell-v13';
+const CACHE = 'carolina-cup-shell-v14';
 
 const PRECACHE = [
   './',

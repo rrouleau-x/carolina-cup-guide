@@ -79,7 +79,7 @@
         "name": "Country Inn & Suites by Radisson, Columbia at Harbison",
         "chain": "Radisson",
         "rate": "$161 per night · $322 for two nights",
-        "drive": "9.8 mi · ~14 min",
+        "drive": "8.1 mi &middot; ~12 min to Southeastern Freight Lines Soccer Center (closest of five)",
         "rooms": "",
         "amenities": [
           "Breakfast included",
@@ -91,34 +91,44 @@
         "bookUrl": "https://www.booking.com/hotel/us/country-inn-suites-by-radisson-columbia-at-harbison-sc.html",
         "distances": {
           "Southeastern Freight Lines Soccer Center": {
-            "mi": 8.3,
-            "min": 13,
-            "src": "osrm"
+            "mi": 8.1,
+            "min": 12,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Ballentine Park Complex": {
-            "mi": 9.8,
-            "min": 14,
-            "src": "google"
+            "mi": 9.4,
+            "min": 12,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 9.7,
+            "min": 13,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Polo Road Park": {
             "mi": 17.2,
-            "min": 25,
-            "src": "osrm"
+            "min": 20,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "SV Presbyterian Church Fields": {
-            "mi": 18.7,
-            "min": 28,
-            "src": "osrm"
+            "mi": 21.0,
+            "min": 25,
+            "src": "google",
+            "checked": "2026-09-19"
           }
         },
         "nearest": "Southeastern Freight Lines Soccer Center",
-        "driveVerified": true
+        "driveVerified": "2026-09-19"
       },
       {
         "name": "WoodSpring Suites Columbia – Irmo",
         "chain": "Choice",
         "rate": "$189 per night · $423 for two nights",
-        "drive": "6.7 mi · ~10 min",
+        "drive": "4.4 mi &middot; ~10 min to Ballentine Park Complex (closest of five)",
         "rooms": "",
         "amenities": [
           "Extended-stay style",
@@ -128,34 +138,45 @@
         "bestValue": false,
         "bookUrl": "",
         "distances": {
-          "Southeastern Freight Lines Soccer Center": {
-            "mi": 6.7,
-            "min": 10,
-            "src": "google"
-          },
           "Ballentine Park Complex": {
-            "mi": 12.2,
-            "min": 19,
-            "src": "osrm"
+            "mi": 4.4,
+            "min": 10,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 6.9,
+            "min": 10,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "Southeastern Freight Lines Soccer Center": {
+            "mi": 11.4,
+            "min": 15,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Polo Road Park": {
-            "mi": 15.2,
-            "min": 22,
-            "src": "osrm"
+            "mi": 20.5,
+            "min": 23,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "SV Presbyterian Church Fields": {
-            "mi": 16.8,
-            "min": 25,
-            "src": "osrm"
+            "mi": 24.3,
+            "min": 27,
+            "src": "google",
+            "checked": "2026-09-19"
           }
         },
-        "nearest": "Southeastern Freight Lines Soccer Center"
+        "nearest": "Ballentine Park Complex",
+        "driveVerified": "2026-09-19"
       },
       {
         "name": "Hilton Garden Inn Columbia/Harbison",
         "chain": "Hilton",
         "rate": "$273 per night · $611 for two nights",
-        "drive": "5.7 mi · ~12 min",
+        "drive": "7.6 mi &middot; ~10 min to Ballentine Park Complex (closest of five)",
         "rooms": "",
         "amenities": [
           "Restaurant on site",
@@ -167,34 +188,44 @@
         "bookUrl": "",
         "distances": {
           "Ballentine Park Complex": {
-            "mi": 5.7,
+            "mi": 7.6,
+            "min": 10,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 8.0,
             "min": 12,
-            "src": "google"
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Southeastern Freight Lines Soccer Center": {
-            "mi": 10.3,
-            "min": 17,
-            "src": "osrm"
+            "mi": 11.0,
+            "min": 15,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Polo Road Park": {
-            "mi": 19.2,
-            "min": 29,
-            "src": "osrm"
+            "mi": 20.0,
+            "min": 23,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "SV Presbyterian Church Fields": {
-            "mi": 20.8,
-            "min": 31,
-            "src": "osrm"
+            "mi": 23.9,
+            "min": 27,
+            "src": "google",
+            "checked": "2026-09-19"
           }
         },
         "nearest": "Ballentine Park Complex",
-        "driveVerified": true
+        "driveVerified": "2026-09-19"
       },
       {
         "name": "MainStay Suites Columbia Harbison",
         "chain": "Choice",
         "rate": "$279 per night · $625 for two nights",
-        "drive": "5.6 mi · ~12 min",
+        "drive": "8.0 mi &middot; ~12 min to Ballentine Park Complex (closest of five)",
         "rooms": "",
         "amenities": [
           "Suite-style with kitchenette",
@@ -205,34 +236,44 @@
         "bookUrl": "",
         "distances": {
           "Ballentine Park Complex": {
-            "mi": 5.6,
+            "mi": 8.0,
             "min": 12,
-            "src": "google"
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 8.3,
+            "min": 13,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Southeastern Freight Lines Soccer Center": {
-            "mi": 10.3,
-            "min": 17,
-            "src": "osrm"
+            "mi": 10.1,
+            "min": 15,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Polo Road Park": {
-            "mi": 19.3,
-            "min": 29,
-            "src": "osrm"
+            "mi": 19.2,
+            "min": 23,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "SV Presbyterian Church Fields": {
-            "mi": 20.8,
-            "min": 32,
-            "src": "osrm"
+            "mi": 23.1,
+            "min": 28,
+            "src": "google",
+            "checked": "2026-09-19"
           }
         },
         "nearest": "Ballentine Park Complex",
-        "driveVerified": false
+        "driveVerified": "2026-09-19"
       },
       {
         "name": "Hyatt Place Columbia/Harbison",
         "chain": "Hyatt",
         "rate": "$367 per night · $821 for two nights",
-        "drive": "5.6 mi · ~12 min",
+        "drive": "7.9 mi &middot; ~10 min to Ballentine Park Complex (closest of five)",
         "rooms": "",
         "amenities": [
           "Breakfast available",
@@ -244,182 +285,328 @@
         "bookUrl": "https://www.booking.com/hotel/us/hyatt-place-columbia-harbison.html",
         "distances": {
           "Ballentine Park Complex": {
-            "mi": 5.6,
+            "mi": 7.9,
+            "min": 10,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 8.2,
             "min": 12,
-            "src": "google"
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Southeastern Freight Lines Soccer Center": {
-            "mi": 11.0,
-            "min": 17,
-            "src": "osrm"
+            "mi": 10.2,
+            "min": 14,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Polo Road Park": {
-            "mi": 19.9,
-            "min": 29,
-            "src": "osrm"
+            "mi": 19.3,
+            "min": 22,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "SV Presbyterian Church Fields": {
-            "mi": 21.4,
-            "min": 31,
-            "src": "osrm"
+            "mi": 23.1,
+            "min": 26,
+            "src": "google",
+            "checked": "2026-09-19"
           }
         },
         "nearest": "Ballentine Park Complex",
-        "driveVerified": false
+        "driveVerified": "2026-09-19"
       }
     ],
     "nonOfficial": [
       {
         "name": "Comfort Suites Columbia at Harbison",
         "chain": "Choice",
-        "drive": "9.0 mi · ~12 min",
+        "drive": "8.5 mi &middot; ~11 min to Ballentine Park Complex (closest of five)",
         "note": "$308 per night. Suite-style rooms.",
         "distances": {
           "Ballentine Park Complex": {
-            "mi": 9.0,
+            "mi": 8.5,
+            "min": 11,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 8.9,
             "min": 12,
-            "src": "google"
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Southeastern Freight Lines Soccer Center": {
             "mi": 9.3,
-            "min": 15,
-            "src": "osrm"
+            "min": 13,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Polo Road Park": {
-            "mi": 18.2,
-            "min": 26,
-            "src": "osrm"
+            "mi": 18.4,
+            "min": 21,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "SV Presbyterian Church Fields": {
-            "mi": 19.7,
-            "min": 29,
-            "src": "osrm"
+            "mi": 22.3,
+            "min": 25,
+            "src": "google",
+            "checked": "2026-09-19"
           }
         },
         "nearest": "Ballentine Park Complex",
-        "driveVerified": false
+        "driveVerified": "2026-09-19"
       },
       {
         "name": "LivSmart Studios by Hilton Columbia Greystone",
         "chain": "Hilton",
-        "drive": "5.5 mi · ~11 min",
+        "drive": "6.3 mi &middot; ~13 min to Southeastern Freight Lines Soccer Center (closest of five)",
         "note": "$315 per night · $718 for two nights. Extended-stay studios.",
         "distances": {
           "Southeastern Freight Lines Soccer Center": {
-            "mi": 5.5,
-            "min": 11,
-            "src": "google"
+            "mi": 6.3,
+            "min": 13,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Polo Road Park": {
-            "mi": 12.6,
+            "mi": 13.9,
             "min": 20,
-            "src": "osrm"
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Ballentine Park Complex": {
-            "mi": 13.8,
-            "min": 20,
-            "src": "osrm"
+            "mi": 15.2,
+            "min": 17,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 15.5,
+            "min": 19,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "SV Presbyterian Church Fields": {
-            "mi": 14.2,
-            "min": 23,
-            "src": "osrm"
+            "mi": 17.8,
+            "min": 24,
+            "src": "google",
+            "checked": "2026-09-19"
           }
         },
         "nearest": "Southeastern Freight Lines Soccer Center",
-        "driveVerified": true
+        "driveVerified": "2026-09-19"
       },
       {
         "name": "Tru by Hilton Harbison Columbia",
         "chain": "Hilton",
-        "drive": "6.2 mi · ~14 min",
+        "drive": "8.2 mi &middot; ~12 min to Ballentine Park Complex (closest of five)",
         "note": "$319 per night · $708 for two nights. Note: this is the Harbison property, not the Greystone one.",
         "distances": {
           "Ballentine Park Complex": {
-            "mi": 6.2,
-            "min": 14,
-            "src": "google"
+            "mi": 8.2,
+            "min": 12,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 8.6,
+            "min": 13,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Southeastern Freight Lines Soccer Center": {
-            "mi": 9.8,
-            "min": 16,
-            "src": "osrm"
+            "mi": 9.9,
+            "min": 15,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Polo Road Park": {
-            "mi": 18.7,
-            "min": 27,
-            "src": "osrm"
+            "mi": 19.0,
+            "min": 23,
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "SV Presbyterian Church Fields": {
-            "mi": 20.3,
-            "min": 30,
-            "src": "osrm"
+            "mi": 22.8,
+            "min": 27,
+            "src": "google",
+            "checked": "2026-09-19"
           }
         },
         "nearest": "Ballentine Park Complex",
-        "driveVerified": false
+        "driveVerified": "2026-09-19"
       },
       {
         "name": "La Quinta Inn by Wyndham Columbia SE / Fort Jackson",
         "chain": "Wyndham",
-        "drive": "10.0 mi · ~14 min",
+        "drive": "11.2 mi &middot; ~14 min to Polo Road Park (closest of five)",
         "note": "$171 per night · $479 for two nights. Cheapest branded room we found, but a longer drive.",
         "distances": {
           "Polo Road Park": {
-            "mi": 10.0,
+            "mi": 11.2,
             "min": 14,
-            "src": "google"
-          },
-          "Southeastern Freight Lines Soccer Center": {
-            "mi": 11.0,
-            "min": 21,
-            "src": "osrm"
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "SV Presbyterian Church Fields": {
-            "mi": 13.5,
+            "mi": 15.1,
+            "min": 19,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "Southeastern Freight Lines Soccer Center": {
+            "mi": 16.7,
             "min": 20,
-            "src": "osrm"
+            "src": "google",
+            "checked": "2026-09-19"
           },
           "Ballentine Park Complex": {
-            "mi": 21.9,
-            "min": 35,
-            "src": "osrm"
+            "mi": 29.3,
+            "min": 30,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 29.6,
+            "min": 32,
+            "src": "google",
+            "checked": "2026-09-19"
           }
         },
         "nearest": "Polo Road Park",
-        "driveVerified": true
+        "driveVerified": "2026-09-19"
       },
       {
         "name": "SpringHill Suites by Marriott Camden",
         "chain": "Marriott ★ Points",
-        "drive": "Camden — allow 35–40 min",
+        "drive": "20.7 mi &middot; ~23 min to SV Presbyterian Church Fields (closest of five)",
         "note": "$213 per night · $477 for two nights. Further out; Marriott Bonvoy eligible.",
-        "distances": {},
-        "nearest": null
+        "distances": {
+          "SV Presbyterian Church Fields": {
+            "mi": 20.7,
+            "min": 23,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "Polo Road Park": {
+            "mi": 22.0,
+            "min": 24,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "Southeastern Freight Lines Soccer Center": {
+            "mi": 31.0,
+            "min": 31,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "Ballentine Park Complex": {
+            "mi": 46.5,
+            "min": 45,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 46.8,
+            "min": 46,
+            "src": "google",
+            "checked": "2026-09-19"
+          }
+        },
+        "nearest": "SV Presbyterian Church Fields",
+        "driveVerified": "2026-09-19"
       },
       {
         "name": "Leesville Lodge",
         "chain": "Independent",
-        "drive": "Lexington side",
+        "drive": "27.0 mi &middot; ~40 min to Ballentine Park Complex (closest of five)",
         "note": "$194 per night. Basic property — check reviews before booking.",
-        "distances": {},
-        "nearest": null
+        "distances": {
+          "Ballentine Park Complex": {
+            "mi": 27.0,
+            "min": 40,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 27.5,
+            "min": 42,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "Southeastern Freight Lines Soccer Center": {
+            "mi": 33.7,
+            "min": 36,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "Polo Road Park": {
+            "mi": 42.8,
+            "min": 44,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SV Presbyterian Church Fields": {
+            "mi": 46.7,
+            "min": 49,
+            "src": "google",
+            "checked": "2026-09-19"
+          }
+        },
+        "nearest": "Ballentine Park Complex",
+        "driveVerified": "2026-09-19"
       },
       {
         "name": "Motel 6 West Columbia – Airport",
         "chain": "Motel 6",
-        "drive": "West Columbia, near the airport",
+        "drive": "11.9 mi &middot; ~15 min to Southeastern Freight Lines Soccer Center (closest of five)",
         "note": "$173 per night. Budget option.",
-        "distances": {},
-        "nearest": null
+        "distances": {
+          "Southeastern Freight Lines Soccer Center": {
+            "mi": 11.9,
+            "min": 15,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "Ballentine Park Complex": {
+            "mi": 18.4,
+            "min": 21,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 18.8,
+            "min": 22,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "Polo Road Park": {
+            "mi": 21.2,
+            "min": 23,
+            "src": "google",
+            "checked": "2026-09-19"
+          },
+          "SV Presbyterian Church Fields": {
+            "mi": 24.8,
+            "min": 28,
+            "src": "google",
+            "checked": "2026-09-19"
+          }
+        },
+        "nearest": "Southeastern Freight Lines Soccer Center",
+        "driveVerified": "2026-09-19"
       }
     ],
     "updatedAt": "2026-09-18",
     "source": "Hotels.com",
     "sourceNote": "Hotels.com search (Oct 2-4 2026, 1 room, 2 adults + 1 child), checked live 2026-09-18",
     "caveat": "Partial result set, not full inventory. Rate is the nightly price shown for October 2-4 for one room, two adults and one child. Absence from this list does NOT mean a hotel is sold out.",
-    "distanceNote": "Every hotel's headline driving distance is confirmed in Google Maps for October 2-4, 2026 and is labelled as such; the additional per-complex figures are router estimates pending the same check. Driving distances only — not straight-line, not copied from a listing site. The Carolina Cup runs across five SCUFC complexes and assigns our teams on September 24, so until then we show every complex rather than guess; once a team's complex is known that team's guide will lead with the hotel closest to its field. SCUFC West Soccer Complex is not yet resolvable as a street address.",
-    "distanceVerified": "2026-09-18"
+    "distanceNote": "Every distance in this section is a Google Maps driving distance for that hotel's verified street address, re-checked September 19, 2026. All five possible complexes are listed, nearest first, for every hotel. Driving distances only - not straight-line, and not copied from a listing site. The Carolina Cup runs across five SCUFC complexes and assigns our teams on September 24, so until then we show every complex rather than guess; once a team's complex is known, that team's guide and app will lead with the hotel closest to its field. Rates in this section were pulled live on September 18, 2026 and were not re-checked on September 19.",
+    "distanceVerified": "2026-09-19"
   },
   "weather": {
     "summary": "Early October in Columbia averages an 80°F afternoon high and a 63°F morning low. Ten-year observed range for these dates: 68°F to 97°F highs, 48°F to 77°F lows. Measurable rain on about 1 day in 5, but the shoulder-season swings are real.",
