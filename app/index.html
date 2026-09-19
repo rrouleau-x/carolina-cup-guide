@@ -360,7 +360,7 @@ let TOURNAMENT = {
   },
   weather: {
     source: { enabled: true, provider: "open-meteo", lat: 34.1269365, lng: -81.2404227, timezone: "America/New_York" },
-    updated:"Updated Sep 13 · seasonal outlook",
+    updated:"Updated Sep 18 · seasonal outlook",
     forecastUrl:"https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
     mini:{ day:"Weekend", temp:"80°", feels:"low 63°", storm:"17% rain" },
     days:[
@@ -375,6 +375,7 @@ let TOURNAMENT = {
   },
   breakPlan: { title:"Between-Games Rhythm", intro:"Once the schedule posts we will build a suggested reset rhythm around your actual game times.", steps:[] },
   hotels: [],
+  hotelsUpdated: "Hotel rates verified Sep 18, 2026. Rates change daily",
   nearby: { groups:[
       { label:"Closest to the venue", items:[
           { name:"CVS Pharmacy", note:"pharmacy · 0.3 mi from the complex", dist:"~1 min", sub:"0.3 mi", url:"https://www.google.com/maps/search/CVS+pharmacy+near+Ballentine+Park+Irmo+SC", icon:"shop" },
@@ -401,7 +402,7 @@ let TOURNAMENT = {
   rules:{ quick:[], full:[], tiebreakers:[], tiebreakersPending:"", fullRulesUrl:"" },
   packing:{ alert:"Pack both kits. Also pack a warm layer — early October mornings run about 63°F.", groups:[] },
   needs:{
-    before:[["Book hotel","rates: verified Sep 13"],["Save the guide PDF","works offline"],["Charge phones","both days"],["Pack both kits","+ warm layer"]],
+    before:[["Book hotel","rates: verified Sep 18"],["Save the guide PDF","works offline"],["Charge phones","both days"],["Pack both kits","+ warm layer"]],
     travel:[["Leave by early afternoon","~3h 15m drive"],["Check in to hotel","Fri Oct 2"],["Early bedtime","players"]],
     game1:[["Both kits","game day"],["Cleats + shin guards","essential"],["Water + electrolytes","bring plenty"],["Cool layer","cool mornings"]],
     between:[["Eat lunch","between games"],["Cool down","shade or A/C"],["Rehydrate","water + electrolytes"],["Back to fields","parking fills early"]],
@@ -516,6 +517,9 @@ function adaptData(d, team){
       (d.hotels.official||[]).forEach(function(h){ hs.push({name:h.name, chain:h.chain, rate:h.rate, drive:h.drive, best:!!h.bestValue, tier:'pick', amenities:h.amenities||[]}); });
       (d.hotels.nonOfficial||[]).forEach(function(h){ hs.push({name:h.name, chain:h.chain, rate:h.rate||'', drive:h.drive, best:false, tier:'alt', note:h.note||''}); });
       T.hotels=hs;
+      if(d.hotels.updatedAt){var _p=String(d.hotels.updatedAt).split('-');
+        var _mo=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        T.hotelsUpdated='Hotel rates verified '+_mo[parseInt(_p[1],10)-1]+' '+parseInt(_p[2],10)+', '+_p[0]+'. Rates change daily';}
     }
 
     // per-team venue override — teams can play at different SCUFC complexes
@@ -1072,7 +1076,7 @@ function renderHotels(){
       + '</div>';
   }
   var html='<div class="card" style="padding:0;overflow:hidden">';
-  html+='<div style="padding:12px 14px;background:var(--amber-bg);color:var(--amber);font-size:12px;font-weight:700">Hotel rates were last verified September 13, 2026. Rates change daily — confirm the current price before booking.</div>';
+  html+='<div style="padding:12px 14px;background:var(--amber-bg);color:var(--amber);font-size:12px;font-weight:700">'+(TOURNAMENT.hotelsUpdated||'Rates change daily')+' — confirm the current price before booking.</div>';
   html+=picks.map(card).join('');
   if(alts.length){ html+='<div style="padding:10px 14px;background:var(--bg);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)">Also available</div>'+alts.map(card).join(''); }
   html+='</div>';

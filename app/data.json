@@ -192,12 +192,12 @@
     "caveat": "Partial result set, not full inventory. Rate is the nightly price shown for October 2-4 for one room, two adults and one child. Absence from this list does NOT mean a hotel is sold out."
   },
   "weather": {
-    "summary": "Early October in Columbia averages a 63°F morning low and an 80°F afternoon high, with roughly a 1-in-6 chance of rain on any given day. Ten-year observed high range: 68°F to 95°F.",
-    "details": "This is a two-wardrobe weekend. Mornings at the first game are genuinely cool — bring a jacket or warm layer. Afternoons can still reach the low 90s, so bring the full heat kit as well: water, electrolytes, sunscreen, cooling towels. Rain is possible but not likely on any single day. Start hydrating the day before travel. Based on ten years of recorded daily observations for Columbia, SC (2016–2025, Open-Meteo historical archive). A reliable daily forecast becomes available around September 28–30.",
+    "summary": "Early October in Columbia averages an 80°F afternoon high and a 63°F morning low. Ten-year observed range for these dates: 68°F to 97°F highs, 48°F to 77°F lows. Measurable rain on about 1 day in 5, but the shoulder-season swings are real.",
+    "details": "This is a two-wardrobe weekend. Mornings at the first game are genuinely cool — bring a jacket. Afternoons can still reach the mid-90s, so bring the full heat kit as well: water, electrolytes, sunscreen, cooling towels. Rain is unlikely on any single day, though not impossible. Start hydrating the day before travel. Recomputed September 18, 2026 from ten years of recorded daily observations for Columbia, SC (2016–2025, Open-Meteo historical archive). A reliable daily forecast becomes available around September 28–30.",
     "forecastLink": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
     "source": "Open-Meteo historical archive (2016–2025) + NWS Columbia",
     "sourceApiUrl": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
-    "updatedAt": "2026-09-13T08:00:00-04:00"
+    "updatedAt": "2026-09-18T20:00:00-04:00"
   },
   "rules": {
     "fullLink": "https://soccer.sincsports.com/TTContent.aspx?tid=CARCUP",
@@ -257,19 +257,19 @@
   "updates": [
     {
       "type": "info",
+      "title": "Hotel availability re-checked live — new list",
+      "description": "We re-ran availability for October 2–4, two adults and one child, and published a fresh list. Country Inn & Suites at Harbison is confirmed at $161 per night and is now our top pick. The Hampton Inn Harbison did not come back as available in any search, so we have stopped recommending it. Rates come from a live search scoped to those exact dates and are a partial result set — a hotel missing from the list is unknown rather than sold out. Confirm the current price before booking.",
+      "time": "Sep 18 · 8:00 PM",
+      "posted": "Parent Manager",
+      "actionRequired": true
+    },
+    {
+      "type": "info",
       "title": "Brackets are posted — our divisions are confirmed",
       "description": "SCUFC published bracket placements on September 16 and we have now verified them at the source. Our four teams landed in four different divisions: U9 Premier is in Under 09 Boys Red (5 teams), U9 Blue in Under 09 Boys Green (8 teams), U10 Premier in Under 10 Boys Red (6 teams), and U10 Blue in Under 10 Boys Green (8 teams). Nobody in the same division — which means no cross-team matchups that weekend. Opponents are known now; game times, fields and the actual pairings post with the full schedule on September 24.",
       "time": "Sep 18 · 8:00 AM",
       "posted": "Parent Manager",
       "actionRequired": false
-    },
-    {
-      "type": "warning",
-      "title": "Hotel rates: last verified September 13 — re-check before booking",
-      "description": "When we checked availability on September 13, 80% of properties in Irmo were already unavailable, and the Harbison cluster to the northwest still had rooms from $100 to $399 per night. Those rates were last verified on September 13, 2026 — we could not re-confirm them live today, so treat every figure as a guide and confirm the current price before booking. A free-cancellation rate costs nothing to hold while you decide.",
-      "time": "Sep 13 · 8:00 AM",
-      "posted": "Parent Manager",
-      "actionRequired": true
     },
     {
       "type": "info",
