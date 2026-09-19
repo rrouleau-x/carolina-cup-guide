@@ -27,19 +27,19 @@
   "updates": [
     {
       "type": "info",
+      "title": "Hotel availability re-checked live — new list",
+      "description": "We re-ran availability for October 2–4, two adults and one child, and published a fresh list. Country Inn & Suites at Harbison is confirmed at $161 per night and is now our top pick. The Hampton Inn Harbison did not come back as available in any search — we have stopped recommending it. Rates come from a live Hotels.com search scoped to those exact dates; it is a partial result set, so a hotel missing from the list is unknown rather than sold out. Confirm the current price before booking.",
+      "time": "Sep 18 · 8:00 PM",
+      "posted": "Parent Manager",
+      "actionRequired": true
+    },
+    {
+      "type": "info",
       "title": "Bracket confirmed — Under 10 Boys Green Division",
       "description": "Our bracket is posted and verified. Savannah United 16/17B Blue plays in Under 10 Boys Green Division (8 teams in total, listed in the guide below). Opponents are known; the schedule with times, fields and pairings posts September 24.",
       "time": "Sep 18 · 8:00 AM",
       "posted": "Parent Manager",
       "actionRequired": false
-    },
-    {
-      "type": "warning",
-      "title": "Hotel rates: last verified September 13 — re-check before booking",
-      "description": "When we checked availability on September 13, 80% of properties in Irmo were already unavailable, and the Harbison cluster to the northwest still had rooms from $100 to $399 per night. Those rates were last verified on September 13, 2026 — we could not re-confirm them live today, so treat every figure as a guide and confirm the current price before booking. A free-cancellation rate costs nothing to hold while you decide.",
-      "time": "Sep 13 · 8:00 AM",
-      "posted": "Parent Manager",
-      "actionRequired": true
     },
     {
       "type": "info",

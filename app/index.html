@@ -514,7 +514,7 @@ function adaptData(d, team){
     if(d.hotels){
       var hs=[];
       (d.hotels.official||[]).forEach(function(h){ hs.push({name:h.name, chain:h.chain, rate:h.rate, drive:h.drive, best:!!h.bestValue, tier:'pick', amenities:h.amenities||[]}); });
-      (d.hotels.nonOfficial||[]).forEach(function(h){ hs.push({name:h.name, chain:h.chain, rate:'', drive:h.drive, best:false, tier:'alt', note:h.note||''}); });
+      (d.hotels.nonOfficial||[]).forEach(function(h){ hs.push({name:h.name, chain:h.chain, rate:h.rate||'', drive:h.drive, best:false, tier:'alt', note:h.note||''}); });
       T.hotels=hs;
     }
 

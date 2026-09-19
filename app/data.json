@@ -69,31 +69,69 @@
     "portal": "",
     "official": [
       {
-        "name": "Hampton Inn Columbia I-26/Harbison Blvd",
-        "chain": "Hilton",
-        "rate": "$284/night · $568 for 2 nights",
-        "total2Nights": "$568",
+        "name": "Country Inn & Suites by Radisson, Columbia at Harbison",
+        "chain": "Radisson",
+        "rate": "$161 per night · $322 for two nights",
+        "drive": "Harbison cluster (northwest Columbia)",
         "rooms": "",
-        "drive": "7.0 mi · 13 min",
-        "route": "Harbison Blvd, northwest Columbia",
         "amenities": [
-          "Hot breakfast included",
-          "Free cancellation",
-          "No prepayment",
-          "King + sofa bed (2 beds)"
+          "Breakfast included",
+          "Pool",
+          "Free parking"
         ],
-        "rating": 9.0,
+        "rating": null,
         "bestValue": true,
-        "bookUrl": "https://www.booking.com/hotel/us/hampton-inn-columbia-i-26-harbison-blvd.html"
+        "bookUrl": "https://www.booking.com/hotel/us/country-inn-suites-by-radisson-columbia-at-harbison-sc.html"
+      },
+      {
+        "name": "WoodSpring Suites Columbia – Irmo",
+        "chain": "Choice",
+        "rate": "$189 per night · $423 for two nights",
+        "drive": "Irmo — closest town to the complexes",
+        "rooms": "",
+        "amenities": [
+          "Extended-stay style",
+          "Free parking"
+        ],
+        "rating": null,
+        "bestValue": false,
+        "bookUrl": ""
+      },
+      {
+        "name": "Hilton Garden Inn Columbia/Harbison",
+        "chain": "Hilton",
+        "rate": "$273 per night · $611 for two nights",
+        "drive": "Harbison cluster (northwest Columbia)",
+        "rooms": "",
+        "amenities": [
+          "Restaurant on site",
+          "Pool",
+          "Free parking"
+        ],
+        "rating": null,
+        "bestValue": false,
+        "bookUrl": ""
+      },
+      {
+        "name": "MainStay Suites Columbia Harbison",
+        "chain": "Choice",
+        "rate": "$279 per night · $625 for two nights",
+        "drive": "Harbison cluster (northwest Columbia)",
+        "rooms": "",
+        "amenities": [
+          "Suite-style with kitchenette",
+          "Breakfast included"
+        ],
+        "rating": null,
+        "bestValue": false,
+        "bookUrl": ""
       },
       {
         "name": "Hyatt Place Columbia/Harbison",
         "chain": "Hyatt",
-        "rate": "$399/night · $798 for 2 nights",
-        "total2Nights": "$798",
+        "rate": "$367 per night · $821 for two nights",
+        "drive": "Harbison cluster (northwest Columbia)",
         "rooms": "",
-        "drive": "5.9 mi · 12 min",
-        "route": "Closest of our picks to the venue",
         "amenities": [
           "Breakfast available",
           "Pool",
@@ -102,52 +140,56 @@
         "rating": null,
         "bestValue": false,
         "bookUrl": "https://www.booking.com/hotel/us/hyatt-place-columbia-harbison.html"
-      },
-      {
-        "name": "Country Inn & Suites by Radisson, Columbia at Harbison",
-        "chain": "Radisson",
-        "rate": "$161/night · $321 for 2 nights",
-        "total2Nights": "$321",
-        "rooms": "",
-        "drive": "8.2 mi · 15 min",
-        "route": "Piney Grove Rd, Harbison area",
-        "amenities": [
-          "Breakfast included",
-          "Pool",
-          "Free parking"
-        ],
-        "rating": null,
-        "bestValue": false,
-        "bookUrl": "https://www.booking.com/hotel/us/country-inn-suites-by-radisson-columbia-at-harbison-sc.html"
       }
     ],
     "nonOfficial": [
       {
-        "name": "Ramada Limited – Columbia",
-        "chain": "Wyndham",
-        "drive": "12.0 mi · 21 min",
-        "note": "$100/night · $200 for 2 nights. Lowest rate we found. Further out, basic property."
+        "name": "Comfort Suites Columbia at Harbison",
+        "chain": "Choice",
+        "drive": "Harbison cluster",
+        "note": "$308 per night. Suite-style rooms."
       },
       {
-        "name": "TownePlace Suites by Marriott Columbia West/Lexington",
-        "chain": "Marriott ★ Points",
-        "drive": "13.7 mi · 22 min",
-        "note": "$299/night · $611 for 2 nights. Kitchen suites — good for longer stays. Marriott Bonvoy eligible."
-      },
-      {
-        "name": "Residence Inn by Marriott Columbia West/Lexington",
-        "chain": "Marriott ★ Points",
-        "drive": "13.7 mi · 21 min",
-        "note": "$319/night · $638 for 2 nights. Kitchen suites, hot breakfast. Marriott Bonvoy eligible."
-      },
-      {
-        "name": "Tru by Hilton Columbia Greystone",
+        "name": "LivSmart Studios by Hilton Columbia Greystone",
         "chain": "Hilton",
-        "drive": "13.5 mi · 21 min",
-        "note": "$598/night · $1,196 for 2 nights. Rates spike on this weekend — check current pricing."
+        "drive": "Greystone / northwest Columbia",
+        "note": "$315 per night · $718 for two nights. Extended-stay studios."
+      },
+      {
+        "name": "Tru by Hilton Harbison Columbia",
+        "chain": "Hilton",
+        "drive": "Harbison cluster",
+        "note": "$319 per night · $708 for two nights. Note: this is the Harbison property, not the Greystone one."
+      },
+      {
+        "name": "La Quinta Inn by Wyndham Columbia SE / Fort Jackson",
+        "chain": "Wyndham",
+        "drive": "Southeast Columbia, Fort Jackson area",
+        "note": "$171 per night · $479 for two nights. Cheapest branded room we found, but a longer drive."
+      },
+      {
+        "name": "SpringHill Suites by Marriott Camden",
+        "chain": "Marriott ★ Points",
+        "drive": "Camden — allow 35–40 min",
+        "note": "$213 per night · $477 for two nights. Further out; Marriott Bonvoy eligible."
+      },
+      {
+        "name": "Leesville Lodge",
+        "chain": "Independent",
+        "drive": "Lexington side",
+        "note": "$194 per night. Basic property — check reviews before booking."
+      },
+      {
+        "name": "Motel 6 West Columbia – Airport",
+        "chain": "Motel 6",
+        "drive": "West Columbia, near the airport",
+        "note": "$173 per night. Budget option."
       }
     ],
-    "updatedAt": "2026-09-13"
+    "updatedAt": "2026-09-18",
+    "source": "Hotels.com",
+    "sourceNote": "Hotels.com search (Oct 2-4 2026, 1 room, 2 adults + 1 child), checked live 2026-09-18",
+    "caveat": "Partial result set, not full inventory. Rate is the nightly price shown for October 2-4 for one room, two adults and one child. Absence from this list does NOT mean a hotel is sold out."
   },
   "weather": {
     "summary": "Early October in Columbia averages a 63°F morning low and an 80°F afternoon high, with roughly a 1-in-6 chance of rain on any given day. Ten-year observed high range: 68°F to 95°F.",
