@@ -337,10 +337,10 @@ let TOURNAMENT = {
   games: [],
   schedulePending: {
     headline: "Schedule Not Released Yet",
-    detail: "Brackets are posted — our division is confirmed. The full schedule with game times, fields and pairings posts September 24. This page updates itself the moment it does.",
+    detail: "Brackets are posted — our division is confirmed. The full schedule with game times, fields and pairings now posts September 26: SCUFC took the schedule page offline to resolve coaching conflicts and field changes (checked September 24). We publish games here as soon as they appear.",
     accepted: "Accepted team list confirmed (Sep 14)",
     brackets: "Bracket posted Sep 16 — verified",
-    schedule: "Full schedule posts September 24"
+    schedule: "Full schedule posts September 26"
   },
   venue: {
     assigned:false, name:"Complex not yet assigned", address:"", city:"Columbia / Irmo, SC", mapsUrl:"",
@@ -708,7 +708,7 @@ function refreshContext(state){
     case 'in-match': txt='HAPPENING NOW'; chip=currentMatch.label+' · '+currentMatch.time+' · Field '+currentMatch.field; need='game1'; break;
     case 'between-games': txt='BETWEEN GAMES'; chip=nextMatch?nextMatch.label+' · '+nextMatch.time:'Next match'; need='between'; break;
     case 'awaiting-final': txt='AWAITING BRACKET RESULT'; chip='Final qualification not yet confirmed'; need='game3'; break;
-    case 'awaiting-schedule': txt='SCHEDULE PENDING'; chip='Bracket confirmed · Schedule Sep 24'; need='before'; break;
+    case 'awaiting-schedule': txt='SCHEDULE PENDING'; chip='Bracket confirmed · Schedule Sep 26'; need='before'; break;
     case 'complete': txt='TOURNAMENT COMPLETE'; chip='Great weekend!'; need='before'; break;
     default: txt='GAME DAY'; chip=nextMatch?nextMatch.label+' · '+nextMatch.time:'Next match'; need='game1';
   }
@@ -955,16 +955,16 @@ function renderVenue(){
     document.getElementById('venueCard').innerHTML='<div class="card" style="border-top:4px solid var(--amber)">'
       +'<div class="label" style="color:var(--amber)">Venue</div>'
       +'<div style="font-size:17px;font-weight:800;margin:3px 0 6px">Complex not yet assigned</div>'
-      +'<p class="muted small" style="margin:0;line-height:1.55">The Carolina Cup is played across five SCUFC complexes in the Columbia / Irmo area. Our team\'s complex and field are confirmed when the schedule posts on <b>September 24</b>.</p>'
+      +'<p class="muted small" style="margin:0;line-height:1.55">The Carolina Cup is played across five SCUFC complexes in the Columbia / Irmo area. Our team\'s complex and field are confirmed when the schedule posts on <b>September 26</b>.</p>'
       +'<div style="margin-top:10px">'+list+'</div>'
       +'<a class="btn ghost" style="margin-top:12px;flex-direction:row;gap:7px" href="'+(v.complexListUrl||'https://www.southcarolinaunitedfc.com/facilities')+'" target="_blank" rel="noopener">Complex addresses &mdash; SCUFC &rsaquo;</a>'
       +'</div>';
-    document.getElementById('fieldsCard').innerHTML='<div class="card" style="text-align:center;padding:22px"><div class="label" style="margin-bottom:6px">Field map</div><p class="small muted" style="margin:0">Field and complex assignments are published with the schedule on September 24.</p></div>';
+    document.getElementById('fieldsCard').innerHTML='<div class="card" style="text-align:center;padding:22px"><div class="label" style="margin-bottom:6px">Field map</div><p class="small muted" style="margin:0">Field and complex assignments are published with the schedule on September 26.</p></div>';
     const amen0=(v.amenities||[]).map(function(a){return '<div class="amenity">'+a+'</div>';}).join('');
     document.getElementById('venueInfoCard').innerHTML='<div class="card"><div class="label" style="margin-bottom:6px">Parking &amp; Amenities</div><p class="small" style="margin:0 0 10px;line-height:1.55">'+v.parking+'</p><div class="amenities">'+amen0+'</div><p class="small muted" style="margin:12px 0 0">'+v.bring+'</p></div>';
     return;
   }
-  document.getElementById('venueCard').innerHTML='<div class="card" style="border-top:4px solid var(--su)"><div class="label">'+v.name+'</div><div style="font-size:16px;font-weight:700;margin:2px 0 2px">'+v.address+'</div><div class="muted" style="margin-bottom:12px">'+v.city+'</div><a class="btn" style="flex-direction:row;font-size:14px;gap:8px" href="'+v.mapsUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Directions</a>'+((v.assigned===false)?'<div style="margin-top:12px;padding:10px 12px;background:var(--amber-bg);border-radius:10px"><div style="font-size:12.5px;font-weight:700;color:var(--amber);line-height:1.5">Complex not yet assigned. The Carolina Cup is played across five SCUFC complexes — ours is confirmed when the schedule posts on Sep 24.</div><div style="margin-top:8px"><a href="'+TOURNAMENT.rules.fullRulesUrl+'" target="_blank" rel="noopener" style="font-size:12px;font-weight:800;color:var(--link)">Official tournament page &rsaquo;</a></div></div>':'')+'</div>';
+  document.getElementById('venueCard').innerHTML='<div class="card" style="border-top:4px solid var(--su)"><div class="label">'+v.name+'</div><div style="font-size:16px;font-weight:700;margin:2px 0 2px">'+v.address+'</div><div class="muted" style="margin-bottom:12px">'+v.city+'</div><a class="btn" style="flex-direction:row;font-size:14px;gap:8px" href="'+v.mapsUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Directions</a>'+((v.assigned===false)?'<div style="margin-top:12px;padding:10px 12px;background:var(--amber-bg);border-radius:10px"><div style="font-size:12.5px;font-weight:700;color:var(--amber);line-height:1.5">Complex not yet assigned. The Carolina Cup is played across five SCUFC complexes — ours is confirmed when the schedule posts on Sep 26.</div><div style="margin-top:8px"><a href="'+TOURNAMENT.rules.fullRulesUrl+'" target="_blank" rel="noopener" style="font-size:12px;font-weight:800;color:var(--link)">Official tournament page &rsaquo;</a></div></div>':'')+'</div>';
   // fields grid — only render once fields are actually assigned by the tournament
   const hasFields=(v.fieldCount>0 && v.ourFields && v.ourFields.length>0);
   let grid='';
@@ -981,7 +981,7 @@ function renderVenue(){
   grid+='<a class="btn ghost" style="margin-top:10px;flex-direction:row;gap:7px" href="'+v.fieldMapUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-4 9a3 3 0 0 0 2.6 1.5h6.8A3 3 0 0 0 18 18l-4-9V3"/></svg>Official field map</a>';
   } else {
     var fmsg=(v.assigned===false)
-      ? 'Field and complex assignments are published with the schedule on September 24.'
+      ? 'Field and complex assignments are published with the schedule on September 26.'
       : 'Field numbers for our games are on the Schedule tab.';
     var fmap=COMPLEX_MAPS[v.name]||v.fieldMapUrl;
     grid='<div class="card" style="text-align:center;padding:22px"><div class="label" style="margin-bottom:6px">Field map</div><p class="small muted" style="margin:0">'+fmsg+'</p>'+(fmap?'<a class="btn ghost" style="margin-top:12px;flex-direction:row;gap:7px" href="'+fmap+'" target="_blank" rel="noopener">'+(v.assigned===false?'Official Ballentine Park layout (PDF)':(v.name+' layout (PDF)'))+'</a>':'')+'</div>';

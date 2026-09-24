@@ -23,7 +23,7 @@
   },
   "games": [],
   "scheduleStatus": "pending",
-  "scheduleExpected": "Bracket confirmed — Under 09 Boys Green Division (8 teams). SCUFC posts the full schedule, with game times, fields and pairings, on September 24, 2026 — and this app updates itself the moment it does.",
+  "scheduleExpected": "Bracket confirmed — Under 09 Boys Green Division (8 teams). SCUFC posts the full schedule, with game times, fields and pairings, on September 26, 2026 — SCUFC's schedule page is offline right now while they resolve coaching conflicts and field changes (checked September 24).",
   "updates": [
     {
       "type": "info",
@@ -36,7 +36,7 @@
     {
       "type": "info",
       "title": "Bracket confirmed — Under 09 Boys Green Division",
-      "description": "Our bracket is posted and verified. Savannah United 17/18B Blue plays in Under 09 Boys Green Division (8 teams in total, listed in the guide below). Opponents are known; the schedule with times, fields and pairings posts September 24.",
+      "description": "Our bracket is posted and verified. Savannah United 17/18B Blue plays in Under 09 Boys Green Division (8 teams in total, listed in the guide below). Opponents are known; the schedule with times, fields and pairings posts September 26.",
       "time": "Sep 18 · 8:00 AM",
       "posted": "Parent Manager",
       "actionRequired": false
@@ -59,8 +59,8 @@
     },
     {
       "type": "info",
-      "title": "Game schedule posts September 24 — re-checked September 18",
-      "description": "Brackets are done; the full schedule is the last piece. It posts September 24, 2026 with game times, fields and the actual pairings. Until then we do not know which of SCUFC's five complexes our teams play at. This app updates itself the moment the schedule lands, and we will send the updated guide with a departure time for every family.",
+      "title": "Game schedule posts September 26 and the page is offline — re-checked September 24",
+      "description": "Brackets are done; the full schedule is the last piece. It posts September 26, 2026 with game times, fields and the actual pairings. Until then we do not know which of SCUFC's five complexes our teams play at. We check the official page through the day and publish the new schedule here as soon as games appear, then send the updated guide with a departure time for every family.",
       "time": "Sep 18 · 8:00 PM",
       "posted": "SCUFC",
       "actionRequired": false
@@ -91,6 +91,6 @@
     ],
     "verified": "2026-09-18",
     "source": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
-    "note": "Our bracket is confirmed. The tournament lists these teams in our division; the actual game-by-game pairings, times and fields arrive with the full schedule on September 24, 2026."
+    "note": "Our bracket is confirmed. The tournament lists these teams in our division; the actual game-by-game pairings, times and fields arrive with the full schedule on September 26, 2026."
   }
 }

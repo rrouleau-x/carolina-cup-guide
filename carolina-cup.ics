@@ -6,13 +6,14 @@ METHOD:PUBLISH
 X-WR-CALNAME:Carolina Cup 2026 - SU 17/18B
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
+SEQUENCE:1
 UID:carolinacup-2026-tournament@savannahunited-su1718b
 DTSTAMP:20260918T120000Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261005
 SUMMARY:Carolina Cup - Savannah United 17/18B
-LOCATION:Columbia / Irmo\\, SC - complex assigned with the schedule on Sep 24
-DESCRIPTION:26th Annual Carolina Cup\\, hosted by South Carolina United FC. Fri Oct 2 - Sun Oct 4\\, 2026. Played across five SCUFC complexes in the Columbia and Irmo area - our specific complex and field are assigned when the schedule posts Sep 24. Drive from Savannah is about 169 miles / 3h 15min. Online check-in only - no on-site check-in. Bracket placements are confirmed; see the guide for your team's division. Companion app: https://rrouleau-x.github.io/carolina-cup-guide/app/
+LOCATION:Columbia / Irmo\\, SC - complex assigned with the schedule on Sep 26
+DESCRIPTION:26th Annual Carolina Cup\\, hosted by South Carolina United FC. Fri Oct 2 - Sun Oct 4\\, 2026. Played across five SCUFC complexes in the Columbia and Irmo area - our specific complex and field are assigned when the schedule posts Sep 26. Drive from Savannah is about 169 miles / 3h 15min. Online check-in only - no on-site check-in. Bracket placements are confirmed; see the guide for your team's division. Companion app: https://rrouleau-x.github.io/carolina-cup-guide/app/
 URL:https://rrouleau-x.github.io/carolina-cup-guide/app/
 TRANSP:TRANSPARENT
 BEGIN:VALARM
@@ -24,7 +25,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:carolinacup-2026-schedule@savannahunited-su1718b
 DTSTAMP:20260918T120000Z
-DTSTART;VALUE=DATE:20260924
+DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260925
 SUMMARY:Carolina Cup: game schedule posted - check departure times
 DESCRIPTION:SCUFC posts the full schedule\\, field assignments and opponents today. Once live\\, the companion app shows game times\\, fields and a calculated departure time for each family.

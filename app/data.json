@@ -81,7 +81,7 @@
       ],
       "evidence": "SCUFC's own field-layout PDFs label Polo Road's fields 3, 4, 7 and 8 as 7v7 - the only complex in the set with 7v7 fields. Our four teams are U9/U10, which the tournament's own format table lists as 7v7. Southeastern Freight, SV Presbyterian and SCUFC West are all-11v11 layouts, built for the older age groups.",
       "secondEvidence": "Ballentine is the other small-field complex, and SCUFC's recreational program - our age group - runs out of Polo Road and Ballentine Park.",
-      "caveat": "Official complexes and field numbers are published with the schedule on September 24, 2026. Tournaments re-line fields and the layouts SCUFC publishes are regular/practice configurations, so this is a best guess and may be wrong.",
+      "caveat": "Official complexes and field numbers are published with the schedule on September 26, 2026. Tournaments re-line fields and the layouts SCUFC publishes are regular/practice configurations, so this is a best guess and may be wrong.",
       "source": "southcarolinaunitedfc.com/facilities field layouts + tournament format table",
       "checked": "2026-09-19"
     }
@@ -706,7 +706,7 @@
     "source": "Hotels.com",
     "sourceNote": "Hotels.com search (Oct 2-4 2026, 1 room, 2 adults + 1 child), checked live 2026-09-18",
     "caveat": "Partial result set, not full inventory. Rate is the nightly price shown for October 2-4 for one room, two adults and one child. Absence from this list does NOT mean a hotel is sold out.",
-    "distanceNote": "Every distance in this section is a Google Maps driving distance for that hotel's verified street address, re-checked September 19, 2026. All five possible complexes are listed, nearest first, for every hotel. Driving distances only - not straight-line, and not copied from a listing site. The Carolina Cup runs across five SCUFC complexes and assigns our teams on September 24, so until then we show every complex rather than guess; once a team's complex is known, that team's guide and app will lead with the hotel closest to its field. Rates in this section were pulled live on September 18, 2026 and were not re-checked on September 19.",
+    "distanceNote": "Every distance in this section is a Google Maps driving distance for that hotel's verified street address, re-checked September 19, 2026. All five possible complexes are listed, nearest first, for every hotel. Driving distances only - not straight-line, and not copied from a listing site. The Carolina Cup runs across five SCUFC complexes and assigns our teams on September 26, so until then we show every complex rather than guess; once a team's complex is known, that team's guide and app will lead with the hotel closest to its field. Rates in this section were pulled live on September 18, 2026 and were not re-checked on September 19.",
     "distanceVerified": "2026-09-19",
     "hedge": {
       "pick": "LivSmart Studios by Hilton Columbia Greystone",
@@ -761,7 +761,7 @@
       },
       {
         "label": "Schedule",
-        "value": "Posted September 24, 2026"
+        "value": "Posts September 26, 2026 — page offline for adjustments (checked September 24)"
       },
       {
         "label": "Stay-to-Play",
@@ -785,6 +785,14 @@
   },
   "updates": [
     {
+      "type": "warning",
+      "title": "Schedule posting moved to September 26 — page offline for adjustments",
+      "description": "Two changes at the source, checked September 24: SCUFC's schedule page is offline while they resolve coaching conflicts and field changes, and the event's Important Dates now list schedules for September 26, 2026 rather than September 24. Accepted teams (Sep 14) and brackets (Sep 16) are unaffected and stay confirmed. We are watching the official page throughout the day and will publish each team's game times, fields and hotel departure times as soon as games appear.",
+      "time": "Sep 24 · 6:50 AM",
+      "posted": "SCUFC",
+      "actionRequired": false
+    },
+    {
       "type": "info",
       "title": "Hotel availability re-checked live — new list",
       "description": "We re-ran availability for October 2–4, two adults and one child, and published a fresh list. Country Inn & Suites at Harbison is confirmed at $161 per night and is now our top pick. The Hampton Inn Harbison did not come back as available in any search, so we have stopped recommending it. Rates come from a live search scoped to those exact dates and are a partial result set — a hotel missing from the list is unknown rather than sold out. Confirm the current price before booking.",
@@ -795,7 +803,7 @@
     {
       "type": "info",
       "title": "Brackets are posted — our divisions are confirmed",
-      "description": "SCUFC published bracket placements on September 16 and we have now verified them at the source. Our four teams landed in four different divisions: U9 Premier is in Under 09 Boys Red (5 teams), U9 Blue in Under 09 Boys Green (8 teams), U10 Premier in Under 10 Boys Red (6 teams), and U10 Blue in Under 10 Boys Green (8 teams). Nobody in the same division — which means no cross-team matchups that weekend. Opponents are known now; game times, fields and the actual pairings post with the full schedule on September 24.",
+      "description": "SCUFC published bracket placements on September 16 and we have now verified them at the source. Our four teams landed in four different divisions: U9 Premier is in Under 09 Boys Red (5 teams), U9 Blue in Under 09 Boys Green (8 teams), U10 Premier in Under 10 Boys Red (6 teams), and U10 Blue in Under 10 Boys Green (8 teams). Nobody in the same division — which means no cross-team matchups that weekend. Opponents are known now; game times, fields and the actual pairings post with the full schedule on September 26.",
       "time": "Sep 18 · 8:00 PM",
       "posted": "Parent Manager",
       "actionRequired": false
@@ -818,9 +826,9 @@
     },
     {
       "type": "info",
-      "title": "Game schedule posts September 24 — re-checked September 18",
-      "description": "Brackets are done; the full schedule is the last piece. It posts September 24, 2026 with game times, fields and the actual pairings. Until then we do not know which of SCUFC's five complexes our teams play at. This app updates itself the moment the schedule lands, and we will send the updated guide with a departure time for every family.",
-      "time": "Sep 18 · 8:00 PM",
+      "title": "Schedule now posts September 26 and the page is offline — re-checked September 24",
+      "description": "SCUFC took the schedule page offline while it resolves coaching conflicts and field changes; the page reads 'Schedules are currently off-line.' The event's own Important Dates now list schedules for September 26, 2026. Brackets stay confirmed. Until games appear we do not know which of SCUFC's five complexes our teams play at. We check the official page several times a day and publish every team\u2019s game times, fields and hotel departure times the moment games appear.",
+      "time": "Sep 24 · 6:50 AM",
       "posted": "SCUFC",
       "actionRequired": false
     },
