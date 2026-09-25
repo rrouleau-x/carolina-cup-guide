@@ -522,6 +522,22 @@ function adaptData(d, team){
         T.hotelsUpdated='Hotel rates verified '+_mo[parseInt(_p[1],10)-1]+' '+parseInt(_p[2],10)+', '+_p[0]+'. Rates change daily';}
     }
 
+    // per-team hotel ranking — a team's OWN complex decides which hotels are actually close.
+    // Written by ~/.hermes/scripts/rank-hotels-per-team.py once the schedule assigns a complex;
+    // absent until then, so the club-wide hedge list above remains the fallback.
+    if(team.hotels && team.hotels.length){
+      T.hotels=team.hotels.map(function(h){
+        var bandNote=(h.band && h.band!=='Primary' && h.band!=='Secondary')
+          ? (h.band+' — '+(h.distance||'')+' to '+(team.hotelsRankedFor||'the complex'))
+          : (h.note||'');
+        return {name:h.name, chain:h.chain, rate:h.rate||'', drive:h.distance||'', best:!!h.bestValue,
+                tier:(h.tier||'pick'), amenities:h.amenities||[], note:bandNote};
+      });
+      if(team.hotelsRankedFor) T.hotelsRankedFor=team.hotelsRankedFor;
+      T.hotelsUpdated='Ranked for '+team.hotelsRankedFor+' · distances and rates verified '
+        + (team.hotelsUpdated||'—') + '. Rates change daily';
+    }
+
     // per-team venue override — teams can play at different SCUFC complexes
     if(team.venue && (team.venue.assigned || team.venue.name)){
       T.venue=Object.assign({}, T.venue, team.venue);
