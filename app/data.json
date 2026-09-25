@@ -49,7 +49,7 @@
       }
     ],
     "complexListUrl": "https://www.southcarolinaunitedfc.com/facilities",
-    "parking": "Free on-site at SCUFC complexes. Arrive 30-45 min early — these are large, spread-out complexes and lots fill on tournament mornings.",
+    "parking": "Free on-site at SCUFC complexes. Arrive 30-45 min early \u2014 these are large, spread-out complexes and lots fill on tournament mornings.",
     "fields": {
       "count": 0,
       "surface": "Grass",
@@ -59,7 +59,7 @@
     "amenities": {
       "concessions": true,
       "restrooms": true,
-      "shade": "Limited — open complexes",
+      "shade": "Limited \u2014 open complexes",
       "aed": false,
       "playground": false
     },
@@ -93,7 +93,7 @@
       {
         "name": "Country Inn & Suites by Radisson, Columbia at Harbison",
         "chain": "Radisson",
-        "rate": "$161 per night · $322 for two nights",
+        "rate": "$161 per night \u00b7 $322 for two nights",
         "drive": "8.1 mi &middot; ~12 min to Southeastern Freight Lines Soccer Center (closest of five)",
         "rooms": "",
         "amenities": [
@@ -147,9 +147,9 @@
         "everOutside": true
       },
       {
-        "name": "WoodSpring Suites Columbia – Irmo",
+        "name": "WoodSpring Suites Columbia \u2013 Irmo",
         "chain": "Choice",
-        "rate": "$189 per night · $423 for two nights",
+        "rate": "$189 per night \u00b7 $423 for two nights",
         "drive": "4.4 mi &middot; ~10 min to Ballentine Park Complex (closest of five)",
         "rooms": "",
         "amenities": [
@@ -204,7 +204,7 @@
       {
         "name": "Hilton Garden Inn Columbia/Harbison",
         "chain": "Hilton",
-        "rate": "$273 per night · $611 for two nights",
+        "rate": "$273 per night \u00b7 $611 for two nights",
         "drive": "7.6 mi &middot; ~10 min to Ballentine Park Complex (closest of five)",
         "rooms": "",
         "amenities": [
@@ -260,7 +260,7 @@
       {
         "name": "MainStay Suites Columbia Harbison",
         "chain": "Choice",
-        "rate": "$279 per night · $625 for two nights",
+        "rate": "$279 per night \u00b7 $625 for two nights",
         "drive": "8.0 mi &middot; ~12 min to Ballentine Park Complex (closest of five)",
         "rooms": "",
         "amenities": [
@@ -315,7 +315,7 @@
       {
         "name": "Hyatt Place Columbia/Harbison",
         "chain": "Hyatt",
-        "rate": "$367 per night · $821 for two nights",
+        "rate": "$367 per night \u00b7 $821 for two nights",
         "drive": "7.9 mi &middot; ~10 min to Ballentine Park Complex (closest of five)",
         "rooms": "",
         "amenities": [
@@ -421,7 +421,7 @@
         "name": "LivSmart Studios by Hilton Columbia Greystone",
         "chain": "Hilton",
         "drive": "6.3 mi &middot; ~13 min to Southeastern Freight Lines Soccer Center (closest of five)",
-        "note": "$313 per night · $713 for two nights. Re-checked live September 19, 2026. Extended-stay studios; only 9 reviews so far, and 2 rooms left at this rate.",
+        "note": "$313 per night \u00b7 $713 for two nights. Re-checked live September 19, 2026. Extended-stay studios; only 9 reviews so far, and 2 rooms left at this rate.",
         "distances": {
           "Southeastern Freight Lines Soccer Center": {
             "mi": 6.3,
@@ -469,7 +469,7 @@
         "name": "Tru by Hilton Harbison Columbia",
         "chain": "Hilton",
         "drive": "8.2 mi &middot; ~12 min to Ballentine Park Complex (closest of five)",
-        "note": "$319 per night · $708 for two nights. Note: this is the Harbison property, not the Greystone one.",
+        "note": "$319 per night \u00b7 $708 for two nights. Note: this is the Harbison property, not the Greystone one.",
         "distances": {
           "Ballentine Park Complex": {
             "mi": 8.2,
@@ -516,7 +516,7 @@
         "name": "La Quinta Inn by Wyndham Columbia SE / Fort Jackson",
         "chain": "Wyndham",
         "drive": "11.2 mi &middot; ~14 min to Polo Road Park (closest of five)",
-        "note": "$171 per night · $383 for two nights. Re-checked live September 19, 2026 (fall sale; was $479). Closest branded hotel to Polo Road Park, and fully refundable.",
+        "note": "$171 per night \u00b7 $383 for two nights. Re-checked live September 19, 2026 (fall sale; was $479). Closest branded hotel to Polo Road Park, and fully refundable.",
         "distances": {
           "Polo Road Park": {
             "mi": 11.2,
@@ -562,9 +562,9 @@
       },
       {
         "name": "SpringHill Suites by Marriott Camden",
-        "chain": "Marriott ★ Points",
+        "chain": "Marriott \u2605 Points",
         "drive": "20.7 mi &middot; ~23 min to SV Presbyterian Church Fields (closest of five)",
-        "note": "$213 per night · $477 for two nights. Further out; Marriott Bonvoy eligible.",
+        "note": "$213 per night \u00b7 $477 for two nights. Further out; Marriott Bonvoy eligible.",
         "distances": {
           "SV Presbyterian Church Fields": {
             "mi": 20.7,
@@ -611,7 +611,7 @@
         "name": "Leesville Lodge",
         "chain": "Independent",
         "drive": "27.0 mi &middot; ~40 min to Ballentine Park Complex (closest of five)",
-        "note": "$194 per night. Basic property — check reviews before booking.",
+        "note": "$194 per night. Basic property \u2014 check reviews before booking.",
         "distances": {
           "Ballentine Park Complex": {
             "mi": 27.0,
@@ -655,7 +655,7 @@
         "everOutside": true
       },
       {
-        "name": "Motel 6 West Columbia – Airport",
+        "name": "Motel 6 West Columbia \u2013 Airport",
         "chain": "Motel 6",
         "drive": "11.9 mi &middot; ~15 min to Southeastern Freight Lines Soccer Center (closest of five)",
         "note": "$173 per night. Budget option.",
@@ -700,6 +700,108 @@
         },
         "bandAtLikely": "Outside",
         "everOutside": true
+      },
+      {
+        "name": "Hampton Inn Columbia Northeast-Fort Jackson Area",
+        "chain": "Hilton",
+        "drive": "4.6 mi &middot; ~9 min to Polo Road Park (closest of five)",
+        "note": "Closest Hilton to the northeast-side complexes. Outdoor pool temporarily closed.",
+        "distances": {
+          "Polo Road Park": {
+            "mi": 4.6,
+            "min": 9,
+            "src": "google",
+            "checked": "2026-09-25"
+          },
+          "SV Presbyterian Church Fields": {
+            "mi": 5.1,
+            "min": 13,
+            "src": "google",
+            "checked": "2026-09-25"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 23.2,
+            "min": 27,
+            "src": "google",
+            "checked": "2026-09-25"
+          },
+          "Southeastern Freight Lines Soccer Center": {
+            "mi": 7.4,
+            "min": 12,
+            "src": "google",
+            "checked": "2026-09-25"
+          },
+          "Ballentine Park Complex": {
+            "mi": 22.8,
+            "min": 26,
+            "src": "google",
+            "checked": "2026-09-25"
+          }
+        },
+        "nearest": "Polo Road Park",
+        "driveVerified": "2026-09-25",
+        "worstCase": {
+          "mi": 23.2,
+          "min": 27,
+          "complex": "SCUFC West Soccer Complex"
+        },
+        "bandAtLikely": "Primary",
+        "everOutside": true,
+        "rate": "$312 per night (two queen beds) - $624 for two nights, tax excluded; one rate is non-refundable",
+        "rating": "8.7/10 (69 reviews)",
+        "address": "1551 Barbara Dr, Columbia, SC 29223",
+        "bookUrl": "https://www.booking.com/searchresults.html?ss=Hampton+Inn+Columbia+Northeast-Fort+Jackson+Area"
+      },
+      {
+        "name": "Hampton Inn Columbia I-26/Harbison Blvd",
+        "chain": "Hilton",
+        "drive": "8.6 mi &middot; ~11 min to Ballentine Park Complex (closest of five)",
+        "note": "Best single hedge: in band at 4 of 5 complexes, including both Irmo ones.",
+        "distances": {
+          "SV Presbyterian Church Fields": {
+            "mi": 22.0,
+            "min": 25,
+            "src": "google",
+            "checked": "2026-09-25"
+          },
+          "Ballentine Park Complex": {
+            "mi": 8.6,
+            "min": 11,
+            "src": "google",
+            "checked": "2026-09-25"
+          },
+          "Polo Road Park": {
+            "mi": 18.1,
+            "min": 21,
+            "src": "google",
+            "checked": "2026-09-25"
+          },
+          "SCUFC West Soccer Complex": {
+            "mi": 8.9,
+            "min": 13,
+            "src": "google",
+            "checked": "2026-09-25"
+          },
+          "Southeastern Freight Lines Soccer Center": {
+            "mi": 9.0,
+            "min": 13,
+            "src": "google",
+            "checked": "2026-09-25"
+          }
+        },
+        "nearest": "Ballentine Park Complex",
+        "driveVerified": "2026-09-25",
+        "worstCase": {
+          "mi": 22.0,
+          "min": 25,
+          "complex": "SV Presbyterian Church Fields"
+        },
+        "bandAtLikely": "Secondary",
+        "everOutside": true,
+        "rate": "$328 per night (king studio suite, free cancellation before Sep 30) - $655 for two nights, tax excluded",
+        "rating": "9.0/10 (547 reviews)",
+        "address": "101 Woodcross Dr, Columbia, SC 29212",
+        "bookUrl": "https://www.booking.com/searchresults.html?ss=Hampton+Inn+Columbia+I-26/Harbison+Blvd"
       }
     ],
     "updatedAt": "2026-09-18",
@@ -721,10 +823,10 @@
     "rateVerifiedNote": "La Quinta SE and LivSmart Greystone were re-checked live on September 19, 2026. The other ten hotels carry their September 18, 2026 figures."
   },
   "weather": {
-    "summary": "Early October in Columbia averages an 80°F afternoon high and a 63°F morning low. Ten-year observed range for these dates: 68°F to 97°F highs, 48°F to 77°F lows. Measurable rain on about 1 day in 5, but the shoulder-season swings are real.",
-    "details": "This is a two-wardrobe weekend. Mornings at the first game are genuinely cool — bring a jacket. Afternoons can still reach the mid-90s, so bring the full heat kit as well: water, electrolytes, sunscreen, cooling towels. Rain is unlikely on any single day, though not impossible. Start hydrating the day before travel. Recomputed September 18, 2026 from ten years of recorded daily observations for Columbia, SC (2016–2025, Open-Meteo historical archive). A reliable daily forecast becomes available around September 28–30.",
+    "summary": "Early October in Columbia averages an 80\u00b0F afternoon high and a 63\u00b0F morning low. Ten-year observed range for these dates: 68\u00b0F to 97\u00b0F highs, 48\u00b0F to 77\u00b0F lows. Measurable rain on about 1 day in 5, but the shoulder-season swings are real.",
+    "details": "This is a two-wardrobe weekend. Mornings at the first game are genuinely cool \u2014 bring a jacket. Afternoons can still reach the mid-90s, so bring the full heat kit as well: water, electrolytes, sunscreen, cooling towels. Rain is unlikely on any single day, though not impossible. Start hydrating the day before travel. Recomputed September 18, 2026 from ten years of recorded daily observations for Columbia, SC (2016\u20132025, Open-Meteo historical archive). A reliable daily forecast becomes available around September 28\u201330.",
     "forecastLink": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
-    "source": "Open-Meteo historical archive (2016–2025) + NWS Columbia",
+    "source": "Open-Meteo historical archive (2016\u20132025) + NWS Columbia",
     "sourceApiUrl": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
     "updatedAt": "2026-09-18T20:00:00-04:00"
   },
@@ -733,11 +835,11 @@
     "keyRules": [
       {
         "label": "Format",
-        "value": "7v7 for U8–U10 age groups"
+        "value": "7v7 for U8\u2013U10 age groups"
       },
       {
         "label": "Age Groups",
-        "value": "U8–U19, boys and girls"
+        "value": "U8\u2013U19, boys and girls"
       },
       {
         "label": "Levels",
@@ -749,27 +851,27 @@
       },
       {
         "label": "Check-in",
-        "value": "Online check-in only — no on-site check-in"
+        "value": "Online check-in only \u2014 no on-site check-in"
       },
       {
         "label": "Accepted Teams",
-        "value": "Posted September 14, 2026 — confirmed"
+        "value": "Posted September 14, 2026 \u2014 confirmed"
       },
       {
         "label": "Brackets",
-        "value": "Posted September 16, 2026 — verified September 18 (see each team's division)"
+        "value": "Posted September 16, 2026 \u2014 verified September 18 (see each team's division)"
       },
       {
         "label": "Schedule",
-        "value": "Posts September 26, 2026 — page offline for adjustments (checked September 24)"
+        "value": "Posts September 26, 2026 \u2014 page offline for adjustments (checked September 24)"
       },
       {
         "label": "Stay-to-Play",
-        "value": "No housing policy published — unconfirmed"
+        "value": "No housing policy published \u2014 unconfirmed"
       },
       {
         "label": "Rules Document",
-        "value": "Not yet published for 2026 — we will not guess"
+        "value": "Not yet published for 2026 \u2014 we will not guess"
       }
     ],
     "tiebreakers": [],
@@ -779,64 +881,64 @@
       "email": "tripp@scufc.com"
     },
     "bracketContact": {
-      "name": "Jamie McClendon (U8–U12)",
+      "name": "Jamie McClendon (U8\u2013U12)",
       "email": "jamie@scufc.com"
     }
   },
   "updates": [
     {
       "type": "warning",
-      "title": "Schedule posting moved to September 26 — page offline for adjustments",
+      "title": "Schedule posting moved to September 26 \u2014 page offline for adjustments",
       "description": "Two changes at the source, checked September 24: SCUFC's schedule page is offline while they resolve coaching conflicts and field changes, and the event's Important Dates now list schedules for September 26, 2026 rather than September 24. Accepted teams (Sep 14) and brackets (Sep 16) are unaffected and stay confirmed. We are watching the official page throughout the day and will publish each team's game times, fields and hotel departure times as soon as games appear.",
-      "time": "Sep 24 · 6:50 AM",
+      "time": "Sep 24 \u00b7 6:50 AM",
       "posted": "SCUFC",
       "actionRequired": false
     },
     {
       "type": "info",
-      "title": "Hotel availability re-checked live — new list",
-      "description": "We re-ran availability for October 2–4, two adults and one child, and published a fresh list. Country Inn & Suites at Harbison is confirmed at $161 per night and is now our top pick. The Hampton Inn Harbison did not come back as available in any search, so we have stopped recommending it. Rates come from a live search scoped to those exact dates and are a partial result set — a hotel missing from the list is unknown rather than sold out. Confirm the current price before booking.",
-      "time": "Sep 18 · 8:00 PM",
+      "title": "Hotel availability re-checked live \u2014 new list",
+      "description": "We re-ran availability for October 2\u20134, two adults and one child, and published a fresh list. Country Inn & Suites at Harbison is confirmed at $161 per night and is now our top pick. The Hampton Inn Harbison did not come back as available in any search, so we have stopped recommending it. Rates come from a live search scoped to those exact dates and are a partial result set \u2014 a hotel missing from the list is unknown rather than sold out. Confirm the current price before booking.",
+      "time": "Sep 18 \u00b7 8:00 PM",
       "posted": "Parent Manager",
       "actionRequired": true
     },
     {
       "type": "info",
-      "title": "Brackets are posted — our divisions are confirmed",
-      "description": "SCUFC published bracket placements on September 16 and we have now verified them at the source. Our four teams landed in four different divisions: U9 Premier is in Under 09 Boys Red (5 teams), U9 Blue in Under 09 Boys Green (8 teams), U10 Premier in Under 10 Boys Red (6 teams), and U10 Blue in Under 10 Boys Green (8 teams). Nobody in the same division — which means no cross-team matchups that weekend. Opponents are known now; game times, fields and the actual pairings post with the full schedule on September 26.",
-      "time": "Sep 18 · 8:00 PM",
+      "title": "Brackets are posted \u2014 our divisions are confirmed",
+      "description": "SCUFC published bracket placements on September 16 and we have now verified them at the source. Our four teams landed in four different divisions: U9 Premier is in Under 09 Boys Red (5 teams), U9 Blue in Under 09 Boys Green (8 teams), U10 Premier in Under 10 Boys Red (6 teams), and U10 Blue in Under 10 Boys Green (8 teams). Nobody in the same division \u2014 which means no cross-team matchups that weekend. Opponents are known now; game times, fields and the actual pairings post with the full schedule on September 26.",
+      "time": "Sep 18 \u00b7 8:00 PM",
       "posted": "Parent Manager",
       "actionRequired": false
     },
     {
       "type": "info",
-      "title": "No stay-to-play policy published — re-checked September 18",
-      "description": "We checked the official tournament page, the SCUFC host site and the registration portal again on September 18, 2026 and still found no housing requirement or approved-hotel list for the Carolina Cup. Our picks are simply the closest options with confirmed availability — there is no housing portal to book through. We have asked tournament director Tripp Miller to confirm.",
-      "time": "Sep 18 · 8:00 PM",
+      "title": "No stay-to-play policy published \u2014 re-checked September 18",
+      "description": "We checked the official tournament page, the SCUFC host site and the registration portal again on September 18, 2026 and still found no housing requirement or approved-hotel list for the Carolina Cup. Our picks are simply the closest options with confirmed availability \u2014 there is no housing portal to book through. We have asked tournament director Tripp Miller to confirm.",
+      "time": "Sep 18 \u00b7 8:00 PM",
       "posted": "Parent Manager",
       "actionRequired": false
     },
     {
       "type": "warning",
-      "title": "Online check-in is open — complete it now",
+      "title": "Online check-in is open \u2014 complete it now",
       "description": "The accepted team list posted September 14 and all four of our teams are on it. SCUFC's tournament page states that online check-in opened after that, that there is NO on-site check-in, and that teams should start online check-in immediately. This is the one item that cannot be handled at the field. Re-verified September 18, 2026.",
-      "time": "Sep 18 · 8:00 PM",
+      "time": "Sep 18 \u00b7 8:00 PM",
       "posted": "SCUFC",
       "actionRequired": true
     },
     {
       "type": "info",
-      "title": "Schedule now posts September 26 and the page is offline — re-checked September 24",
+      "title": "Schedule now posts September 26 and the page is offline \u2014 re-checked September 24",
       "description": "SCUFC took the schedule page offline while it resolves coaching conflicts and field changes; the page reads 'Schedules are currently off-line.' The event's own Important Dates now list schedules for September 26, 2026. Brackets stay confirmed. Until games appear we do not know which of SCUFC's five complexes our teams play at. We check the official page several times a day and publish every team\u2019s game times, fields and hotel departure times the moment games appear.",
-      "time": "Sep 24 · 6:50 AM",
+      "time": "Sep 24 \u00b7 6:50 AM",
       "posted": "SCUFC",
       "actionRequired": false
     },
     {
       "type": "info",
-      "title": "2026 rules document still not published — re-checked September 18",
+      "title": "2026 rules document still not published \u2014 re-checked September 18",
       "description": "We checked the official tournament content pages again on September 18, 2026 and found no 2026 Carolina Cup rules document. Game length, mercy rule, substitutions and the tiebreaker order all remain unconfirmed. We will not fill these in from another tournament's rulebook. Rules questions can go to Tournament Director Tripp Miller at tripp@scufc.com.",
-      "time": "Sep 18 · 8:00 PM",
+      "time": "Sep 18 \u00b7 8:00 PM",
       "posted": "Parent Manager",
       "actionRequired": false
     }
@@ -870,12 +972,12 @@
     "emergency": "911"
   },
   "venueRules": {
-    "tents": "Pending Confirmation — SCUFC has not published a tent or canopy policy for this event.",
-    "pets": "Pending Confirmation — pet policy not published.",
+    "tents": "Pending Confirmation \u2014 SCUFC has not published a tent or canopy policy for this event.",
+    "pets": "Pending Confirmation \u2014 pet policy not published.",
     "foodCooler": "Concessions available on-site at the complexes. Outside food and cooler policy not published.",
     "chairs": "Folding chairs are standard at youth soccer complexes. Stay behind the spectator line and do not block access paths or medical lanes.",
-    "alcohol": "Pending Confirmation — not published.",
-    "smoking": "Pending Confirmation — not published."
+    "alcohol": "Pending Confirmation \u2014 not published.",
+    "smoking": "Pending Confirmation \u2014 not published."
   },
   "checklist": {
     "player": [
