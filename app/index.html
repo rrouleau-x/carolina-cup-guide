@@ -331,7 +331,7 @@ let TOURNAMENT = {
     meta: "OCT 2–4 · IRMO, SC",
     homeBase: "Savannah, GA",
     fullGuideUrl: "../guide.pdf",
-    updatesUpdated: "Sep 18"
+    updatesUpdated: "Sep 26"
   },
   travel: { date: "2026-10-02", label: "Travel Day", detail: "Irmo, SC", drive: "~169 mi · ~3h 15m from Savannah" },
   games: [],
@@ -374,7 +374,7 @@ let TOURNAMENT = {
     ]  },
   breakPlan: { title:"Between-Games Rhythm", intro:"Once the schedule posts we will build a suggested reset rhythm around your actual game times.", steps:[] },
   hotels: [],
-  hotelsUpdated: "Hotel rates verified Sep 18, 2026. Rates change daily",
+  hotelsUpdated: "Hotel rates verified Sep 26, 2026. Rates change daily",
   nearby: { groups:[
       { label:"Closest to the venue", items:[
           { name:"CVS Pharmacy", note:"pharmacy · 0.3 mi from the complex", dist:"~1 min", sub:"0.3 mi", url:"https://www.google.com/maps/search/CVS+pharmacy+near+Ballentine+Park+Irmo+SC", icon:"shop" },
@@ -401,7 +401,7 @@ let TOURNAMENT = {
   rules:{ quick:[], full:[], tiebreakers:[], tiebreakersPending:"", fullRulesUrl:"" },
   packing:{ alert:"Pack both kits. Also pack a warm layer — early October mornings run about 63°F.", groups:[] },
   needs:{
-    before:[["Book hotel","rates: verified Sep 18"],["Save the guide PDF","works offline"],["Charge phones","both days"],["Pack both kits","+ warm layer"]],
+    before:[["Book hotel","rates: checked Sep 26"],["Save the guide PDF","works offline"],["Charge phones","both days"],["Pack both kits","+ warm layer"]],
     travel:[["Leave by early afternoon","~3h 15m drive"],["Check in to hotel","Fri Oct 2"],["Early bedtime","players"]],
     game1:[["Both kits","game day"],["Cleats + shin guards","essential"],["Water + electrolytes","bring plenty"],["Cool layer","cool mornings"]],
     between:[["Eat lunch","between games"],["Cool down","shade or A/C"],["Rehydrate","water + electrolytes"],["Back to fields","parking fills early"]],
@@ -464,7 +464,9 @@ function adaptData(d, team){
           dayLabel:dayLabel(g.date),
           time:hhmm(g.time),
           opponent:g.opponent||'TBD',
-          field:fieldNum(g.field),
+          /* keep any trailing letter - "Field 2A" is field 2A, not field 2.
+             fieldNum() alone drops the letter and the family walks to the wrong pitch. */
+          field:(function(f){var m=String(f||'').match(/([A-Za-z]?\d+[A-Za-z]?|[A-Za-z])\s*$/);return (m?m[1]:'TBD').toUpperCase();})(g.field),
           home:null,
           arrival:g.arrival||'',
           arrivalStatus:'confirmed',
