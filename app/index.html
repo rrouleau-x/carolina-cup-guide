@@ -359,20 +359,19 @@ let TOURNAMENT = {
     bring:"SCUFC has not published a tent, cooler or pet policy for this event — we will confirm with the tournament director."
   },
   weather: {
-    source: { enabled: true, provider: "open-meteo", lat: 34.1269365, lng: -81.2404227, timezone: "America/New_York" },
-    updated:"Updated Sep 18 · seasonal outlook",
+    source: { enabled: true, provider: "nws", lat: 34.1269365, lng: -81.2404227, timezone: "America/New_York" },
+    updated:"NWS outlook, fetched Sep 26 · live feed refreshes on open",
     forecastUrl:"https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
-    mini:{ day:"Weekend", temp:"80°", feels:"low 63°", storm:"17% rain" },
+    mini:{ day:"Saturday", temp:"84°", feels:"chance of rain showers", storm:"rain 84%" },
     days:[
-      { label:"Friday", high:"79°", feels:"Low 63°", storm:"20%", concern:"Travel day", className:"sat" },
-      { label:"Saturday", high:"80°", feels:"Low 63°", storm:"20%", concern:"Cool mornings", className:"sat" },
-      { label:"Sunday", high:"81°", feels:"Low 63°", storm:"10%", concern:"Mostly clear", className:"sun" }
+      { label:"Friday", high:"87°", feels:"Mostly sunny · slight chance of PM showers", storm:"14%", concern:"Arrival day", className:"sat" },
+      { label:"Saturday", high:"84°", feels:"Chance of rain showers", storm:"84%", concern:"Two games · pack rain layers", className:"sat" },
+      { label:"Sunday", high:"—", feels:"Beyond the 7-day window · early-Oct normals ~80°F/63°F", storm:"—", concern:"Re-check 48h out", className:"sun" }
     ],
     watch:[
-      { title:"Cool Mornings", value:"63°F", sub:"first game of the day · bring a layer", cls:"cool" },
-      { title:"Warm Afternoons", value:"80°F", sub:"sun is strong · hydrate anyway", cls:"hot" }
-    ]
-  },
+      { title:"Saturday Rain", value:"chance", sub:"all four teams play twice that day", cls:"storm" },
+      { title:"Afternoons", value:"87°F", sub:"Friday high · water and shade", cls:"hot" }
+    ]  },
   breakPlan: { title:"Between-Games Rhythm", intro:"Once the schedule posts we will build a suggested reset rhythm around your actual game times.", steps:[] },
   hotels: [],
   hotelsUpdated: "Hotel rates verified Sep 18, 2026. Rates change daily",
@@ -854,13 +853,41 @@ function loadWeather(){
   lastWxLoad=now;
   const src=TOURNAMENT.weather.source;
   if(!src||!src.enabled) return; // keep static data as fallback
-  const url='https://api.open-meteo.com/v1/forecast'
-    +'?latitude='+src.lat+'&longitude='+src.lng
-    +'&daily=temperature_2m_max,apparent_temperature_max,precipitation_probability_max,precipitation_sum'
-    +'&temperature_unit=fahrenheit&precipitation_unit=inch&wind_speed_unit=mph'
-    +'&timezone='+encodeURIComponent(src.timezone||TOURNAMENT.timezone)
-    +'&forecast_days=8';
-  fetch(url).then(r=>r.json()).then(data=>{
+  /* NATIONAL WEATHER SERVICE is the source of truth here - the same source the printed
+     guide and the PDFs quote. The old Open-Meteo feed ran 8-10F hotter on these dates
+     (93F/96F feels vs NWS 84F), which showed the family two contradicting forecasts.
+     If NWS is unreachable we fall back to Open-Meteo but the stamp says so, so the app
+     never silently contradicts the guide. (verified 2026-09-26) */
+  function nwsDaily(){
+    return fetch('https://api.weather.gov/points/'+src.lat+','+src.lng,{headers:{'Accept':'application/geo+json'}})
+      .then(r=>r.json())
+      .then(p=>fetch(p.properties.forecast,{headers:{'Accept':'application/geo+json'}}))
+      .then(r=>r.json())
+      .then(f=>{
+        const per=f.properties.periods||[];
+        const time=[],tmax=[],prob=[],sum=[],shorts=[];
+        per.filter(p=>p.isDaytime).forEach(p=>{
+          time.push(String(p.startTime).slice(0,10));
+          tmax.push(p.temperature);
+          prob.push((p.probabilityOfPrecipitation&&p.probabilityOfPrecipitation.value!=null)?p.probabilityOfPrecipitation.value:0);
+          const sf=(p.shortForecast||'');
+          sum.push((/rain|shower/i.test(sf))?0.05:0);
+          shorts.push(sf);
+        });
+        return {daily:{time:time,temperature_2m_max:tmax,apparent_temperature_max:tmax.slice(),precipitation_probability_max:prob,precipitation_sum:sum},shorts:shorts,provenance:'NWS'};
+      });
+  }
+  function openMeteoDaily(){
+    const url='https://api.open-meteo.com/v1/forecast'
+      +'?latitude='+src.lat+'&longitude='+src.lng
+      +'&daily=temperature_2m_max,apparent_temperature_max,precipitation_probability_max,precipitation_sum'
+      +'&temperature_unit=fahrenheit&precipitation_unit=inch&wind_speed_unit=mph'
+      +'&timezone='+encodeURIComponent(src.timezone||TOURNAMENT.timezone)
+      +'&forecast_days=8';
+    return fetch(url).then(r=>r.json()).then(d=>({daily:d.daily,shorts:[],provenance:'Open-Meteo (NWS unavailable)'}));
+  }
+  nwsDaily().catch(openMeteoDaily).then(res=>{
+    const data=res.daily||{}; const SHORTS=res.shorts||[]; const WHO=res.provenance||'NWS';
     const daily=data.daily||{};
     const times=daily.time||[];
     // Map each game's date (YYYY-MM-DD) to the matching forecast day
@@ -872,13 +899,13 @@ function loadWeather(){
     TOURNAMENT.games.forEach(g=>{
       const idx=byGame[g.id]; if(idx==null||seen[g.datetime.slice(0,10)])return; seen[g.datetime.slice(0,10)]=true;
       const high=Math.round(daily.temperature_2m_max[idx]);
-      const feels=Math.round(daily.apparent_temperature_max[idx]);
+      const feels=(SHORTS[idx]||('Feels '+Math.round(daily.apparent_temperature_max[idx])+'\u00b0'));
       const storm=Math.round(daily.precipitation_probability_max[idx]);
       const rain=+(daily.precipitation_sum[idx]||0).toFixed(2);
       const isSun=TOURNAMENT.games.find(x=>x.datetime.slice(0,10)===g.datetime.slice(0,10)&&x.id!==g.id)||g.datetime.slice(0,10)>=TOURNAMENT.games.find(x=>x.type!=='final').datetime.slice(0,10);
       const dayName=new Date(g.datetime).toLocaleDateString('en-US',{weekday:'long',timeZone:src.timezone||TOURNAMENT.timezone});
       const concern=feels>=100?'Extreme heat':storm>=70?'High storm risk':storm>=40?'Storms possible':'Mostly clear';
-      days.push({ label:dayName, high:high+'°', feels:'Feels '+feels+'°', storm:storm+'%', concern, className:dayName==='Sunday'?'sun':'sat', rain });
+      days.push({ label:dayName, high:high+'°', feels:feels, storm:storm+'%', concern, className:dayName==='Sunday'?'sun':'sat', rain });
     });
     // Pick the next game's day for the mini line
     const state=resolveTournamentState(TOURNAMENT,tzNow());
@@ -888,21 +915,21 @@ function loadWeather(){
     if(idx!=null&&daily.temperature_2m_max&&daily.apparent_temperature_max&&daily.precipitation_probability_max){
       const t=Math.round(daily.temperature_2m_max[idx]),f=Math.round(daily.apparent_temperature_max[idx]),st=Math.round(daily.precipitation_probability_max[idx]);
       const dayName=new Date(nextGame.datetime).toLocaleDateString('en-US',{weekday:'long',timeZone:src.timezone||TOURNAMENT.timezone});
-      mini={ day:dayName, temp:t+'°', feels:'feels '+f+'°', storm:'storm '+st+'%' };
+      mini={ day:dayName, temp:t+'°', feels:(SHORTS[idx]?SHORTS[idx].toLowerCase():'feels '+f+'°'), storm:'rain '+st+'%' };
     }
     // Build watch cells from the two most relevant concerns
     const watch=[];
     if(days.length){
       const hottest=[...days].sort((a,b)=>parseInt(b.feels.replace(/\D/g,''))-parseInt(a.feels.replace(/\D/g,'')))[0];
       const stormiest=[...days].sort((a,b)=>parseInt(b.storm)-parseInt(a.storm))[0];
-      watch.push({ title:'Extreme Heat · '+hottest.label.slice(0,3), value:hottest.feels.replace('Feels ','')+'F', sub:'feels like · stay hydrated', cls:'hot' });
+      watch.push({ title:'Hottest · '+hottest.label.slice(0,3), value:hottest.high, sub:'high · hydrate either way', cls:'hot' });
       watch.push({ title:'Storm Risk · '+stormiest.label.slice(0,3), value:stormiest.storm, sub:'chance · expect delays', cls:'storm' });
     }
     if(days.length){ TOURNAMENT.weather.days=days; }
     TOURNAMENT.weather.mini=mini;
     if(watch.length){ TOURNAMENT.weather.watch=watch; }
     const now=new Date();
-    TOURNAMENT.weather.updated='Live · '+now.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZone:src.timezone||TOURNAMENT.timezone})+' ET';
+    TOURNAMENT.weather.updated='Live · '+WHO+' · '+now.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZone:src.timezone||TOURNAMENT.timezone})+' ET';
     renderWeather();
     // Weather feeds the Next Match mini-line, so re-render it too (state key may be unchanged).
     refreshAll();
