@@ -823,12 +823,18 @@
     "rateVerifiedNote": "La Quinta SE and LivSmart Greystone were re-checked live on September 19, 2026. The other ten hotels carry their September 18, 2026 figures."
   },
   "weather": {
-    "summary": "Live National Weather Service outlook for Irmo / Columbia (fetched Sep 26, 2026): Friday Oct 2 \u2014 mostly sunny, high 87&deg;F, a slight chance of afternoon showers and a 69&deg;F night. Saturday Oct 3 \u2014 high 84&deg;F with a chance of rain showers. Sunday Oct 4 falls beyond the seven-day window, so plan on early-October normals: about 80&deg;F afternoon and 63&deg;F morning. Early October here is still UV-strong in the middle of the day.",
+    "summary": "Live National Weather Service outlook for Irmo / Columbia (fetched Sep 26, 2026): Friday Oct 2 - mostly sunny, high 87&deg;F, a 19% chance of rain showers mainly in the afternoon, 69&deg;F overnight. Saturday Oct 3 - high 84&deg;F with a 42% chance of rain showers. Sunday Oct 4 falls beyond the seven-day window, so plan on early-October normals: about 80&deg;F afternoon and 63&deg;F morning.",
     "details": "Saturday carries the only real rain signal of the weekend, and our teams kick off between 8:00 AM and 6:00 PM that day. Bring a light rain layer and a dry spare kit in a plastic bag for every player \u2014 a wet morning game followed by an afternoon game is exactly when a second set of socks matters. Mornings are genuinely cool (mid-60s), afternoons are hot and humid. Hydrate the day before travel; electrolytes on the double-game days (all four teams play two on Saturday).",
     "forecastLink": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
     "source": "Open-Meteo historical archive (2016\u20132025) + NWS Columbia",
     "sourceApiUrl": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
-    "updatedAt": "2026-09-26"
+    "updatedAt": "2026-09-26",
+    "mini": {
+      "day": "Saturday",
+      "temp": "84\u00b0",
+      "feels": "chance rain showers",
+      "storm": "rain 42%"
+    }
   },
   "rules": {
     "fullLink": "https://soccer.sincsports.com/TTContent.aspx?tid=CARCUP",

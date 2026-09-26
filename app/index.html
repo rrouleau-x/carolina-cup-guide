@@ -362,10 +362,10 @@ let TOURNAMENT = {
     source: { enabled: true, provider: "nws", lat: 34.1269365, lng: -81.2404227, timezone: "America/New_York" },
     updated:"NWS outlook, fetched Sep 26 · live feed refreshes on open",
     forecastUrl:"https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
-    mini:{ day:"Saturday", temp:"84°", feels:"chance of rain showers", storm:"rain 84%" },
+    mini:{ day:"Saturday", temp:"84°", feels:"chance rain showers", storm:"rain 42%" },
     days:[
-      { label:"Friday", high:"87°", feels:"Mostly sunny · slight chance of PM showers", storm:"14%", concern:"Arrival day", className:"sat" },
-      { label:"Saturday", high:"84°", feels:"Chance of rain showers", storm:"84%", concern:"Two games · pack rain layers", className:"sat" },
+      { label:"Friday", high:"87°", feels:"Mostly Sunny then Slight Chance Rain Showers", storm:"19%", concern:"Arrival day", className:"sat" },
+      { label:"Saturday", high:"84°", feels:"Chance Rain Showers", storm:"42%", concern:"Two games · pack rain layers", className:"sat" },
       { label:"Sunday", high:"—", feels:"Beyond the 7-day window · early-Oct normals ~80°F/63°F", storm:"—", concern:"Re-check 48h out", className:"sun" }
     ],
     watch:[
@@ -513,7 +513,10 @@ function adaptData(d, team){
     }
 
     // weather note
-    if(d.weather && d.weather.summary) T.weather.mini={ day:'Outlook', temp:'80°', feels:'low 63°', storm:'seasonal' };
+    if(d.weather){
+      if(d.weather.mini && d.weather.mini.temp) T.weather.mini=d.weather.mini;
+      else if(d.weather.summary) T.weather.mini={ day:'Outlook', temp:'—', feels:'open the weekend forecast', storm:'' };
+    }
 
     // hotels
     if(d.hotels){
@@ -929,6 +932,7 @@ function loadWeather(){
     }
     if(days.length){ TOURNAMENT.weather.days=days; }
     TOURNAMENT.weather.mini=mini;
+    try{ if(typeof renderNextMatch==='function') renderNextMatch(resolveTournamentState(TOURNAMENT,tzNow())); }catch(e){}
     if(watch.length){ TOURNAMENT.weather.watch=watch; }
     const now=new Date();
     TOURNAMENT.weather.updated='Live · '+WHO+' · '+now.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZone:src.timezone||TOURNAMENT.timezone})+' ET';
