@@ -76,6 +76,14 @@
   "updates": [
     {
       "type": "info",
+      "title": "Lodging cut to the 5 closest verified hotels for Dutch Fork High School \u2014 rates checked today",
+      "description": "Five hotels, in distance order from Dutch Fork High School. Live rates pulled from Booking.com on Sep 26, 2026 for Oct 2-4 (two nights, 2 adults + 1 child). Anything we could not re-verify live keeps its last-verified figure and says so.",
+      "time": "Sep 26 \u00b7 3:10 PM",
+      "posted": "Parent Manager",
+      "actionRequired": false
+    },
+    {
+      "type": "info",
       "title": "Full schedule posted \u2014 3 games, all at Dutch Fork High School",
       "description": "SCUFC published the full schedule. Savannah United 17/18B Blue plays 3 group games (Under 09 Boys Green Division): SAT Oct 3 at 8:00 AM vs Lexington SA 17B White (Field ); SAT Oct 3 at 11:45 AM vs Bulls Rush U9 Boys Grey (Field ); SUN Oct 4 at 1:00 PM vs CESA U9B Pre USYS-NL 2 (Field ). Arrive 45 minutes before each kickoff. Every game is at Dutch Fork High School.",
       "time": "Sep 26 \u00b7 2:00 PM",
@@ -156,5 +164,140 @@
     "city": "Irmo, SC 29063",
     "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1400+Old+Tamah+Rd%2C+Irmo%2C+SC+29063",
     "assigned": true
+  },
+  "hotels": [
+    {
+      "name": "WoodSpring Suites Columbia \u2013 Irmo",
+      "chain": "Choice",
+      "tier": "pick",
+      "distanceMi": 5.9,
+      "distanceMin": 15,
+      "distance": "5.9 mi &middot; ~15 min",
+      "band": "Primary",
+      "rate": "$219 per night \u00b7 $438 for two nights",
+      "rateVerified": "2026-09-26",
+      "distanceChecked": "2026-09-26",
+      "distanceSrc": "google",
+      "bookUrl": true,
+      "amenities": [
+        "Extended-stay style",
+        "Free parking",
+        "Kitchenette"
+      ],
+      "bestValue": false
+    },
+    {
+      "name": "Hyatt Place Columbia/Harbison",
+      "chain": "Hyatt",
+      "tier": "pick",
+      "distanceMi": 7.0,
+      "distanceMin": 17,
+      "distance": "7.0 mi &middot; ~17 min",
+      "band": "Primary",
+      "rate": "$599 per night \u00b7 two nights $1,198 (rate spike on these dates)",
+      "rateVerified": "2026-09-26",
+      "distanceChecked": "2026-09-26",
+      "distanceSrc": "google",
+      "bookUrl": false,
+      "amenities": [
+        "Suite-style seating",
+        "Free breakfast",
+        "Pool"
+      ],
+      "bestValue": false
+    },
+    {
+      "name": "Hilton Garden Inn Columbia/Harbison",
+      "chain": "Hilton",
+      "tier": "pick",
+      "distanceMi": 7.1,
+      "distanceMin": 17,
+      "distance": "7.1 mi &middot; ~17 min",
+      "band": "Primary",
+      "rate": "$286 per night \u00b7 $572 for two nights",
+      "rateVerified": "2026-09-26",
+      "distanceChecked": "2026-09-26",
+      "distanceSrc": "google",
+      "bookUrl": false,
+      "amenities": [
+        "Full service",
+        "Restaurant on site",
+        "Pool"
+      ],
+      "bestValue": false
+    },
+    {
+      "name": "MainStay Suites Columbia Harbison",
+      "chain": "Choice",
+      "tier": "pick",
+      "distanceMi": 7.3,
+      "distanceMin": 18,
+      "distance": "7.3 mi &middot; ~18 min",
+      "band": "Primary",
+      "rate": "$279 per night \u00b7 last verified Sep 18 (no live rate returned Sep 26)",
+      "rateVerified": "2026-09-18",
+      "distanceChecked": "2026-09-26",
+      "distanceSrc": "google",
+      "bookUrl": false,
+      "amenities": [
+        "All-suite",
+        "Kitchenette",
+        "Free parking"
+      ],
+      "bestValue": false
+    },
+    {
+      "name": "Tru by Hilton Harbison Columbia",
+      "chain": "Hilton",
+      "tier": "pick",
+      "distanceMi": 7.6,
+      "distanceMin": 19,
+      "distance": "7.6 mi &middot; ~19 min",
+      "band": "Primary",
+      "rate": "$296 per night \u00b7 $592 for two nights",
+      "rateVerified": "2026-09-26",
+      "distanceChecked": "2026-09-26",
+      "distanceSrc": "google",
+      "bookUrl": false,
+      "amenities": [
+        "Bright lobby hangout",
+        "Free breakfast",
+        "Keeps Hilton points"
+      ],
+      "bestValue": false
+    }
+  ],
+  "hotelsRankedFor": "Dutch Fork High School",
+  "hotelsUpdated": "2026-09-26",
+  "breakPlan": {
+    "title": "Between-Games Rhythm",
+    "intro": "Saturday is an 8:00 AM and 11:45 AM double, both at Dutch Fork High School. That is a short turnaround \u2014 about 1 hour 55 minutes between the final whistle and the next report time, so plan to stay on site.",
+    "steps": [
+      {
+        "label": "Final whistle",
+        "time": "~9:05 AM",
+        "note": "After game #739 on Field A."
+      },
+      {
+        "label": "Eat immediately",
+        "time": "9:15 AM",
+        "note": "Eat within 30 minutes of the whistle. Bring it with you \u2014 there is no time to drive out and back comfortably."
+      },
+      {
+        "label": "Shade + change",
+        "time": "9:45 AM",
+        "note": "Dry shirt, dry socks, hat off and hydrate. The morning is the coolest part of the day, so use it."
+      },
+      {
+        "label": "Quiet sit",
+        "time": "10:15 AM",
+        "note": "Feet up in the car or in the shade. No running around between games."
+      },
+      {
+        "label": "Back for game #734",
+        "time": "11:00 AM",
+        "note": "Field B. Ten minutes of passing, then check in with the coach."
+      }
+    ]
   }
 }

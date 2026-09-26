@@ -507,6 +507,9 @@ function adaptData(d, team){
 
     // schedule-pending copy (per team)
     if(team.scheduleExpected) T.schedulePending.detail=team.scheduleExpected;
+    if(team.breakPlan && team.breakPlan.steps && team.breakPlan.steps.length){
+      T.breakPlan={ title:team.breakPlan.title||'Between-Games Rhythm', intro:team.breakPlan.intro||'', steps:team.breakPlan.steps };
+    }
 
     // weather note
     if(d.weather && d.weather.summary) T.weather.mini={ day:'Outlook', temp:'80°', feels:'low 63°', storm:'seasonal' };

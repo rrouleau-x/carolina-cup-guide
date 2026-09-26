@@ -804,7 +804,7 @@
         "bookUrl": "https://www.booking.com/searchresults.html?ss=Hampton+Inn+Columbia+I-26/Harbison+Blvd"
       }
     ],
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-26",
     "source": "Hotels.com",
     "sourceNote": "Hotels.com search (Oct 2-4 2026, 1 room, 2 adults + 1 child), checked live 2026-09-18",
     "caveat": "Partial result set, not full inventory. Rate is the nightly price shown for October 2-4 for one room, two adults and one child. Absence from this list does NOT mean a hotel is sold out.",
@@ -823,12 +823,12 @@
     "rateVerifiedNote": "La Quinta SE and LivSmart Greystone were re-checked live on September 19, 2026. The other ten hotels carry their September 18, 2026 figures."
   },
   "weather": {
-    "summary": "Early October in Columbia averages an 80\u00b0F afternoon high and a 63\u00b0F morning low. Ten-year observed range for these dates: 68\u00b0F to 97\u00b0F highs, 48\u00b0F to 77\u00b0F lows. Measurable rain on about 1 day in 5, but the shoulder-season swings are real.",
-    "details": "This is a two-wardrobe weekend. Mornings at the first game are genuinely cool \u2014 bring a jacket. Afternoons can still reach the mid-90s, so bring the full heat kit as well: water, electrolytes, sunscreen, cooling towels. Rain is unlikely on any single day, though not impossible. Start hydrating the day before travel. Recomputed September 18, 2026 from ten years of recorded daily observations for Columbia, SC (2016\u20132025, Open-Meteo historical archive). A reliable daily forecast becomes available around September 28\u201330.",
+    "summary": "Live National Weather Service outlook for Irmo / Columbia (fetched Sep 26, 2026): Friday Oct 2 \u2014 mostly sunny, high 87&deg;F, a slight chance of afternoon showers and a 69&deg;F night. Saturday Oct 3 \u2014 high 84&deg;F with a chance of rain showers. Sunday Oct 4 falls beyond the seven-day window, so plan on early-October normals: about 80&deg;F afternoon and 63&deg;F morning. Early October here is still UV-strong in the middle of the day.",
+    "details": "Saturday carries the only real rain signal of the weekend, and our teams kick off between 8:00 AM and 6:00 PM that day. Bring a light rain layer and a dry spare kit in a plastic bag for every player \u2014 a wet morning game followed by an afternoon game is exactly when a second set of socks matters. Mornings are genuinely cool (mid-60s), afternoons are hot and humid. Hydrate the day before travel; electrolytes on the double-game days (all four teams play two on Saturday).",
     "forecastLink": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
     "source": "Open-Meteo historical archive (2016\u20132025) + NWS Columbia",
     "sourceApiUrl": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
-    "updatedAt": "2026-09-18T20:00:00-04:00"
+    "updatedAt": "2026-09-26"
   },
   "rules": {
     "fullLink": "https://soccer.sincsports.com/TTContent.aspx?tid=CARCUP",
