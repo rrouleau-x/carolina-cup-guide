@@ -5,31 +5,473 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Carolina Cup 2026 - SU 17/18B
 X-WR-TIMEZONE:America/New_York
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
-SEQUENCE:1
+SEQUENCE:2
 UID:carolinacup-2026-tournament@savannahunited-su1718b
-DTSTAMP:20260918T120000Z
+DTSTAMP:20260926T180000Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261005
 SUMMARY:Carolina Cup - Savannah United 17/18B
-LOCATION:Columbia / Irmo\\, SC - complex assigned with the schedule on Sep 26
-DESCRIPTION:26th Annual Carolina Cup\\, hosted by South Carolina United FC. Fri Oct 2 - Sun Oct 4\\, 2026. Played across five SCUFC complexes in the Columbia and Irmo area - our specific complex and field are assigned when the schedule posts Sep 26. Drive from Savannah is about 169 miles / 3h 15min. Online check-in only - no on-site check-in. Bracket placements are confirmed; see the guide for your team's division. Companion app: https://rrouleau-x.github.io/carolina-cup-guide/app/
+LOCATION:Ballentine Park Complex / Polo Road Park / Dutch Fork HS\, Columbia & Irmo\, SC
+DESCRIPTION:26th Annual Carolina Cup\, hosted by South Carolina United FC. Fri Oct 2 -
+  Sun Oct 4\, 2026. Our four teams play 12 group games across Ballentine Pa
+ rk Complex (U9B Premier)\, Polo Road Park (U10B Premier and Blue) and Dutc
+ h Fork High School (U9B Blue). Drive from Savannah is about 169 miles / 3h
+  15min. Online check-in only - no on-site check-in. Companion app: https:/
+ /rrouleau-x.github.io/carolina-cup-guide/app/
 URL:https://rrouleau-x.github.io/carolina-cup-guide/app/
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 TRIGGER:-P2D
 ACTION:DISPLAY
-DESCRIPTION:Carolina Cup is in 2 days - check the schedule and hotel
+DESCRIPTION:Carolina Cup starts Friday - check the guide
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:carolinacup-2026-schedule@savannahunited-su1718b
-DTSTAMP:20260918T120000Z
-DTSTART;VALUE=DATE:20260926
-DTEND;VALUE=DATE:20260925
-SUMMARY:Carolina Cup: game schedule posted - check departure times
-DESCRIPTION:SCUFC posts the full schedule\\, field assignments and opponents today. Once live\\, the companion app shows game times\\, fields and a calculated departure time for each family.
-URL:https://rrouleau-x.github.io/carolina-cup-guide/app/
+SEQUENCE:2
+UID:carolinacup-2026-u9-premier-g703@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T103000
+DTEND;TZID=America/New_York:20261003T103000
+SUMMARY:U9B Premier vs CESA U9B Pre ECNL-RL Summit 1 (Away)
+LOCATION:Ballentine Park Complex Field 2A\, Irmo\, SC
+DESCRIPTION:Savannah United 17/18B Premier (U9B Premier) - game #703. Away game vs CES
+ A U9B Pre ECNL-RL Summit 1. Player arrival 9:45 AM EDT (45 minutes before 
+ kickoff). Uniform: TBD - pack both kits. Under 09 Boys Red Division. Guide
+ : https://rrouleau-x.github.io/carolina-cup-guide/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:U9B Premier kickoff in 90 minutes - Ballentine Park Complex
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u9-premier-g706@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T033000
+DTEND;TZID=America/New_York:20261003T033000
+SUMMARY:U9B Premier vs CFA 17/18 Red (Home)
+LOCATION:Ballentine Park Complex Field 2B\, Irmo\, SC
+DESCRIPTION:Savannah United 17/18B Premier (U9B Premier) - game #706. Home game vs CFA
+  17/18 Red. Player arrival 2:45 PM EDT (45 minutes before kickoff). Unifor
+ m: TBD - pack both kits. Under 09 Boys Red Division. Guide: https://rroule
+ au-x.github.io/carolina-cup-guide/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:U9B Premier kickoff in 90 minutes - Ballentine Park Complex
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u9-premier-g707@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261004T103000
+DTEND;TZID=America/New_York:20261004T103000
+SUMMARY:U9B Premier vs SCUFC U9 Boys Blue (Away)
+LOCATION:Ballentine Park Complex Field 2B\, Irmo\, SC
+DESCRIPTION:Savannah United 17/18B Premier (U9B Premier) - game #707. Away game vs SCU
+ FC U9 Boys Blue. Player arrival 9:45 AM EDT (45 minutes before kickoff). U
+ niform: TBD - pack both kits. Under 09 Boys Red Division. Guide: https://r
+ rouleau-x.github.io/carolina-cup-guide/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:U9B Premier kickoff in 90 minutes - Ballentine Park Complex
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u9-blue-g739@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T080000
+DTEND;TZID=America/New_York:20261003T080000
+SUMMARY:U9B Blue vs Lexington SA 17B White (Away)
+LOCATION:Dutch Fork High School Field A\, Irmo\, SC
+DESCRIPTION:Savannah United 17/18B Blue (U9B Blue) - game #739. Away game vs Lexington
+  SA 17B White. Player arrival 7:15 AM EDT (45 minutes before kickoff). Uni
+ form: TBD - pack both kits. Under 09 Boys Green Division. Guide: https://r
+ rouleau-x.github.io/carolina-cup-guide/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:U9B Blue kickoff in 90 minutes - Dutch Fork High School
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u9-blue-g734@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T114500
+DTEND;TZID=America/New_York:20261003T114500
+SUMMARY:U9B Blue vs Bulls Rush U9 Boys Grey (Away)
+LOCATION:Dutch Fork High School Field B\, Irmo\, SC
+DESCRIPTION:Savannah United 17/18B Blue (U9B Blue) - game #734. Away game vs Bulls Rus
+ h U9 Boys Grey. Player arrival 11:00 AM EDT (45 minutes before kickoff). U
+ niform: TBD - pack both kits. Under 09 Boys Green Division. Guide: https:/
+ /rrouleau-x.github.io/carolina-cup-guide/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:U9B Blue kickoff in 90 minutes - Dutch Fork High School
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u9-blue-g743@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261004T010000
+DTEND;TZID=America/New_York:20261004T010000
+SUMMARY:U9B Blue vs CESA U9B Pre USYS-NL 2 (Home)
+LOCATION:Dutch Fork High School Field A\, Irmo\, SC
+DESCRIPTION:Savannah United 17/18B Blue (U9B Blue) - game #743. Home game vs CESA U9B 
+ Pre USYS-NL 2. Player arrival 12:15 PM EDT (45 minutes before kickoff). Un
+ iform: TBD - pack both kits. Under 09 Boys Green Division. Guide: https://
+ rrouleau-x.github.io/carolina-cup-guide/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:U9B Blue kickoff in 90 minutes - Dutch Fork High School
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u10-premier-g126@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T114500
+DTEND;TZID=America/New_York:20261003T114500
+SUMMARY:U10B Premier vs Willex Football Academy U10 (Away)
+LOCATION:Polo Road Park Field 8\, Columbia\, SC
+DESCRIPTION:Savannah United 16/17B Premier (U10B Premier) - game #126. Away game vs Wi
+ llex Football Academy U10. Player arrival 11:00 AM EDT (45 minutes before 
+ kickoff). Uniform: TBD - pack both kits. Under 10 Boys Blue Division. Guid
+ e: https://rrouleau-x.github.io/carolina-cup-guide/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:U10B Premier kickoff in 90 minutes - Polo Road Park
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u10-premier-g128@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T060000
+DTEND;TZID=America/New_York:20261003T060000
+SUMMARY:U10B Premier vs Queen City Mutiny U10 Gold (Home)
+LOCATION:Polo Road Park Field 7\, Columbia\, SC
+DESCRIPTION:Savannah United 16/17B Premier (U10B Premier) - game #128. Home game vs Qu
+ een City Mutiny U10 Gold. Player arrival 5:15 PM EDT (45 minutes before ki
+ ckoff). Uniform: TBD - pack both kits. Under 10 Boys Blue Division. Guide:
+  https://rrouleau-x.github.io/carolina-cup-guide/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:U10B Premier kickoff in 90 minutes - Polo Road Park
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u10-premier-g130@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261004T091500
+DTEND;TZID=America/New_York:20261004T091500
+SUMMARY:U10B Premier vs TFC 16/17B Ibis I GA (Away)
+LOCATION:Polo Road Park Field 3\, Columbia\, SC
+DESCRIPTION:Savannah United 16/17B Premier (U10B Premier) - game #130. Away game vs TF
+ C 16/17B Ibis I GA. Player arrival 8:30 AM EDT (45 minutes before kickoff)
+ . Uniform: TBD - pack both kits. Under 10 Boys Blue Division. Guide: https
+ ://rrouleau-x.github.io/carolina-cup-guide/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:U10B Premier kickoff in 90 minutes - Polo Road Park
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u10-blue-g801@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T091500
+DTEND;TZID=America/New_York:20261003T091500
+SUMMARY:U10B Blue vs JIYSC U10 Black Leon (Home)
+LOCATION:Polo Road Park Field 7\, Columbia\, SC
+DESCRIPTION:Savannah United 16/17B Blue (U10B Blue) - game #801. Home game vs JIYSC U1
+ 0 Black Leon. Player arrival 8:30 AM EDT (45 minutes before kickoff). Unif
+ orm: TBD - pack both kits. Under 10 Boys Green Division. Guide: https://rr
+ ouleau-x.github.io/carolina-cup-guide/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:U10B Blue kickoff in 90 minutes - Polo Road Park
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u10-blue-g805@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T010000
+DTEND;TZID=America/New_York:20261003T010000
+SUMMARY:U10B Blue vs BU10 Grey (Home)
+LOCATION:Polo Road Park Field 4\, Columbia\, SC
+DESCRIPTION:Savannah United 16/17B Blue (U10B Blue) - game #805. Home game vs BU10 Gre
+ y. Player arrival 12:15 PM EDT (45 minutes before kickoff). Uniform: TBD -
+  pack both kits. Under 10 Boys Green Division. Guide: https://rrouleau-x.g
+ ithub.io/carolina-cup-guide/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:U10B Blue kickoff in 90 minutes - Polo Road Park
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u10-blue-g808@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261004T091500
+DTEND;TZID=America/New_York:20261004T091500
+SUMMARY:U10B Blue vs SCUFC U10 Boys Amber (Away)
+LOCATION:Polo Road Park Field 4\, Columbia\, SC
+DESCRIPTION:Savannah United 16/17B Blue (U10B Blue) - game #808. Away game vs SCUFC U1
+ 0 Boys Amber. Player arrival 8:30 AM EDT (45 minutes before kickoff). Unif
+ orm: TBD - pack both kits. Under 10 Boys Green Division. Guide: https://rr
+ ouleau-x.github.io/carolina-cup-guide/
+URL:https://rrouleau-x.github.io/carolina-cup-guide/
+BEGIN:VALARM
+TRIGGER:-PT90M
+ACTION:DISPLAY
+DESCRIPTION:U10B Blue kickoff in 90 minutes - Polo Road Park
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u9-premier-arr703@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T094500
+DTEND;TZID=America/New_York:20261003T094500
+SUMMARY:Arrive: U9B Premier Field 2A at Ballentine Park Complex
+LOCATION:Ballentine Park Complex Field 2A
+DESCRIPTION:Player report time for U9B Premier vs CESA U9B Pre ECNL-RL Summit 1 (kicko
+ ff 10:30 AM EDT).
 TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Leave for the field now
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u9-premier-arr706@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T024500
+DTEND;TZID=America/New_York:20261003T024500
+SUMMARY:Arrive: U9B Premier Field 2B at Ballentine Park Complex
+LOCATION:Ballentine Park Complex Field 2B
+DESCRIPTION:Player report time for U9B Premier vs CFA 17/18 Red (kickoff 3:30 PM EDT).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Leave for the field now
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u9-premier-arr707@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261004T094500
+DTEND;TZID=America/New_York:20261004T094500
+SUMMARY:Arrive: U9B Premier Field 2B at Ballentine Park Complex
+LOCATION:Ballentine Park Complex Field 2B
+DESCRIPTION:Player report time for U9B Premier vs SCUFC U9 Boys Blue (kickoff 10:30 AM
+  EDT).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Leave for the field now
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u9-blue-arr739@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T071500
+DTEND;TZID=America/New_York:20261003T071500
+SUMMARY:Arrive: U9B Blue Field A at Dutch Fork High School
+LOCATION:Dutch Fork High School Field A
+DESCRIPTION:Player report time for U9B Blue vs Lexington SA 17B White (kickoff 8:00 AM
+  EDT).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Leave for the field now
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u9-blue-arr734@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T110000
+DTEND;TZID=America/New_York:20261003T110000
+SUMMARY:Arrive: U9B Blue Field B at Dutch Fork High School
+LOCATION:Dutch Fork High School Field B
+DESCRIPTION:Player report time for U9B Blue vs Bulls Rush U9 Boys Grey (kickoff 11:45 
+ AM EDT).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Leave for the field now
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u9-blue-arr743@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261004T121500
+DTEND;TZID=America/New_York:20261004T121500
+SUMMARY:Arrive: U9B Blue Field A at Dutch Fork High School
+LOCATION:Dutch Fork High School Field A
+DESCRIPTION:Player report time for U9B Blue vs CESA U9B Pre USYS-NL 2 (kickoff 1:00 PM
+  EDT).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Leave for the field now
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u10-premier-arr126@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T110000
+DTEND;TZID=America/New_York:20261003T110000
+SUMMARY:Arrive: U10B Premier Field 8 at Polo Road Park
+LOCATION:Polo Road Park Field 8
+DESCRIPTION:Player report time for U10B Premier vs Willex Football Academy U10 (kickof
+ f 11:45 AM EDT).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Leave for the field now
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u10-premier-arr128@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T051500
+DTEND;TZID=America/New_York:20261003T051500
+SUMMARY:Arrive: U10B Premier Field 7 at Polo Road Park
+LOCATION:Polo Road Park Field 7
+DESCRIPTION:Player report time for U10B Premier vs Queen City Mutiny U10 Gold (kickoff
+  6:00 PM EDT).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Leave for the field now
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u10-premier-arr130@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261004T083000
+DTEND;TZID=America/New_York:20261004T083000
+SUMMARY:Arrive: U10B Premier Field 3 at Polo Road Park
+LOCATION:Polo Road Park Field 3
+DESCRIPTION:Player report time for U10B Premier vs TFC 16/17B Ibis I GA (kickoff 9:15 
+ AM EDT).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Leave for the field now
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u10-blue-arr801@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T083000
+DTEND;TZID=America/New_York:20261003T083000
+SUMMARY:Arrive: U10B Blue Field 7 at Polo Road Park
+LOCATION:Polo Road Park Field 7
+DESCRIPTION:Player report time for U10B Blue vs JIYSC U10 Black Leon (kickoff 9:15 AM 
+ EDT).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Leave for the field now
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u10-blue-arr805@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261003T121500
+DTEND;TZID=America/New_York:20261003T121500
+SUMMARY:Arrive: U10B Blue Field 4 at Polo Road Park
+LOCATION:Polo Road Park Field 4
+DESCRIPTION:Player report time for U10B Blue vs BU10 Grey (kickoff 1:00 PM EDT).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Leave for the field now
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SEQUENCE:2
+UID:carolinacup-2026-u10-blue-arr808@savannahunited-su1718b
+DTSTAMP:20260926T180000Z
+DTSTART;TZID=America/New_York:20261004T083000
+DTEND;TZID=America/New_York:20261004T083000
+SUMMARY:Arrive: U10B Blue Field 4 at Polo Road Park
+LOCATION:Polo Road Park Field 4
+DESCRIPTION:Player report time for U10B Blue vs SCUFC U10 Boys Amber (kickoff 9:15 AM 
+ EDT).
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Leave for the field now
+END:VALARM
 END:VEVENT
 END:VCALENDAR

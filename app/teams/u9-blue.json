@@ -21,55 +21,112 @@
     "phone": "",
     "email": ""
   },
-  "games": [],
-  "scheduleStatus": "pending",
-  "scheduleExpected": "Bracket confirmed — Under 09 Boys Green Division (8 teams). SCUFC posts the full schedule, with game times, fields and pairings, on September 26, 2026 — SCUFC's schedule page is offline right now while they resolve coaching conflicts and field changes (checked September 24).",
+  "games": [
+    {
+      "id": "739",
+      "date": "2026-10-03",
+      "time": "8:00 AM EDT",
+      "opponent": "Lexington SA 17B White",
+      "venue": "Dutch Fork High School",
+      "field": "Field A",
+      "arrival": "7:15 AM EDT",
+      "uniform": "TBD - pack both kits",
+      "status": "scheduled",
+      "type": "group",
+      "home": false,
+      "gameNo": "739",
+      "sincGameId": "7443592",
+      "division": "Under 09 Boys Green Division"
+    },
+    {
+      "id": "734",
+      "date": "2026-10-03",
+      "time": "11:45 AM EDT",
+      "opponent": "Bulls Rush U9 Boys Grey",
+      "venue": "Dutch Fork High School",
+      "field": "Field B",
+      "arrival": "11:00 AM EDT",
+      "uniform": "TBD - pack both kits",
+      "status": "scheduled",
+      "type": "group",
+      "home": false,
+      "gameNo": "734",
+      "sincGameId": "7443587",
+      "division": "Under 09 Boys Green Division"
+    },
+    {
+      "id": "743",
+      "date": "2026-10-04",
+      "time": "1:00 PM EDT",
+      "opponent": "CESA U9B Pre USYS-NL 2",
+      "venue": "Dutch Fork High School",
+      "field": "Field A",
+      "arrival": "12:15 PM EDT",
+      "uniform": "TBD - pack both kits",
+      "status": "scheduled",
+      "type": "group",
+      "home": true,
+      "gameNo": "743",
+      "sincGameId": "7443596",
+      "division": "Under 09 Boys Green Division"
+    }
+  ],
+  "scheduleStatus": "confirmed",
+  "scheduleExpected": "Published and confirmed. 3 group games: SAT Oct 3 8:00 AM vs Lexington SA 17B White; SAT Oct 3 11:45 AM vs Bulls Rush U9 Boys Grey; SUN Oct 4 1:00 PM vs CESA U9B Pre USYS-NL 2. All at Dutch Fork High School.",
   "updates": [
     {
       "type": "info",
-      "title": "Hotel availability re-checked live — new list",
-      "description": "We re-ran availability for October 2–4, two adults and one child, and published a fresh list. Country Inn & Suites at Harbison is confirmed at $161 per night and is now our top pick. The Hampton Inn Harbison did not come back as available in any search — we have stopped recommending it. Rates come from a live Hotels.com search scoped to those exact dates; it is a partial result set, so a hotel missing from the list is unknown rather than sold out. Confirm the current price before booking.",
-      "time": "Sep 18 · 8:00 PM",
-      "posted": "Parent Manager",
-      "actionRequired": true
-    },
-    {
-      "type": "info",
-      "title": "Bracket confirmed — Under 09 Boys Green Division",
-      "description": "Our bracket is posted and verified. Savannah United 17/18B Blue plays in Under 09 Boys Green Division (8 teams in total, listed in the guide below). Opponents are known; the schedule with times, fields and pairings posts September 26.",
-      "time": "Sep 18 · 8:00 AM",
+      "title": "Full schedule posted \u2014 3 games, all at Dutch Fork High School",
+      "description": "SCUFC published the full schedule. Savannah United 17/18B Blue plays 3 group games (Under 09 Boys Green Division): SAT Oct 3 at 8:00 AM vs Lexington SA 17B White (Field ); SAT Oct 3 at 11:45 AM vs Bulls Rush U9 Boys Grey (Field ); SUN Oct 4 at 1:00 PM vs CESA U9B Pre USYS-NL 2 (Field ). Arrive 45 minutes before each kickoff. Every game is at Dutch Fork High School.",
+      "time": "Sep 26 \u00b7 2:00 PM",
       "posted": "Parent Manager",
       "actionRequired": false
     },
     {
       "type": "info",
-      "title": "No stay-to-play policy published — re-checked September 18",
-      "description": "We checked the official tournament page, the SCUFC host site and the registration portal again on September 18, 2026 and still found no housing requirement or approved-hotel list for the Carolina Cup. Our picks are simply the closest options with confirmed availability — there is no housing portal to book through. We have asked tournament director Tripp Miller to confirm.",
-      "time": "Sep 18 · 8:00 PM",
+      "title": "Hotel availability re-checked live \u2014 new list",
+      "description": "We re-ran availability for October 2\u20134, two adults and one child, and published a fresh list. Country Inn & Suites at Harbison is confirmed at $161 per night and is now our top pick. The Hampton Inn Harbison did not come back as available in any search \u2014 we have stopped recommending it. Rates come from a live Hotels.com search scoped to those exact dates; it is a partial result set, so a hotel missing from the list is unknown rather than sold out. Confirm the current price before booking.",
+      "time": "Sep 18 \u00b7 8:00 PM",
+      "posted": "Parent Manager",
+      "actionRequired": true
+    },
+    {
+      "type": "info",
+      "title": "Bracket confirmed \u2014 Under 09 Boys Green Division",
+      "description": "Our bracket is posted and verified. Savannah United 17/18B Blue plays in Under 09 Boys Green Division (8 teams in total, listed in the guide below). Opponents are known; the schedule with times, fields and pairings posts September 26.",
+      "time": "Sep 18 \u00b7 8:00 AM",
+      "posted": "Parent Manager",
+      "actionRequired": false
+    },
+    {
+      "type": "info",
+      "title": "No stay-to-play policy published \u2014 re-checked September 18",
+      "description": "We checked the official tournament page, the SCUFC host site and the registration portal again on September 18, 2026 and still found no housing requirement or approved-hotel list for the Carolina Cup. Our picks are simply the closest options with confirmed availability \u2014 there is no housing portal to book through. We have asked tournament director Tripp Miller to confirm.",
+      "time": "Sep 18 \u00b7 8:00 PM",
       "posted": "Parent Manager",
       "actionRequired": false
     },
     {
       "type": "warning",
-      "title": "Online check-in is open — complete it now",
+      "title": "Online check-in is open \u2014 complete it now",
       "description": "The accepted team list posted September 14 and all four of our teams are on it. SCUFC's tournament page states that online check-in opened after that, that there is NO on-site check-in, and that teams should start online check-in immediately. This is the one item that cannot be handled at the field. Re-verified September 18, 2026.",
-      "time": "Sep 18 · 8:00 PM",
+      "time": "Sep 18 \u00b7 8:00 PM",
       "posted": "SCUFC",
       "actionRequired": true
     },
     {
       "type": "info",
-      "title": "Game schedule posts September 26 and the page is offline — re-checked September 24",
+      "title": "Game schedule posts September 26 and the page is offline \u2014 re-checked September 24",
       "description": "Brackets are done; the full schedule is the last piece. It posts September 26, 2026 with game times, fields and the actual pairings. Until then we do not know which of SCUFC's five complexes our teams play at. We check the official page through the day and publish the new schedule here as soon as games appear, then send the updated guide with a departure time for every family.",
-      "time": "Sep 18 · 8:00 PM",
+      "time": "Sep 18 \u00b7 8:00 PM",
       "posted": "SCUFC",
       "actionRequired": false
     },
     {
       "type": "info",
-      "title": "2026 rules document still not published — re-checked September 18",
+      "title": "2026 rules document still not published \u2014 re-checked September 18",
       "description": "We checked the official tournament content pages again on September 18, 2026 and found no 2026 Carolina Cup rules document. Game length, mercy rule, substitutions and the tiebreaker order all remain unconfirmed. We will not fill these in from another tournament's rulebook. Rules questions can go to Tournament Director Tripp Miller at tripp@scufc.com.",
-      "time": "Sep 18 · 8:00 PM",
+      "time": "Sep 18 \u00b7 8:00 PM",
       "posted": "Parent Manager",
       "actionRequired": false
     }
@@ -92,5 +149,12 @@
     "verified": "2026-09-18",
     "source": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
     "note": "Our bracket is confirmed. The tournament lists these teams in our division; the actual game-by-game pairings, times and fields arrive with the full schedule on September 26, 2026."
+  },
+  "venue": {
+    "name": "Dutch Fork High School",
+    "address": "1400 Old Tamah Rd",
+    "city": "Irmo, SC 29063",
+    "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1400+Old+Tamah+Rd%2C+Irmo%2C+SC+29063",
+    "assigned": true
   }
 }
