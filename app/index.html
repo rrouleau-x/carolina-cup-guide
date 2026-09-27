@@ -696,7 +696,7 @@ function resolveTournamentState(t, now){
       // before a day's FIRST game - wrong on the morning of Oct 3). (Rich, 2026-09-27)
       const sameDay = nextMatch.start.toLocaleDateString('en-US',{timeZone:TOURNAMENT.timezone})
                    === now.toLocaleDateString('en-US',{timeZone:TOURNAMENT.timezone});
-      const firstOfDay = !games.some(g=>g.state==='completed'
+      const firstOfDay = !withState.some(g=>g.state==='completed'
         && g.start.toLocaleDateString('en-US',{timeZone:TOURNAMENT.timezone})===nextMatch.start.toLocaleDateString('en-US',{timeZone:TOURNAMENT.timezone}));
       if(sameDay){ phase='game-day'; countdownTarget=nextMatch.start;
         countdownLabel=(firstOfDay?'UNTIL KICKOFF':'UNTIL '+nextMatch.label.toUpperCase()); }
