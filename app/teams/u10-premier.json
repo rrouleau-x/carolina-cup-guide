@@ -169,100 +169,105 @@
       "chain": "Hilton",
       "tier": "pick",
       "distanceMi": 4.6,
-      "distanceMin": 12,
-      "distance": "4.6 mi &middot; ~12 min",
+      "distanceMin": 8,
+      "distance": "4.6 mi &middot; ~8 min",
       "band": "Primary",
       "rate": "$337 per night \u00b7 $674 for two nights",
       "rateVerified": "2026-09-26",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": false,
       "amenities": [
         "Two-queen rooms",
         "Free hot breakfast",
         "Keeps Hilton points"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "4.6 mi &middot; ~8 min to Polo Road Park"
     },
     {
       "name": "La Quinta Inn by Wyndham Columbia SE / Fort Jackson",
       "chain": "Wyndham",
       "tier": "pick",
-      "distanceMi": 11.2,
-      "distanceMin": 20,
-      "distance": "11.2 mi &middot; ~20 min",
+      "distanceMi": 11.1,
+      "distanceMin": 14,
+      "distance": "11.1 mi &middot; ~14 min",
       "band": "Primary",
       "rate": "$194 per night \u00b7 $388 for two nights",
       "rateVerified": "2026-09-26",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": true,
       "amenities": [
         "Free parking",
         "Pet friendly",
         "Breakfast included"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "11.1 mi &middot; ~14 min to Polo Road Park"
+    },
+    {
+      "name": "Country Inn & Suites by Radisson, Columbia SE (Exchange Blvd)",
+      "chain": "Choice",
+      "tier": "pick",
+      "distanceMi": 11.2,
+      "distanceMin": 14,
+      "distance": "11.2 mi &middot; ~14 min",
+      "band": "Primary",
+      "rate": "$122 per night \u00b7 $244 for two nights",
+      "rateVerified": "2026-09-26",
+      "distanceChecked": "2026-09-26",
+      "distanceSrc": "google-routes-api",
+      "bookUrl": false,
+      "amenities": [
+        "Free breakfast",
+        "Free parking",
+        "Cheapest verified"
+      ],
+      "bestValue": false,
+      "drive": "11.2 mi &middot; ~14 min to Polo Road Park"
     },
     {
       "name": "LivSmart Studios by Hilton Columbia Greystone",
       "chain": "Hilton",
       "tier": "pick",
-      "distanceMi": 13.9,
-      "distanceMin": 22,
-      "distance": "13.9 mi &middot; ~22 min",
+      "distanceMi": 14.0,
+      "distanceMin": 19,
+      "distance": "14.0 mi &middot; ~19 min",
       "band": "Primary",
       "rate": "$238 per night \u00b7 $485 for two nights",
       "rateVerified": "2026-09-26",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": false,
       "amenities": [
         "Apartment-style suites",
         "Kitchen in room",
         "Keeps Hilton points"
       ],
-      "bestValue": false
-    },
-    {
-      "name": "Country Inn & Suites by Radisson, Columbia at Harbison",
-      "chain": "Choice",
-      "tier": "pick",
-      "distanceMi": 17.2,
-      "distanceMin": 24,
-      "distance": "17.2 mi &middot; ~24 min",
-      "band": "Secondary",
-      "rate": "$122 per night \u00b7 $244 for two nights",
-      "rateVerified": "2026-09-26",
-      "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
-      "bookUrl": false,
-      "amenities": [
-        "Cheapest verified",
-        "Free breakfast",
-        "Free parking"
-      ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "14.0 mi &middot; ~19 min to Polo Road Park"
     },
     {
       "name": "Hampton Inn Columbia I-26/Harbison Blvd",
       "chain": "Hilton",
       "tier": "pick",
       "distanceMi": 18.1,
-      "distanceMin": 24,
-      "distance": "18.1 mi &middot; ~24 min",
+      "distanceMin": 20,
+      "distance": "18.1 mi &middot; ~20 min",
       "band": "Secondary",
       "rate": "$309 per night \u00b7 $618 for two nights",
       "rateVerified": "2026-09-26",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": false,
       "amenities": [
         "Free hot breakfast",
         "Pool",
         "Keeps Hilton points"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "18.1 mi &middot; ~20 min to Polo Road Park"
     }
   ],
   "hotelsRankedFor": "Polo Road Park",

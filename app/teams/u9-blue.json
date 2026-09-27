@@ -170,101 +170,106 @@
       "name": "WoodSpring Suites Columbia \u2013 Irmo",
       "chain": "Choice",
       "tier": "pick",
-      "distanceMi": 5.9,
-      "distanceMin": 15,
-      "distance": "5.9 mi &middot; ~15 min",
+      "distanceMi": 5.5,
+      "distanceMin": 10,
+      "distance": "5.5 mi &middot; ~10 min",
       "band": "Primary",
       "rate": "$219 per night \u00b7 $438 for two nights",
       "rateVerified": "2026-09-26",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": true,
       "amenities": [
         "Extended-stay style",
         "Free parking",
         "Kitchenette"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "5.5 mi &middot; ~10 min to Dutch Fork High School"
     },
     {
       "name": "Hyatt Place Columbia/Harbison",
       "chain": "Hyatt",
       "tier": "pick",
-      "distanceMi": 7.0,
-      "distanceMin": 17,
-      "distance": "7.0 mi &middot; ~17 min",
+      "distanceMi": 6.0,
+      "distanceMin": 11,
+      "distance": "6.0 mi &middot; ~11 min",
       "band": "Primary",
       "rate": "$599 per night \u00b7 two nights $1,198 (rate spike on these dates)",
       "rateVerified": "2026-09-26",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": false,
       "amenities": [
         "Suite-style seating",
         "Free breakfast",
         "Pool"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "6.0 mi &middot; ~11 min to Dutch Fork High School"
     },
     {
       "name": "Hilton Garden Inn Columbia/Harbison",
       "chain": "Hilton",
       "tier": "pick",
-      "distanceMi": 7.1,
-      "distanceMin": 17,
-      "distance": "7.1 mi &middot; ~17 min",
+      "distanceMi": 6.7,
+      "distanceMin": 12,
+      "distance": "6.7 mi &middot; ~12 min",
       "band": "Primary",
       "rate": "$286 per night \u00b7 $572 for two nights",
       "rateVerified": "2026-09-26",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": false,
       "amenities": [
         "Full service",
         "Restaurant on site",
         "Pool"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "6.7 mi &middot; ~12 min to Dutch Fork High School"
     },
     {
       "name": "MainStay Suites Columbia Harbison",
       "chain": "Choice",
       "tier": "pick",
-      "distanceMi": 7.3,
-      "distanceMin": 18,
-      "distance": "7.3 mi &middot; ~18 min",
+      "distanceMi": 7.0,
+      "distanceMin": 14,
+      "distance": "7.0 mi &middot; ~14 min",
       "band": "Primary",
       "rate": "$279 per night \u00b7 last verified Sep 18 (no live rate returned Sep 26)",
       "rateVerified": "2026-09-18",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": false,
       "amenities": [
         "All-suite",
         "Kitchenette",
         "Free parking"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "7.0 mi &middot; ~14 min to Dutch Fork High School"
     },
     {
       "name": "Tru by Hilton Harbison Columbia",
       "chain": "Hilton",
       "tier": "pick",
-      "distanceMi": 7.6,
-      "distanceMin": 19,
-      "distance": "7.6 mi &middot; ~19 min",
+      "distanceMi": 7.2,
+      "distanceMin": 14,
+      "distance": "7.2 mi &middot; ~14 min",
       "band": "Primary",
       "rate": "$296 per night \u00b7 $592 for two nights",
       "rateVerified": "2026-09-26",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": false,
       "amenities": [
         "Bright lobby hangout",
         "Free breakfast",
         "Keeps Hilton points"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "7.2 mi &middot; ~14 min to Dutch Fork High School"
     }
   ],
   "hotelsRankedFor": "Dutch Fork High School",

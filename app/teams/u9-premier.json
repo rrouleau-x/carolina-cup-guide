@@ -168,100 +168,105 @@
       "chain": "Choice",
       "tier": "pick",
       "distanceMi": 4.4,
-      "distanceMin": 10,
-      "distance": "4.4 mi &middot; ~10 min",
+      "distanceMin": 9,
+      "distance": "4.4 mi &middot; ~9 min",
       "band": "Primary",
       "rate": "$219 per night \u00b7 $438 for two nights",
       "rateVerified": "2026-09-26",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": true,
       "amenities": [
         "Extended-stay style",
         "Free parking",
         "Kitchenette"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "4.4 mi &middot; ~9 min to Ballentine Park Complex"
     },
     {
       "name": "Hilton Garden Inn Columbia/Harbison",
       "chain": "Hilton",
       "tier": "pick",
-      "distanceMi": 7.6,
-      "distanceMin": 15,
-      "distance": "7.6 mi &middot; ~15 min",
+      "distanceMi": 7.7,
+      "distanceMin": 10,
+      "distance": "7.7 mi &middot; ~10 min",
       "band": "Primary",
       "rate": "$286 per night \u00b7 $572 for two nights",
       "rateVerified": "2026-09-26",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": false,
       "amenities": [
         "Bonvoy-style full service",
         "Restaurant on site",
         "Pool"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "7.7 mi &middot; ~10 min to Ballentine Park Complex"
     },
     {
       "name": "Hyatt Place Columbia/Harbison",
       "chain": "Hyatt",
       "tier": "pick",
       "distanceMi": 7.9,
-      "distanceMin": 16,
-      "distance": "7.9 mi &middot; ~16 min",
+      "distanceMin": 10,
+      "distance": "7.9 mi &middot; ~10 min",
       "band": "Primary",
       "rate": "$599 per night \u00b7 two nights $1,198 (rate spike on these dates)",
       "rateVerified": "2026-09-26",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": false,
       "amenities": [
         "Suite-style seating",
         "Free breakfast",
         "Pool"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "7.9 mi &middot; ~10 min to Ballentine Park Complex"
     },
     {
       "name": "MainStay Suites Columbia Harbison",
       "chain": "Choice",
       "tier": "pick",
       "distanceMi": 8.0,
-      "distanceMin": 16,
-      "distance": "8.0 mi &middot; ~16 min",
+      "distanceMin": 11,
+      "distance": "8.0 mi &middot; ~11 min",
       "band": "Primary",
       "rate": "$279 per night \u00b7 last verified Sep 18 (no live rate returned Sep 26)",
       "rateVerified": "2026-09-18",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": false,
       "amenities": [
         "All-suite",
         "Kitchenette",
         "Free parking"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "8.0 mi &middot; ~11 min to Ballentine Park Complex"
     },
     {
       "name": "Tru by Hilton Harbison Columbia",
       "chain": "Hilton",
       "tier": "pick",
       "distanceMi": 8.2,
-      "distanceMin": 17,
-      "distance": "8.2 mi &middot; ~17 min",
+      "distanceMin": 11,
+      "distance": "8.2 mi &middot; ~11 min",
       "band": "Primary",
       "rate": "$296 per night \u00b7 $592 for two nights",
       "rateVerified": "2026-09-26",
       "distanceChecked": "2026-09-26",
-      "distanceSrc": "google",
+      "distanceSrc": "google-routes-api",
       "bookUrl": false,
       "amenities": [
         "Bright lobby hangout",
         "Free breakfast",
         "Keeps Hilton points"
       ],
-      "bestValue": false
+      "bestValue": false,
+      "drive": "8.2 mi &middot; ~11 min to Ballentine Park Complex"
     }
   ],
   "hotelsRankedFor": "Ballentine Park Complex",
