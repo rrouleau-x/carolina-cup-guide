@@ -691,7 +691,17 @@ function resolveTournamentState(t, now){
   } else if(nextMatch){
     if(travel&&now<travel.start){ phase='pre-tournament'; countdownTarget=nextMatch.start; countdownLabel='UNTIL KICKOFF'; }
     else if(travel&&now<new Date(travel.start.getTime()+24*3600000)){ phase='travel'; countdownTarget=nextMatch.start; countdownLabel='UNTIL KICKOFF'; }
-    else { phase='between-games'; countdownTarget=nextMatch.start; countdownLabel='UNTIL '+nextMatch.label.toUpperCase(); }
+    else {
+      // Same calendar day as the next kickoff = game day, not "between games" (which used to show
+      // before a day's FIRST game - wrong on the morning of Oct 3). (Rich, 2026-09-27)
+      const sameDay = nextMatch.start.toLocaleDateString('en-US',{timeZone:TOURNAMENT.timezone})
+                   === now.toLocaleDateString('en-US',{timeZone:TOURNAMENT.timezone});
+      const firstOfDay = !games.some(g=>g.state==='completed'
+        && g.start.toLocaleDateString('en-US',{timeZone:TOURNAMENT.timezone})===nextMatch.start.toLocaleDateString('en-US',{timeZone:TOURNAMENT.timezone}));
+      if(sameDay){ phase='game-day'; countdownTarget=nextMatch.start;
+        countdownLabel=(firstOfDay?'UNTIL KICKOFF':'UNTIL '+nextMatch.label.toUpperCase()); }
+      else { phase='between-games'; countdownTarget=nextMatch.start; countdownLabel='UNTIL '+nextMatch.label.toUpperCase(); }
+    }
   } else {
     // No current or upcoming match. If there's a still-pending conditional final whose
     // scheduled time hasn't fully passed, we're waiting on a bracket result.
@@ -730,6 +740,7 @@ function refreshContext(state){
     case 'travel': txt='TRAVEL DAY'; chip=travel.detail||travel.label; need='travel'; break;
     case 'in-match': txt='HAPPENING NOW'; chip=currentMatch.label+' · '+currentMatch.time+' · Field '+currentMatch.field; need='game1'; break;
     case 'between-games': txt='BETWEEN GAMES'; chip=nextMatch?nextMatch.label+' · '+nextMatch.time:'Next match'; need='between'; break;
+    case 'game-day': txt='GAME DAY'; chip=nextMatch?nextMatch.label+' · '+nextMatch.time:'Next match'; need=(nextMatch&&nextMatch.label==='Game 1')?'game1':'between'; break;
     case 'awaiting-final': txt='AWAITING BRACKET RESULT'; chip='Final qualification not yet confirmed'; need='game3'; break;
     case 'awaiting-schedule': txt='SCHEDULE PENDING'; chip='Bracket confirmed · Schedule Sep 26'; need='before'; break;
     case 'complete': txt='TOURNAMENT COMPLETE'; chip='Great weekend!'; need='before'; break;
