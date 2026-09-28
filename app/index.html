@@ -398,7 +398,7 @@ let TOURNAMENT = {
     { name:"Tournament HQ", role:"SCUFC · Tripp Miller", phone:"8774572832", initial:"H" },
     { name:"Team Updates", role:"PlayMetrics", url:"https://playmetrics.com", initial:"P" }
   ],
-  rules:{ quick:[], full:[], tiebreakers:[], tiebreakersPending:"", tiebreakProcess:"", fullRulesUrl:"", standingsUrl:"" },
+  rules:{ quick:[], full:[], tiebreakers:[], tiebreakersPending:"", tiebreakProcess:"", fullRulesUrl:"", standingsUrl:"", docsUrl:"" },
   packing:{ alert:"Pack both kits. Also pack a warm layer — early October mornings run about 63°F.", groups:[] },
   needs:{
     before:[["Book hotel","rates: checked Sep 26"],["Save the guide PDF","works offline"],["Charge phones","both days"],["Pack both kits","+ warm layer"]],
@@ -575,6 +575,7 @@ function adaptData(d, team){
       if(d.rules.tiebreakersPending) T.rules.tiebreakersPending=d.rules.tiebreakersPending;
       if(d.rules.tiebreakProcess) T.rules.tiebreakProcess=d.rules.tiebreakProcess;
       if(d.rules.standingsLink) T.rules.standingsUrl=d.rules.standingsLink;
+      if(d.rules.docsLink) T.rules.docsUrl=d.rules.docsLink;
       if(d.rules.fullLink) T.rules.fullRulesUrl=d.rules.fullLink;
     }
 
@@ -1080,7 +1081,7 @@ function renderRules(){
   const tbNote=TOURNAMENT.rules.tiebreakProcess
     ? '<div style="margin:12px 0 0;padding:10px 12px;background:var(--amber-bg);border-radius:10px"><div style="font-size:12px;font-weight:700;color:var(--amber);line-height:1.55">What the event does say</div><div style="font-size:12.5px;color:var(--text);line-height:1.6;margin-top:4px">'+TOURNAMENT.rules.tiebreakProcess+'</div></div>'
     : '';
-  document.getElementById('rulesSection').innerHTML='<div class="section-title"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M12 21 8 9l4-6 4 6z"/></svg>Parents Should Know</div><div class="card"><div class="quickrules">'+quick+'</div><details class="acc"><summary>View all tournament rules <span>＋</span></summary><div class="accbody">'+full+'</div></details><details class="acc"><summary>Tiebreakers — in order <span>＋</span></summary><div class="accbody">'+tb+'</div></details>'+tbNote+'<a class="btn ghost" style="margin-top:12px;flex-direction:row;gap:7px" href="'+TOURNAMENT.rules.fullRulesUrl+'" target="_blank" rel="noopener">Tournament info &amp; rules (SincSports)</a>'+((TOURNAMENT.rules.standingsUrl)?'<a class="btn ghost" style="margin-top:8px;flex-direction:row;gap:7px" href="'+TOURNAMENT.rules.standingsUrl+'" target="_blank" rel="noopener">Live standings &amp; tiebreak page</a>':'')+'</div>';
+  document.getElementById('rulesSection').innerHTML='<div class="section-title"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M12 21 8 9l4-6 4 6z"/></svg>Parents Should Know</div><div class="card"><div class="quickrules">'+quick+'</div><details class="acc"><summary>View all tournament rules <span>＋</span></summary><div class="accbody">'+full+'</div></details><details class="acc"><summary>Tiebreakers — in order <span>＋</span></summary><div class="accbody">'+tb+'</div></details>'+tbNote+'<a class="btn ghost" style="margin-top:12px;flex-direction:row;gap:7px" href="'+TOURNAMENT.rules.fullRulesUrl+'" target="_blank" rel="noopener">Tournament info &amp; rules (SincSports)</a>'+((TOURNAMENT.rules.standingsUrl)?'<a class="btn ghost" style="margin-top:8px;flex-direction:row;gap:7px" href="'+TOURNAMENT.rules.standingsUrl+'" target="_blank" rel="noopener">Live standings &amp; tiebreak page</a>':'')+((TOURNAMENT.rules.docsUrl)?'<a class="btn ghost" style="margin-top:8px;flex-direction:row;gap:7px" href="'+TOURNAMENT.rules.docsUrl+'" target="_blank" rel="noopener">Team documents &mdash; rules (SincSports login)</a>':'')+'</div>';
 }
 function renderChanges(){
   const rows=TOURNAMENT.changes.map(c=>'<p style="margin:0 0 6px"><b>'+c.k+':</b> '+c.v+'</p>').join('');

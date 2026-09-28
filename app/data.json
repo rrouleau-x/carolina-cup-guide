@@ -881,7 +881,7 @@
    }
   ],
   "tiebreakers": [],
-  "tiebreakersPending": "SCUFC has not published the 2026 Carolina Cup tiebreaker order. The tournament runs group play on points; its own results page states that tied teams are resolved by the event's tiebreaker rules in order until the tie is broken. The order itself appears on the standings page once games are played.",
+  "tiebreakersPending": "SCUFC has not published a 2026 Carolina Cup rules document or tiebreaker order publicly. It keeps its event documents (rules, check-in, forms) in SincSports Team Documents, which opens with a team login, and sends them to team managers. Ask your team manager, or open Team Documents in SincSports.",
   "directorContact": {
    "name": "Tripp Miller",
    "email": "tripp@scufc.com"
@@ -891,7 +891,8 @@
    "email": "jamie@scufc.com"
   },
   "standingsLink": "https://soccer.sincsports.com/TTResults2.aspx?tid=CARCUP",
-  "tiebreakProcess": "Group play awards points. Where teams finish level on points, the tournament applies its tiebreaker rules in order until the tie is broken (its own standings page shows the points each team was awarded through the tiebreak). Anything still level is broken manually by the tournament director. SincSports publishes the resulting order live."
+  "tiebreakProcess": "Group play awards points. Where teams finish level on points, the tournament applies its tiebreaker rules in order until the tie is broken (its own standings page shows the points each team was awarded through the tiebreak). Anything still level is broken manually by the tournament director. SincSports publishes the resulting order live.",
+  "docsLink": "https://soccer.sincsports.com/TTCheckList.aspx?tid=CARCUP&tab=3&sub=2&Page=2"
  },
  "updates": [
   {
