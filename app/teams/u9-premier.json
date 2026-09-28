@@ -1,381 +1,391 @@
 {
- "slug": "u9-premier",
- "name": "Savannah United 17/18B Premier",
- "shortName": "SU 17/18B Premier",
- "label": "U9 Premier",
- "ageGroup": "09U",
- "gender": "Boys",
- "format": "7v7",
- "sincTeamId": "GAM18001F6",
- "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM18001F6",
- "accepted": true,
- "coach": {
-  "name": "Keith Gunn",
-  "role": "Director of Coaching",
-  "phone": "912-856-9442",
-  "email": "keith.gunn@savannahunited.com"
- },
- "manager": {
-  "name": "Victoria",
-  "role": "Parent Team Manager",
-  "phone": "",
-  "email": ""
- },
- "games": [
-  {
-   "id": "703",
-   "date": "2026-10-03",
-   "time": "10:30 AM EDT",
-   "opponent": "CESA U9B Pre ECNL-RL Summit 1",
-   "venue": "Ballentine Park Complex",
-   "field": "Field 2A",
-   "arrival": "9:45 AM EDT",
-   "uniform": "TBD - pack both kits",
-   "status": "scheduled",
-   "type": "group",
-   "home": false,
-   "gameNo": "703",
-   "sincGameId": "7443556",
-   "division": "Under 09 Boys Red Division"
+  "slug": "u9-premier",
+  "name": "Savannah United 17/18B Premier",
+  "shortName": "SU 17/18B Premier",
+  "label": "U9 Premier",
+  "ageGroup": "09U",
+  "gender": "Boys",
+  "format": "7v7",
+  "sincTeamId": "GAM18001F6",
+  "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM18001F6",
+  "accepted": true,
+  "coach": {
+    "name": "Keith Gunn",
+    "role": "Director of Coaching",
+    "phone": "912-856-9442",
+    "email": "keith.gunn@savannahunited.com"
   },
-  {
-   "id": "706",
-   "date": "2026-10-03",
-   "time": "3:30 PM EDT",
-   "opponent": "CFA 17/18 Red",
-   "venue": "Ballentine Park Complex",
-   "field": "Field 2B",
-   "arrival": "2:45 PM EDT",
-   "uniform": "TBD - pack both kits",
-   "status": "scheduled",
-   "type": "group",
-   "home": true,
-   "gameNo": "706",
-   "sincGameId": "7443559",
-   "division": "Under 09 Boys Red Division"
+  "manager": {
+    "name": "Victoria",
+    "role": "Parent Team Manager",
+    "phone": "",
+    "email": ""
   },
-  {
-   "id": "707",
-   "date": "2026-10-04",
-   "time": "10:30 AM EDT",
-   "opponent": "SCUFC U9 Boys Blue",
-   "venue": "Ballentine Park Complex",
-   "field": "Field 2B",
-   "arrival": "9:45 AM EDT",
-   "uniform": "TBD - pack both kits",
-   "status": "scheduled",
-   "type": "group",
-   "home": false,
-   "gameNo": "707",
-   "sincGameId": "7443560",
-   "division": "Under 09 Boys Red Division"
-  }
- ],
- "scheduleStatus": "confirmed",
- "scheduleExpected": "Published and confirmed. 3 group games: SAT Oct 3 10:30 AM vs CESA U9B Pre ECNL-RL Summit 1; SAT Oct 3 3:30 PM vs CFA 17/18 Red; SUN Oct 4 10:30 AM vs SCUFC U9 Boys Blue. All at Ballentine Park Complex.",
- "updates": [
-  {
-   "type": "info",
-   "title": "Lodging cut to the 5 closest verified hotels for Ballentine Park Complex — rates checked today",
-   "description": "Five hotels, in distance order from Ballentine Park Complex. Live rates pulled from Booking.com on Sep 26, 2026 for Oct 2-4 (two nights, 2 adults + 1 child). Anything we could not re-verify live keeps its last-verified figure and says so.",
-   "time": "Sep 26 · 3:10 PM",
-   "posted": "Parent Manager",
-   "actionRequired": false
-  },
-  {
-   "type": "info",
-   "title": "Full schedule posted — 3 games, all at Ballentine Park Complex",
-   "description": "SCUFC published the full schedule. Savannah United 17/18B Premier plays 3 group games (Under 09 Boys Red Division): SAT Oct 3 at 10:30 AM vs CESA U9B Pre ECNL-RL Summit 1 (Field 2A); SAT Oct 3 at 3:30 PM vs CFA 17/18 Red (Field 2B); SUN Oct 4 at 10:30 AM vs SCUFC U9 Boys Blue (Field 2B). Arrive 45 minutes before each kickoff. Every game is at Ballentine Park Complex.",
-   "time": "Sep 26 · 2:00 PM",
-   "posted": "Parent Manager",
-   "actionRequired": false
-  },
-  {
-   "type": "info",
-   "title": "Hotel availability re-checked live — new list",
-   "description": "We re-ran availability for October 2–4, two adults and one child, and published a fresh list. Country Inn & Suites at Harbison is confirmed at $161 per night and is now our top pick. The Hampton Inn Harbison did not come back as available in any search — we have stopped recommending it. Rates come from a live Hotels.com search scoped to those exact dates; it is a partial result set, so a hotel missing from the list is unknown rather than sold out. Confirm the current price before booking.",
-   "time": "Sep 18 · 8:00 PM",
-   "posted": "Parent Manager",
-   "actionRequired": true
-  },
-  {
-   "type": "info",
-   "title": "Bracket confirmed — Under 09 Boys Red Division",
-   "description": "Our bracket is posted and verified. Savannah United 17/18B Premier plays in Under 09 Boys Red Division (5 teams in total, listed in the guide below). Opponents are known; the schedule with times, fields and pairings posts September 26.",
-   "time": "Sep 18 · 8:00 AM",
-   "posted": "Parent Manager",
-   "actionRequired": false
-  },
-  {
-   "type": "info",
-   "title": "No stay-to-play policy published — re-checked September 18",
-   "description": "We checked the official tournament page, the SCUFC host site and the registration portal again on September 18, 2026 and still found no housing requirement or approved-hotel list for the Carolina Cup. Our picks are simply the closest options with confirmed availability — there is no housing portal to book through. We have asked tournament director Tripp Miller to confirm.",
-   "time": "Sep 18 · 8:00 PM",
-   "posted": "Parent Manager",
-   "actionRequired": false
-  },
-  {
-   "type": "warning",
-   "title": "Online check-in is open — complete it now",
-   "description": "The accepted team list posted September 14 and all four of our teams are on it. SCUFC's tournament page states that online check-in opened after that, that there is NO on-site check-in, and that teams should start online check-in immediately. This is the one item that cannot be handled at the field. Re-verified September 18, 2026.",
-   "time": "Sep 18 · 8:00 PM",
-   "posted": "SCUFC",
-   "actionRequired": true
-  },
-  {
-   "type": "info",
-   "title": "Game schedule posts September 26 and the page is offline — re-checked September 24",
-   "description": "Brackets are done; the full schedule is the last piece. It posts September 26, 2026 with game times, fields and the actual pairings. Until then we do not know which of SCUFC's five complexes our teams play at. We check the official page through the day and publish the new schedule here as soon as games appear, then send the updated guide with a departure time for every family.",
-   "time": "Sep 18 · 8:00 PM",
-   "posted": "SCUFC",
-   "actionRequired": false
-  },
-  {
-   "type": "info",
-   "title": "2026 rules document still not published — re-checked September 18",
-   "description": "We checked the official tournament content pages again on September 18, 2026 and found no 2026 Carolina Cup rules document. Game length, mercy rule, substitutions and the tiebreaker order all remain unconfirmed. We will not fill these in from another tournament's rulebook. Rules questions can go to Tournament Director Tripp Miller at tripp@scufc.com.",
-   "time": "Sep 18 · 8:00 PM",
-   "posted": "Parent Manager",
-   "actionRequired": false
-  }
- ],
- "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u9-premier.pdf",
- "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u9-premier/",
- "division": "Under 09 Boys Red Division",
- "bracket": {
-  "division": "Under 09 Boys Red Division",
-  "teamCount": 5,
-  "opponents": [
-   "CESA U9B Pre ECNL-RL Summit 1",
-   "FC Revival U9 Boys Navy",
-   "JIYSC U9 Boys Red Chambers",
-   "SCUFC U9 Boys Blue"
+  "games": [
+    {
+      "id": "703",
+      "date": "2026-10-03",
+      "time": "10:30 AM EDT",
+      "opponent": "CESA U9B Pre ECNL-RL Summit 1",
+      "venue": "Ballentine Park Complex",
+      "field": "Field 2A",
+      "arrival": "9:45 AM EDT",
+      "uniform": "TBD - pack both kits",
+      "status": "scheduled",
+      "type": "group",
+      "home": false,
+      "gameNo": "703",
+      "sincGameId": "7443556",
+      "division": "Under 09 Boys Red Division"
+    },
+    {
+      "id": "706",
+      "date": "2026-10-03",
+      "time": "3:30 PM EDT",
+      "opponent": "CFA 17/18 Red",
+      "venue": "Ballentine Park Complex",
+      "field": "Field 2B",
+      "arrival": "2:45 PM EDT",
+      "uniform": "TBD - pack both kits",
+      "status": "scheduled",
+      "type": "group",
+      "home": true,
+      "gameNo": "706",
+      "sincGameId": "7443559",
+      "division": "Under 09 Boys Red Division"
+    },
+    {
+      "id": "707",
+      "date": "2026-10-04",
+      "time": "10:30 AM EDT",
+      "opponent": "SCUFC U9 Boys Blue",
+      "venue": "Ballentine Park Complex",
+      "field": "Field 2B",
+      "arrival": "9:45 AM EDT",
+      "uniform": "TBD - pack both kits",
+      "status": "scheduled",
+      "type": "group",
+      "home": false,
+      "gameNo": "707",
+      "sincGameId": "7443560",
+      "division": "Under 09 Boys Red Division"
+    }
   ],
-  "verified": "2026-09-18",
-  "source": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
-  "note": "Our bracket is confirmed. The tournament lists these teams in our division; the actual game-by-game pairings, times and fields arrive with the full schedule on September 26, 2026."
- },
- "venue": {
-  "name": "Ballentine Park Complex",
-  "address": "1009 Bickley Road",
-  "city": "Irmo, SC 29063",
-  "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1009+Bickley+Road%2C+Irmo%2C+SC+29063",
-  "assigned": true
- },
- "hotels": [
-  {
-   "name": "WoodSpring Suites Columbia – Irmo",
-   "chain": "Choice",
-   "tier": "pick",
-   "distanceMi": 4.4,
-   "distanceMin": 9,
-   "distance": "4.4 mi &middot; ~9 min",
-   "band": "Primary",
-   "rate": "$219 per night · $438 for two nights",
-   "rateVerified": "2026-09-26",
-   "distanceChecked": "2026-09-26",
-   "distanceSrc": "google-routes-api",
-   "bookUrl": true,
-   "amenities": [
-    "Extended-stay style",
-    "Free parking",
-    "Kitchenette"
-   ],
-   "bestValue": false,
-   "drive": "4.4 mi &middot; ~9 min to Ballentine Park Complex"
+  "scheduleStatus": "confirmed",
+  "scheduleExpected": "Published and confirmed. 3 group games: SAT Oct 3 10:30 AM vs CESA U9B Pre ECNL-RL Summit 1; SAT Oct 3 3:30 PM vs CFA 17/18 Red; SUN Oct 4 10:30 AM vs SCUFC U9 Boys Blue. All at Ballentine Park Complex.",
+  "updates": [
+    {
+      "type": "info",
+      "title": "Lodging cut to the 5 closest verified hotels for Ballentine Park Complex — rates checked today",
+      "description": "Five hotels, in distance order from Ballentine Park Complex. Live rates pulled from Booking.com on Sep 26, 2026 for Oct 2-4 (two nights, 2 adults + 1 child). Anything we could not re-verify live keeps its last-verified figure and says so.",
+      "time": "Sep 26 · 3:10 PM",
+      "posted": "Parent Manager",
+      "actionRequired": false
+    },
+    {
+      "type": "info",
+      "title": "Full schedule posted — 3 games, all at Ballentine Park Complex",
+      "description": "SCUFC published the full schedule. Savannah United 17/18B Premier plays 3 group games (Under 09 Boys Red Division): SAT Oct 3 at 10:30 AM vs CESA U9B Pre ECNL-RL Summit 1 (Field 2A); SAT Oct 3 at 3:30 PM vs CFA 17/18 Red (Field 2B); SUN Oct 4 at 10:30 AM vs SCUFC U9 Boys Blue (Field 2B). Arrive 45 minutes before each kickoff. Every game is at Ballentine Park Complex.",
+      "time": "Sep 26 · 2:00 PM",
+      "posted": "Parent Manager",
+      "actionRequired": false
+    },
+    {
+      "type": "info",
+      "title": "Hotel availability re-checked live — new list",
+      "description": "We re-ran availability for October 2–4, two adults and one child, and published a fresh list. Country Inn & Suites at Harbison is confirmed at $161 per night and is now our top pick. The Hampton Inn Harbison did not come back as available in any search — we have stopped recommending it. Rates come from a live Hotels.com search scoped to those exact dates; it is a partial result set, so a hotel missing from the list is unknown rather than sold out. Confirm the current price before booking.",
+      "time": "Sep 18 · 8:00 PM",
+      "posted": "Parent Manager",
+      "actionRequired": true
+    },
+    {
+      "type": "info",
+      "title": "Bracket confirmed — Under 09 Boys Red Division",
+      "description": "Our bracket is posted and verified. Savannah United 17/18B Premier plays in Under 09 Boys Red Division (5 teams in total, listed in the guide below). Opponents are known; the schedule with times, fields and pairings posts September 26.",
+      "time": "Sep 18 · 8:00 AM",
+      "posted": "Parent Manager",
+      "actionRequired": false
+    },
+    {
+      "type": "info",
+      "title": "No stay-to-play policy published — re-checked September 18",
+      "description": "We checked the official tournament page, the SCUFC host site and the registration portal again on September 18, 2026 and still found no housing requirement or approved-hotel list for the Carolina Cup. Our picks are simply the closest options with confirmed availability — there is no housing portal to book through. We have asked tournament director Tripp Miller to confirm.",
+      "time": "Sep 18 · 8:00 PM",
+      "posted": "Parent Manager",
+      "actionRequired": false
+    },
+    {
+      "type": "warning",
+      "title": "Online check-in is open — complete it now",
+      "description": "The accepted team list posted September 14 and all four of our teams are on it. SCUFC's tournament page states that online check-in opened after that, that there is NO on-site check-in, and that teams should start online check-in immediately. This is the one item that cannot be handled at the field. Re-verified September 18, 2026.",
+      "time": "Sep 18 · 8:00 PM",
+      "posted": "SCUFC",
+      "actionRequired": true
+    },
+    {
+      "type": "info",
+      "title": "Game schedule posts September 26 and the page is offline — re-checked September 24",
+      "description": "Brackets are done; the full schedule is the last piece. It posts September 26, 2026 with game times, fields and the actual pairings. Until then we do not know which of SCUFC's five complexes our teams play at. We check the official page through the day and publish the new schedule here as soon as games appear, then send the updated guide with a departure time for every family.",
+      "time": "Sep 18 · 8:00 PM",
+      "posted": "SCUFC",
+      "actionRequired": false
+    },
+    {
+      "type": "info",
+      "title": "2026 rules document still not published — re-checked September 18",
+      "description": "We checked the official tournament content pages again on September 18, 2026 and found no 2026 Carolina Cup rules document. Game length, mercy rule, substitutions and the tiebreaker order all remain unconfirmed. We will not fill these in from another tournament's rulebook. Rules questions can go to Tournament Director Tripp Miller at tripp@scufc.com.",
+      "time": "Sep 18 · 8:00 PM",
+      "posted": "Parent Manager",
+      "actionRequired": false
+    }
+  ],
+  "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u9-premier.pdf",
+  "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u9-premier/",
+  "division": "Under 09 Boys Red Division",
+  "bracket": {
+    "division": "Under 09 Boys Red Division",
+    "teamCount": 5,
+    "opponents": [
+      "CESA U9B Pre ECNL-RL Summit 1",
+      "FC Revival U9 Boys Navy",
+      "JIYSC U9 Boys Red Chambers",
+      "SCUFC U9 Boys Blue"
+    ],
+    "verified": "2026-09-18",
+    "source": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
+    "note": "Our bracket is confirmed. The tournament lists these teams in our division; the actual game-by-game pairings, times and fields arrive with the full schedule on September 26, 2026."
   },
-  {
-   "name": "Hilton Garden Inn Columbia/Harbison",
-   "chain": "Hilton",
-   "tier": "pick",
-   "distanceMi": 7.7,
-   "distanceMin": 10,
-   "distance": "7.7 mi &middot; ~10 min",
-   "band": "Primary",
-   "rate": "$286 per night · $572 for two nights",
-   "rateVerified": "2026-09-26",
-   "distanceChecked": "2026-09-26",
-   "distanceSrc": "google-routes-api",
-   "bookUrl": false,
-   "amenities": [
-    "Bonvoy-style full service",
-    "Restaurant on site",
-    "Pool"
-   ],
-   "bestValue": false,
-   "drive": "7.7 mi &middot; ~10 min to Ballentine Park Complex"
+  "venue": {
+    "name": "Ballentine Park Complex",
+    "address": "1009 Bickley Road",
+    "city": "Irmo, SC 29063",
+    "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1009+Bickley+Road%2C+Irmo%2C+SC+29063",
+    "assigned": true
   },
-  {
-   "name": "Hyatt Place Columbia/Harbison",
-   "chain": "Hyatt",
-   "tier": "pick",
-   "distanceMi": 7.9,
-   "distanceMin": 10,
-   "distance": "7.9 mi &middot; ~10 min",
-   "band": "Primary",
-   "rate": "$599 per night · two nights $1,198 (rate spike on these dates)",
-   "rateVerified": "2026-09-26",
-   "distanceChecked": "2026-09-26",
-   "distanceSrc": "google-routes-api",
-   "bookUrl": false,
-   "amenities": [
-    "Suite-style seating",
-    "Free breakfast",
-    "Pool"
-   ],
-   "bestValue": false,
-   "drive": "7.9 mi &middot; ~10 min to Ballentine Park Complex"
+  "hotels": [
+    {
+      "name": "WoodSpring Suites Columbia – Irmo",
+      "chain": "Choice",
+      "tier": "pick",
+      "distanceMi": 4.4,
+      "distanceMin": 10,
+      "distance": "4.4 mi &middot; ~10 min",
+      "band": "Primary",
+      "rate": "$219 per night · $438 for two nights",
+      "rateVerified": "2026-09-26",
+      "distanceChecked": "2026-09-28",
+      "distanceSrc": "google-routes-api",
+      "bookUrl": true,
+      "amenities": [
+        "Extended-stay style",
+        "Free parking",
+        "Kitchenette"
+      ],
+      "bestValue": false,
+      "drive": "4.4 mi &middot; ~10 min to Ballentine Park Complex",
+      "address": "941 Columbiana Dr, Irmo, SC 29063, USA",
+      "bonvoyEligible": false
+    },
+    {
+      "name": "Hilton Garden Inn Columbia/Harbison",
+      "chain": "Hilton",
+      "tier": "pick",
+      "distanceMi": 5.7,
+      "distanceMin": 12,
+      "distance": "5.7 mi &middot; ~12 min",
+      "band": "Primary",
+      "rate": "$286 per night · $572 for two nights",
+      "rateVerified": "2026-09-26",
+      "distanceChecked": "2026-09-28",
+      "distanceSrc": "google-routes-api",
+      "bookUrl": false,
+      "amenities": [
+        "Bonvoy-style full service",
+        "Restaurant on site",
+        "Pool"
+      ],
+      "bestValue": false,
+      "drive": "5.7 mi &middot; ~12 min to Ballentine Park Complex",
+      "address": "434 Columbiana Dr, Columbia, SC 29212, USA",
+      "bonvoyEligible": false
+    },
+    {
+      "name": "MainStay Suites Columbia Harbison",
+      "chain": "Choice",
+      "tier": "pick",
+      "distanceMi": 6.0,
+      "distanceMin": 14,
+      "distance": "6.0 mi &middot; ~14 min",
+      "band": "Primary",
+      "rate": "$279 per night · last verified Sep 18 (no live rate returned Sep 26)",
+      "rateVerified": "2026-09-18",
+      "distanceChecked": "2026-09-28",
+      "distanceSrc": "google-routes-api",
+      "bookUrl": false,
+      "amenities": [
+        "All-suite",
+        "Kitchenette",
+        "Free parking"
+      ],
+      "bestValue": false,
+      "drive": "6.0 mi &middot; ~14 min to Ballentine Park Complex",
+      "address": "350 Columbiana Dr Bldg B, Columbia, SC 29212, USA",
+      "bonvoyEligible": false
+    },
+    {
+      "name": "Tru by Hilton Harbison Columbia",
+      "chain": "Hilton",
+      "tier": "pick",
+      "distanceMi": 6.2,
+      "distanceMin": 14,
+      "distance": "6.2 mi &middot; ~14 min",
+      "band": "Primary",
+      "rate": "$296 per night · $592 for two nights",
+      "rateVerified": "2026-09-26",
+      "distanceChecked": "2026-09-28",
+      "distanceSrc": "google-routes-api",
+      "bookUrl": false,
+      "amenities": [
+        "Bright lobby hangout",
+        "Free breakfast",
+        "Keeps Hilton points"
+      ],
+      "bestValue": false,
+      "drive": "6.2 mi &middot; ~14 min to Ballentine Park Complex",
+      "address": "271 Columbiana Dr, Columbia, SC 29212, USA",
+      "bonvoyEligible": false
+    },
+    {
+      "name": "Hyatt Place Columbia/Harbison",
+      "chain": "Hyatt",
+      "tier": "pick",
+      "distanceMi": 7.9,
+      "distanceMin": 11,
+      "distance": "7.9 mi &middot; ~11 min",
+      "band": "Primary",
+      "rate": "$599 per night · two nights $1,198 (rate spike on these dates)",
+      "rateVerified": "2026-09-26",
+      "distanceChecked": "2026-09-28",
+      "distanceSrc": "google-routes-api",
+      "bookUrl": "https://www.booking.com/hotel/us/hyatt-place-columbia-harbison.html",
+      "amenities": [
+        "Suite-style seating",
+        "Free breakfast",
+        "Pool"
+      ],
+      "bestValue": false,
+      "drive": "7.9 mi &middot; ~11 min to Ballentine Park Complex",
+      "address": "1130 Kinley Rd, Irmo, SC 29063, USA",
+      "bonvoyEligible": false
+    }
+  ],
+  "hotelsRankedFor": "Ballentine Park Complex",
+  "hotelsUpdated": "2026-09-28",
+  "breakPlan": {
+    "title": "Between-Games Rhythm",
+    "intro": "Saturday is a 10:30 AM and 3:30 PM double. The match runs about 65 minutes, so you have roughly 3 hours free in between at the same complex — enough to eat properly and cool down without leaving the area.",
+    "steps": [
+      {
+        "label": "Final whistle",
+        "time": "~11:35 AM",
+        "note": "After game #703 on Field 2A."
+      },
+      {
+        "label": "Cool down + shade",
+        "time": "11:35 AM",
+        "note": "Ballentine has shade near the parking side. Change socks and shirts now, not later."
+      },
+      {
+        "label": "Real lunch, real sitting",
+        "time": "12:00 PM",
+        "note": "Eat within 30 minutes of the whistle while muscles are still warm — a proper meal, not snacks. Anywhere in Irmo/Ballentine; the Irmo cluster is 5-10 minutes away."
+      },
+      {
+        "label": "Quiet hour",
+        "time": "1:00 PM",
+        "note": "Shade, feet up, screens down. A 30-45 minute rest in the car with A/C does more for a 9-year-old than any drill."
+      },
+      {
+        "label": "Rehydrate + light warm-up",
+        "time": "2:15 PM",
+        "note": "Water and electrolytes sipped steadily from 1:00 PM — not a bottle all at once."
+      },
+      {
+        "label": "Back for game #706",
+        "time": "2:45 PM",
+        "note": "Field 2B. Parking is busiest about 30 minutes before kickoff."
+      }
+    ]
   },
-  {
-   "name": "MainStay Suites Columbia Harbison",
-   "chain": "Choice",
-   "tier": "pick",
-   "distanceMi": 8.0,
-   "distanceMin": 11,
-   "distance": "8.0 mi &middot; ~11 min",
-   "band": "Primary",
-   "rate": "$279 per night · last verified Sep 18 (no live rate returned Sep 26)",
-   "rateVerified": "2026-09-18",
-   "distanceChecked": "2026-09-26",
-   "distanceSrc": "google-routes-api",
-   "bookUrl": false,
-   "amenities": [
-    "All-suite",
-    "Kitchenette",
-    "Free parking"
-   ],
-   "bestValue": false,
-   "drive": "8.0 mi &middot; ~11 min to Ballentine Park Complex"
-  },
-  {
-   "name": "Tru by Hilton Harbison Columbia",
-   "chain": "Hilton",
-   "tier": "pick",
-   "distanceMi": 8.2,
-   "distanceMin": 11,
-   "distance": "8.2 mi &middot; ~11 min",
-   "band": "Primary",
-   "rate": "$296 per night · $592 for two nights",
-   "rateVerified": "2026-09-26",
-   "distanceChecked": "2026-09-26",
-   "distanceSrc": "google-routes-api",
-   "bookUrl": false,
-   "amenities": [
-    "Bright lobby hangout",
-    "Free breakfast",
-    "Keeps Hilton points"
-   ],
-   "bestValue": false,
-   "drive": "8.2 mi &middot; ~11 min to Ballentine Park Complex"
-  }
- ],
- "hotelsRankedFor": "Ballentine Park Complex",
- "hotelsUpdated": "2026-09-26",
- "breakPlan": {
-  "title": "Between-Games Rhythm",
-  "intro": "Saturday is a 10:30 AM and 3:30 PM double. The match runs about 65 minutes, so you have roughly 3 hours free in between at the same complex — enough to eat properly and cool down without leaving the area.",
-  "steps": [
-   {
-    "label": "Final whistle",
-    "time": "~11:35 AM",
-    "note": "After game #703 on Field 2A."
-   },
-   {
-    "label": "Cool down + shade",
-    "time": "11:35 AM",
-    "note": "Ballentine has shade near the parking side. Change socks and shirts now, not later."
-   },
-   {
-    "label": "Real lunch, real sitting",
-    "time": "12:00 PM",
-    "note": "Eat within 30 minutes of the whistle while muscles are still warm — a proper meal, not snacks. Anywhere in Irmo/Ballentine; the Irmo cluster is 5-10 minutes away."
-   },
-   {
-    "label": "Quiet hour",
-    "time": "1:00 PM",
-    "note": "Shade, feet up, screens down. A 30-45 minute rest in the car with A/C does more for a 9-year-old than any drill."
-   },
-   {
-    "label": "Rehydrate + light warm-up",
-    "time": "2:15 PM",
-    "note": "Water and electrolytes sipped steadily from 1:00 PM — not a bottle all at once."
-   },
-   {
-    "label": "Back for game #706",
-    "time": "2:45 PM",
-    "note": "Field 2B. Parking is busiest about 30 minutes before kickoff."
-   }
-  ]
- },
- "food": [
-  {
-   "name": "Carolina Wings & Ribhouse",
-   "kind": "Chicken Wings Restaurant",
-   "addr": "1000 Marina Rd, Irmo, SC 29063, USA",
-   "mi": 0.3,
-   "min": 2,
-   "rating": 4.4,
-   "reviews": 768,
-   "price": "Moderate",
-   "goodForChildren": true,
-   "why": "Fastest sit-down meal to the fields — the obvious pick if the break is short.",
-   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1240038,-81.2391033&travelmode=driving"
-  },
-  {
-   "name": "Tonella's Pizza Kitchen",
-   "kind": "Restaurant",
-   "addr": "1349 Dutch Fork Rd, Irmo, SC 29063, USA",
-   "mi": 0.3,
-   "min": 2,
-   "rating": 4.5,
-   "reviews": 639,
-   "price": "Moderate",
-   "goodForChildren": true,
-   "why": "Local pizza, quick with kids, easy to order ahead.",
-   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1231064,-81.23609090000001&travelmode=driving"
-  },
-  {
-   "name": "Eggs Up Grill",
-   "kind": "Restaurant",
-   "addr": "1180 Dutch Fork Rd, Irmo, SC 29063, USA",
-   "mi": 1.0,
-   "min": 4,
-   "rating": 4.5,
-   "reviews": 1094,
-   "price": "Moderate",
-   "goodForChildren": true,
-   "why": "Breakfast and brunch — the one that matters before a morning kickoff.",
-   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.127200800000004,-81.22389419999999&travelmode=driving"
-  },
-  {
-   "name": "Chick-fil-A",
-   "kind": "Fast Food Restaurant",
-   "addr": "1007 Dutch Fork Rd, Irmo, SC 29063, USA",
-   "mi": 1.6,
-   "min": 5,
-   "rating": 4.6,
-   "reviews": 3202,
-   "price": "Inexpensive",
-   "goodForChildren": true,
-   "why": "Quickest reliable stop; order in the app on the way.",
-   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1233778,-81.2152725&travelmode=driving"
-  },
-  {
-   "name": "Higher Ground Char House",
-   "kind": "Restaurant",
-   "addr": "211 Chapin Rd, Chapin, SC 29036, USA",
-   "mi": 5.1,
-   "min": 9,
-   "rating": 4.6,
-   "reviews": 1944,
-   "price": "Moderate",
-   "goodForChildren": true,
-   "why": "Local sit-down dinner spot for after the last game of the day.",
-   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.13745,-81.312363&travelmode=driving"
-  }
- ],
- "foodRankedFor": "Ballentine Park",
- "foodUpdated": "2026-09-28",
- "foodNote": "Saturday's gap between games is about 3h10m and Sunday is a single game, so this team has time for a sit-down meal — but the first three are close enough to eat and be back.",
- "foodSrc": "google-places-api + google-routes-api"
+  "food": [
+    {
+      "name": "Carolina Wings & Ribhouse",
+      "kind": "Chicken Wings Restaurant",
+      "addr": "1000 Marina Rd, Irmo, SC 29063, USA",
+      "mi": 0.3,
+      "min": 2,
+      "rating": 4.4,
+      "reviews": 768,
+      "price": "Moderate",
+      "goodForChildren": true,
+      "why": "Fastest sit-down meal to the fields — the obvious pick if the break is short.",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1240038,-81.2391033&travelmode=driving"
+    },
+    {
+      "name": "Tonella's Pizza Kitchen",
+      "kind": "Restaurant",
+      "addr": "1349 Dutch Fork Rd, Irmo, SC 29063, USA",
+      "mi": 0.3,
+      "min": 2,
+      "rating": 4.5,
+      "reviews": 639,
+      "price": "Moderate",
+      "goodForChildren": true,
+      "why": "Local pizza, quick with kids, easy to order ahead.",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1231064,-81.23609090000001&travelmode=driving"
+    },
+    {
+      "name": "Eggs Up Grill",
+      "kind": "Restaurant",
+      "addr": "1180 Dutch Fork Rd, Irmo, SC 29063, USA",
+      "mi": 1.0,
+      "min": 4,
+      "rating": 4.5,
+      "reviews": 1094,
+      "price": "Moderate",
+      "goodForChildren": true,
+      "why": "Breakfast and brunch — the one that matters before a morning kickoff.",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.127200800000004,-81.22389419999999&travelmode=driving"
+    },
+    {
+      "name": "Chick-fil-A",
+      "kind": "Fast Food Restaurant",
+      "addr": "1007 Dutch Fork Rd, Irmo, SC 29063, USA",
+      "mi": 1.6,
+      "min": 5,
+      "rating": 4.6,
+      "reviews": 3202,
+      "price": "Inexpensive",
+      "goodForChildren": true,
+      "why": "Quickest reliable stop; order in the app on the way.",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1233778,-81.2152725&travelmode=driving"
+    },
+    {
+      "name": "Higher Ground Char House",
+      "kind": "Restaurant",
+      "addr": "211 Chapin Rd, Chapin, SC 29036, USA",
+      "mi": 5.1,
+      "min": 9,
+      "rating": 4.6,
+      "reviews": 1944,
+      "price": "Moderate",
+      "goodForChildren": true,
+      "why": "Local sit-down dinner spot for after the last game of the day.",
+      "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.13745,-81.312363&travelmode=driving"
+    }
+  ],
+  "foodRankedFor": "Ballentine Park",
+  "foodUpdated": "2026-09-28",
+  "foodNote": "Saturday's gap between games is about 3h10m and Sunday is a single game, so this team has time for a sit-down meal — but the first three are close enough to eat and be back.",
+  "foodSrc": "google-places-api + google-routes-api"
 }

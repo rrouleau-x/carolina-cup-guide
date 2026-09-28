@@ -543,8 +543,8 @@ function adaptData(d, team){
                 tier:(h.tier||'pick'), amenities:h.amenities||[], note:bandNote};
       });
       if(team.hotelsRankedFor) T.hotelsRankedFor=team.hotelsRankedFor;
-      T.hotelsUpdated='Ranked for '+team.hotelsRankedFor+' · distances and rates verified '
-        + (team.hotelsUpdated||'—') + '. Rates change daily';
+      T.hotelsUpdated='Ranked for '+team.hotelsRankedFor+' · every distance re-measured '
+        + (team.hotelsUpdated||'—') + '; rates as last verified by the provider. Rates change daily';
     }
 
     // per-team restaurants — same rule as hotels: THIS team's own complex decides the list
