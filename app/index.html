@@ -290,6 +290,7 @@
       <a class="fullguide" id="fullGuideLink" href="#"><div class="fg1" id="fg1"></div><div class="fg2" id="fg2"></div><span class="fgb"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/></svg>Open full guide</span></a>
       <div class="section-title"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg>Hotels</div>
       <div id="hotelsSection"></div>
+      <div id="foodSection"></div>
       <div id="breakSection"></div>
       <div id="nearbySection"></div>
       <div id="contactsSection"></div>
@@ -374,6 +375,7 @@ let TOURNAMENT = {
     ]  },
   breakPlan: { title:"Between-Games Rhythm", intro:"Once the schedule posts we will build a suggested reset rhythm around your actual game times.", steps:[] },
   hotels: [],
+  food: [], foodRankedFor: "", foodNote: "", foodUpdated: "",
   hotelsUpdated: "Hotel rates verified Sep 26, 2026. Rates change daily",
   nearby: { groups:[
       { label:"Closest to the venue", items:[
@@ -543,6 +545,15 @@ function adaptData(d, team){
       if(team.hotelsRankedFor) T.hotelsRankedFor=team.hotelsRankedFor;
       T.hotelsUpdated='Ranked for '+team.hotelsRankedFor+' · distances and rates verified '
         + (team.hotelsUpdated||'—') + '. Rates change daily';
+    }
+
+    // per-team restaurants — same rule as hotels: THIS team's own complex decides the list
+    if(team.food && team.food.length){
+      T.food=team.food.map(function(f){ return {name:f.name, kind:f.kind||'', mi:f.mi, min:f.min,
+        addr:f.addr||'', rating:f.rating, reviews:f.reviews, why:f.why||''}; });
+      if(team.foodRankedFor) T.foodRankedFor=team.foodRankedFor;
+      T.foodNote=team.foodNote||'';
+      T.foodUpdated=team.foodUpdated||'';
     }
 
     // per-team venue override — teams can play at different SCUFC complexes
@@ -1132,6 +1143,26 @@ function resetPack(){if(confirm('Reset the packing checklist?')){localStorage.re
 
 
 // ---- HOTELS (from data.json) ----
+function renderFood(){
+  var el=document.getElementById('foodSection'); if(!el) return;
+  var f=T.food||[]; if(!f.length) return;
+  var rows=f.map(function(x,i){
+    return '<div class="ruleline"><b>'+(i+1)+'</b><span><strong>'+x.name+'</strong>'
+      +'<span class="muted"> \u00b7 '+x.kind+'</span>'
+      +'<div class="muted" style="font-size:12.5px;margin-top:2px">'+x.mi+' mi \u00b7 ~'+x.min+' min from '+T.foodRankedFor
+      +(x.rating? (' \u00b7 '+x.rating+'\u2605 ('+x.reviews+' reviews)'):'')+'</div>'
+      +(x.why? ('<div style="font-size:12.5px;margin-top:3px">'+x.why+'</div>'):'')
+      +'</span></div>';
+  }).join('');
+  el.innerHTML='<div class="section-title"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v7a2 2 0 0 0 4 0V3M7 10v11M17 3c-1.5 2-2 3.5-2 5.5 0 1.5.7 2.5 2 2.5v10"/></svg>Where to Eat</div>'
+    +'<div class="card">'
+    +(T.foodNote? ('<div class="muted" style="margin-bottom:10px;font-size:13px;line-height:1.55">'+T.foodNote+'</div>'):'')
+    +rows
+    +'<div class="muted" style="margin-top:10px;font-size:12px;line-height:1.5">Five restaurants for '+T.foodRankedFor
+    +', each distance measured to that complex with the Google Routes API and checked '+T.foodUpdated+'. Ratings are Google's at the time of checking.</div>'
+    +'</div>';
+}
+
 function renderHotels(){
   var el=document.getElementById('hotelsSection'); if(!el) return;
   if(!TOURNAMENT.hotels || !TOURNAMENT.hotels.length){ el.innerHTML=''; return; }
@@ -1156,7 +1187,7 @@ function renderHotels(){
 
 // ---- INIT + LIVE TICK ----
 function renderAll(){
-renderVenue();renderBreak();renderNearby();renderContacts();renderRules();renderChanges();renderWeather();renderPack();renderHotels();renderFullGuide();
+renderVenue();renderBreak();renderNearby();renderContacts();renderRules();renderChanges();renderWeather();renderPack();renderHotels(); renderFood();renderFullGuide();
 }
 renderAll();
 // ---- TEAM SELECTION ----

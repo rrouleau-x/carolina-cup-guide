@@ -1,308 +1,374 @@
 {
-  "slug": "u10-blue",
-  "name": "Savannah United 16/17B Blue",
-  "shortName": "SU 16/17B Blue",
-  "label": "U10 Blue",
-  "ageGroup": "10U",
-  "gender": "Boys",
-  "format": "7v7",
-  "sincTeamId": "GAM1717299",
-  "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM1717299",
-  "accepted": true,
-  "coach": {
-    "name": "Keith Gunn",
-    "role": "Director of Coaching",
-    "phone": "912-856-9442",
-    "email": "keith.gunn@savannahunited.com"
+ "slug": "u10-blue",
+ "name": "Savannah United 16/17B Blue",
+ "shortName": "SU 16/17B Blue",
+ "label": "U10 Blue",
+ "ageGroup": "10U",
+ "gender": "Boys",
+ "format": "7v7",
+ "sincTeamId": "GAM1717299",
+ "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM1717299",
+ "accepted": true,
+ "coach": {
+  "name": "Keith Gunn",
+  "role": "Director of Coaching",
+  "phone": "912-856-9442",
+  "email": "keith.gunn@savannahunited.com"
+ },
+ "manager": {
+  "name": "Victoria",
+  "role": "Parent Team Manager",
+  "phone": "",
+  "email": ""
+ },
+ "games": [
+  {
+   "id": "801",
+   "date": "2026-10-03",
+   "time": "9:15 AM EDT",
+   "opponent": "JIYSC U10 Black Leon",
+   "venue": "Polo Road Park",
+   "field": "Field 7",
+   "arrival": "8:30 AM EDT",
+   "uniform": "TBD - pack both kits",
+   "status": "scheduled",
+   "type": "group",
+   "home": true,
+   "gameNo": "801",
+   "sincGameId": "7443654",
+   "division": "Under 10 Boys Green Division"
   },
-  "manager": {
-    "name": "Victoria",
-    "role": "Parent Team Manager",
-    "phone": "",
-    "email": ""
+  {
+   "id": "805",
+   "date": "2026-10-03",
+   "time": "1:00 PM EDT",
+   "opponent": "BU10 Grey",
+   "venue": "Polo Road Park",
+   "field": "Field 4",
+   "arrival": "12:15 PM EDT",
+   "uniform": "TBD - pack both kits",
+   "status": "scheduled",
+   "type": "group",
+   "home": true,
+   "gameNo": "805",
+   "sincGameId": "7443658",
+   "division": "Under 10 Boys Green Division"
   },
-  "games": [
-    {
-      "id": "801",
-      "date": "2026-10-03",
-      "time": "9:15 AM EDT",
-      "opponent": "JIYSC U10 Black Leon",
-      "venue": "Polo Road Park",
-      "field": "Field 7",
-      "arrival": "8:30 AM EDT",
-      "uniform": "TBD - pack both kits",
-      "status": "scheduled",
-      "type": "group",
-      "home": true,
-      "gameNo": "801",
-      "sincGameId": "7443654",
-      "division": "Under 10 Boys Green Division"
-    },
-    {
-      "id": "805",
-      "date": "2026-10-03",
-      "time": "1:00 PM EDT",
-      "opponent": "BU10 Grey",
-      "venue": "Polo Road Park",
-      "field": "Field 4",
-      "arrival": "12:15 PM EDT",
-      "uniform": "TBD - pack both kits",
-      "status": "scheduled",
-      "type": "group",
-      "home": true,
-      "gameNo": "805",
-      "sincGameId": "7443658",
-      "division": "Under 10 Boys Green Division"
-    },
-    {
-      "id": "808",
-      "date": "2026-10-04",
-      "time": "9:15 AM EDT",
-      "opponent": "SCUFC U10 Boys Amber",
-      "venue": "Polo Road Park",
-      "field": "Field 4",
-      "arrival": "8:30 AM EDT",
-      "uniform": "TBD - pack both kits",
-      "status": "scheduled",
-      "type": "group",
-      "home": false,
-      "gameNo": "808",
-      "sincGameId": "7443661",
-      "division": "Under 10 Boys Green Division"
-    }
-  ],
-  "scheduleStatus": "confirmed",
-  "scheduleExpected": "Published and confirmed. 3 group games: SAT Oct 3 9:15 AM vs JIYSC U10 Black Leon; SAT Oct 3 1:00 PM vs BU10 Grey; SUN Oct 4 9:15 AM vs SCUFC U10 Boys Amber. All at Polo Road Park.",
-  "updates": [
-    {
-      "type": "info",
-      "title": "Lodging cut to the 5 closest verified hotels for Polo Road Park \u2014 rates checked today",
-      "description": "Five hotels, in distance order from Polo Road Park. Live rates pulled from Booking.com on Sep 26, 2026 for Oct 2-4 (two nights, 2 adults + 1 child). Anything we could not re-verify live keeps its last-verified figure and says so.",
-      "time": "Sep 26 \u00b7 3:10 PM",
-      "posted": "Parent Manager",
-      "actionRequired": false
-    },
-    {
-      "type": "info",
-      "title": "Full schedule posted \u2014 3 games, all at Polo Road Park",
-      "description": "SCUFC published the full schedule. Savannah United 16/17B Blue plays 3 group games (Under 10 Boys Green Division): SAT Oct 3 at 9:15 AM vs JIYSC U10 Black Leon (Field 7); SAT Oct 3 at 1:00 PM vs BU10 Grey (Field 4); SUN Oct 4 at 9:15 AM vs SCUFC U10 Boys Amber (Field 4). Arrive 45 minutes before each kickoff. Every game is at Polo Road Park.",
-      "time": "Sep 26 \u00b7 2:00 PM",
-      "posted": "Parent Manager",
-      "actionRequired": false
-    },
-    {
-      "type": "info",
-      "title": "Hotel availability re-checked live \u2014 new list",
-      "description": "We re-ran availability for October 2\u20134, two adults and one child, and published a fresh list. Country Inn & Suites at Harbison is confirmed at $161 per night and is now our top pick. The Hampton Inn Harbison did not come back as available in any search \u2014 we have stopped recommending it. Rates come from a live Hotels.com search scoped to those exact dates; it is a partial result set, so a hotel missing from the list is unknown rather than sold out. Confirm the current price before booking.",
-      "time": "Sep 18 \u00b7 8:00 PM",
-      "posted": "Parent Manager",
-      "actionRequired": true
-    },
-    {
-      "type": "info",
-      "title": "Bracket confirmed \u2014 Under 10 Boys Green Division",
-      "description": "Our bracket is posted and verified. Savannah United 16/17B Blue plays in Under 10 Boys Green Division (8 teams in total, listed in the guide below). Opponents are known; the schedule with times, fields and pairings posts September 26.",
-      "time": "Sep 18 \u00b7 8:00 AM",
-      "posted": "Parent Manager",
-      "actionRequired": false
-    },
-    {
-      "type": "info",
-      "title": "No stay-to-play policy published \u2014 re-checked September 18",
-      "description": "We checked the official tournament page, the SCUFC host site and the registration portal again on September 18, 2026 and still found no housing requirement or approved-hotel list for the Carolina Cup. Our picks are simply the closest options with confirmed availability \u2014 there is no housing portal to book through. We have asked tournament director Tripp Miller to confirm.",
-      "time": "Sep 18 \u00b7 8:00 PM",
-      "posted": "Parent Manager",
-      "actionRequired": false
-    },
-    {
-      "type": "warning",
-      "title": "Online check-in is open \u2014 complete it now",
-      "description": "The accepted team list posted September 14 and all four of our teams are on it. SCUFC's tournament page states that online check-in opened after that, that there is NO on-site check-in, and that teams should start online check-in immediately. This is the one item that cannot be handled at the field. Re-verified September 18, 2026.",
-      "time": "Sep 18 \u00b7 8:00 PM",
-      "posted": "SCUFC",
-      "actionRequired": true
-    },
-    {
-      "type": "info",
-      "title": "Game schedule posts September 26 and the page is offline \u2014 re-checked September 24",
-      "description": "Brackets are done; the full schedule is the last piece. It posts September 26, 2026 with game times, fields and the actual pairings. Until then we do not know which of SCUFC's five complexes our teams play at. We check the official page through the day and publish the new schedule here as soon as games appear, then send the updated guide with a departure time for every family.",
-      "time": "Sep 18 \u00b7 8:00 PM",
-      "posted": "SCUFC",
-      "actionRequired": false
-    },
-    {
-      "type": "info",
-      "title": "2026 rules document still not published \u2014 re-checked September 18",
-      "description": "We checked the official tournament content pages again on September 18, 2026 and found no 2026 Carolina Cup rules document. Game length, mercy rule, substitutions and the tiebreaker order all remain unconfirmed. We will not fill these in from another tournament's rulebook. Rules questions can go to Tournament Director Tripp Miller at tripp@scufc.com.",
-      "time": "Sep 18 \u00b7 8:00 PM",
-      "posted": "Parent Manager",
-      "actionRequired": false
-    }
-  ],
-  "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u10-blue.pdf",
-  "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u10-blue/",
-  "division": "Under 10 Boys Green Division",
-  "bracket": {
-    "division": "Under 10 Boys Green Division",
-    "teamCount": 8,
-    "opponents": [
-      "BU10 Grey (SC Surf)",
-      "Coast 16/17 White",
-      "FCC U10 Boys Navy 2 GT",
-      "JIYSC U10 Black Leon",
-      "SCUFC U10 Boys Amber",
-      "SCUFC U10 Boys Green",
-      "Spartanburg United U10 Boys Green"
-    ],
-    "verified": "2026-09-18",
-    "source": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
-    "note": "Our bracket is confirmed. The tournament lists these teams in our division; the actual game-by-game pairings, times and fields arrive with the full schedule on September 26, 2026."
-  },
-  "venue": {
-    "name": "Polo Road Park",
-    "address": "730 Polo Road",
-    "city": "Columbia, SC 29229",
-    "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=730+Polo+Road%2C+Columbia%2C+SC+29229",
-    "assigned": true
-  },
-  "hotels": [
-    {
-      "name": "Hampton Inn Columbia Northeast\u2013Fort Jackson",
-      "chain": "Hilton",
-      "tier": "pick",
-      "distanceMi": 4.6,
-      "distanceMin": 8,
-      "distance": "4.6 mi &middot; ~8 min",
-      "band": "Primary",
-      "rate": "$337 per night \u00b7 $674 for two nights",
-      "rateVerified": "2026-09-26",
-      "distanceChecked": "2026-09-26",
-      "distanceSrc": "google-routes-api",
-      "bookUrl": false,
-      "amenities": [
-        "Two-queen rooms",
-        "Free hot breakfast",
-        "Keeps Hilton points"
-      ],
-      "bestValue": false,
-      "drive": "4.6 mi &middot; ~8 min to Polo Road Park"
-    },
-    {
-      "name": "La Quinta Inn by Wyndham Columbia SE / Fort Jackson",
-      "chain": "Wyndham",
-      "tier": "pick",
-      "distanceMi": 11.1,
-      "distanceMin": 14,
-      "distance": "11.1 mi &middot; ~14 min",
-      "band": "Primary",
-      "rate": "$194 per night \u00b7 $388 for two nights",
-      "rateVerified": "2026-09-26",
-      "distanceChecked": "2026-09-26",
-      "distanceSrc": "google-routes-api",
-      "bookUrl": true,
-      "amenities": [
-        "Free parking",
-        "Pet friendly",
-        "Breakfast included"
-      ],
-      "bestValue": false,
-      "drive": "11.1 mi &middot; ~14 min to Polo Road Park"
-    },
-    {
-      "name": "Country Inn & Suites by Radisson, Columbia SE (Exchange Blvd)",
-      "chain": "Choice",
-      "tier": "pick",
-      "distanceMi": 11.2,
-      "distanceMin": 14,
-      "distance": "11.2 mi &middot; ~14 min",
-      "band": "Primary",
-      "rate": "$122 per night \u00b7 $244 for two nights",
-      "rateVerified": "2026-09-26",
-      "distanceChecked": "2026-09-26",
-      "distanceSrc": "google-routes-api",
-      "bookUrl": false,
-      "amenities": [
-        "Free breakfast",
-        "Free parking",
-        "Cheapest verified"
-      ],
-      "bestValue": false,
-      "drive": "11.2 mi &middot; ~14 min to Polo Road Park"
-    },
-    {
-      "name": "LivSmart Studios by Hilton Columbia Greystone",
-      "chain": "Hilton",
-      "tier": "pick",
-      "distanceMi": 14.0,
-      "distanceMin": 19,
-      "distance": "14.0 mi &middot; ~19 min",
-      "band": "Primary",
-      "rate": "$238 per night \u00b7 $485 for two nights",
-      "rateVerified": "2026-09-26",
-      "distanceChecked": "2026-09-26",
-      "distanceSrc": "google-routes-api",
-      "bookUrl": false,
-      "amenities": [
-        "Apartment-style suites",
-        "Kitchen in room",
-        "Keeps Hilton points"
-      ],
-      "bestValue": false,
-      "drive": "14.0 mi &middot; ~19 min to Polo Road Park"
-    },
-    {
-      "name": "Hampton Inn Columbia I-26/Harbison Blvd",
-      "chain": "Hilton",
-      "tier": "pick",
-      "distanceMi": 18.1,
-      "distanceMin": 20,
-      "distance": "18.1 mi &middot; ~20 min",
-      "band": "Secondary",
-      "rate": "$309 per night \u00b7 $618 for two nights",
-      "rateVerified": "2026-09-26",
-      "distanceChecked": "2026-09-26",
-      "distanceSrc": "google-routes-api",
-      "bookUrl": false,
-      "amenities": [
-        "Free hot breakfast",
-        "Pool",
-        "Keeps Hilton points"
-      ],
-      "bestValue": false,
-      "drive": "18.1 mi &middot; ~20 min to Polo Road Park"
-    }
-  ],
-  "hotelsRankedFor": "Polo Road Park",
-  "hotelsUpdated": "2026-09-26",
-  "breakPlan": {
-    "title": "Between-Games Rhythm",
-    "intro": "Saturday is a 9:15 AM and 1:00 PM double, both at Polo Road \u2014 about 1 hour 55 minutes between the final whistle and the next report time. Stay on site and treat it as a reset, not a break.",
-    "steps": [
-      {
-        "label": "Final whistle",
-        "time": "~10:20 AM",
-        "note": "After game #801 on Field 7."
-      },
-      {
-        "label": "Eat immediately",
-        "time": "10:30 AM",
-        "note": "Within 30 minutes of the whistle. Pack it \u2014 leaving the complex costs you the whole window."
-      },
-      {
-        "label": "Shade + dry kit",
-        "time": "10:50 AM",
-        "note": "Change shirt and socks, hat off, water and electrolytes."
-      },
-      {
-        "label": "Quiet sit",
-        "time": "11:15 AM",
-        "note": "Sit down properly. Late morning at Polo Road is hotter than the 9:15 kickoff felt."
-      },
-      {
-        "label": "Back for game #805",
-        "time": "12:15 PM",
-        "note": "Field 4. Short warm-up only \u2014 no chasing a ball for 40 minutes."
-      }
-    ]
+  {
+   "id": "808",
+   "date": "2026-10-04",
+   "time": "9:15 AM EDT",
+   "opponent": "SCUFC U10 Boys Amber",
+   "venue": "Polo Road Park",
+   "field": "Field 4",
+   "arrival": "8:30 AM EDT",
+   "uniform": "TBD - pack both kits",
+   "status": "scheduled",
+   "type": "group",
+   "home": false,
+   "gameNo": "808",
+   "sincGameId": "7443661",
+   "division": "Under 10 Boys Green Division"
   }
+ ],
+ "scheduleStatus": "confirmed",
+ "scheduleExpected": "Published and confirmed. 3 group games: SAT Oct 3 9:15 AM vs JIYSC U10 Black Leon; SAT Oct 3 1:00 PM vs BU10 Grey; SUN Oct 4 9:15 AM vs SCUFC U10 Boys Amber. All at Polo Road Park.",
+ "updates": [
+  {
+   "type": "info",
+   "title": "Lodging cut to the 5 closest verified hotels for Polo Road Park — rates checked today",
+   "description": "Five hotels, in distance order from Polo Road Park. Live rates pulled from Booking.com on Sep 26, 2026 for Oct 2-4 (two nights, 2 adults + 1 child). Anything we could not re-verify live keeps its last-verified figure and says so.",
+   "time": "Sep 26 · 3:10 PM",
+   "posted": "Parent Manager",
+   "actionRequired": false
+  },
+  {
+   "type": "info",
+   "title": "Full schedule posted — 3 games, all at Polo Road Park",
+   "description": "SCUFC published the full schedule. Savannah United 16/17B Blue plays 3 group games (Under 10 Boys Green Division): SAT Oct 3 at 9:15 AM vs JIYSC U10 Black Leon (Field 7); SAT Oct 3 at 1:00 PM vs BU10 Grey (Field 4); SUN Oct 4 at 9:15 AM vs SCUFC U10 Boys Amber (Field 4). Arrive 45 minutes before each kickoff. Every game is at Polo Road Park.",
+   "time": "Sep 26 · 2:00 PM",
+   "posted": "Parent Manager",
+   "actionRequired": false
+  },
+  {
+   "type": "info",
+   "title": "Hotel availability re-checked live — new list",
+   "description": "We re-ran availability for October 2–4, two adults and one child, and published a fresh list. Country Inn & Suites at Harbison is confirmed at $161 per night and is now our top pick. The Hampton Inn Harbison did not come back as available in any search — we have stopped recommending it. Rates come from a live Hotels.com search scoped to those exact dates; it is a partial result set, so a hotel missing from the list is unknown rather than sold out. Confirm the current price before booking.",
+   "time": "Sep 18 · 8:00 PM",
+   "posted": "Parent Manager",
+   "actionRequired": true
+  },
+  {
+   "type": "info",
+   "title": "Bracket confirmed — Under 10 Boys Green Division",
+   "description": "Our bracket is posted and verified. Savannah United 16/17B Blue plays in Under 10 Boys Green Division (8 teams in total, listed in the guide below). Opponents are known; the schedule with times, fields and pairings posts September 26.",
+   "time": "Sep 18 · 8:00 AM",
+   "posted": "Parent Manager",
+   "actionRequired": false
+  },
+  {
+   "type": "info",
+   "title": "No stay-to-play policy published — re-checked September 18",
+   "description": "We checked the official tournament page, the SCUFC host site and the registration portal again on September 18, 2026 and still found no housing requirement or approved-hotel list for the Carolina Cup. Our picks are simply the closest options with confirmed availability — there is no housing portal to book through. We have asked tournament director Tripp Miller to confirm.",
+   "time": "Sep 18 · 8:00 PM",
+   "posted": "Parent Manager",
+   "actionRequired": false
+  },
+  {
+   "type": "warning",
+   "title": "Online check-in is open — complete it now",
+   "description": "The accepted team list posted September 14 and all four of our teams are on it. SCUFC's tournament page states that online check-in opened after that, that there is NO on-site check-in, and that teams should start online check-in immediately. This is the one item that cannot be handled at the field. Re-verified September 18, 2026.",
+   "time": "Sep 18 · 8:00 PM",
+   "posted": "SCUFC",
+   "actionRequired": true
+  },
+  {
+   "type": "info",
+   "title": "Game schedule posts September 26 and the page is offline — re-checked September 24",
+   "description": "Brackets are done; the full schedule is the last piece. It posts September 26, 2026 with game times, fields and the actual pairings. Until then we do not know which of SCUFC's five complexes our teams play at. We check the official page through the day and publish the new schedule here as soon as games appear, then send the updated guide with a departure time for every family.",
+   "time": "Sep 18 · 8:00 PM",
+   "posted": "SCUFC",
+   "actionRequired": false
+  },
+  {
+   "type": "info",
+   "title": "2026 rules document still not published — re-checked September 18",
+   "description": "We checked the official tournament content pages again on September 18, 2026 and found no 2026 Carolina Cup rules document. Game length, mercy rule, substitutions and the tiebreaker order all remain unconfirmed. We will not fill these in from another tournament's rulebook. Rules questions can go to Tournament Director Tripp Miller at tripp@scufc.com.",
+   "time": "Sep 18 · 8:00 PM",
+   "posted": "Parent Manager",
+   "actionRequired": false
+  }
+ ],
+ "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u10-blue.pdf",
+ "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u10-blue/",
+ "division": "Under 10 Boys Green Division",
+ "bracket": {
+  "division": "Under 10 Boys Green Division",
+  "teamCount": 8,
+  "opponents": [
+   "BU10 Grey (SC Surf)",
+   "Coast 16/17 White",
+   "FCC U10 Boys Navy 2 GT",
+   "JIYSC U10 Black Leon",
+   "SCUFC U10 Boys Amber",
+   "SCUFC U10 Boys Green",
+   "Spartanburg United U10 Boys Green"
+  ],
+  "verified": "2026-09-18",
+  "source": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
+  "note": "Our bracket is confirmed. The tournament lists these teams in our division; the actual game-by-game pairings, times and fields arrive with the full schedule on September 26, 2026."
+ },
+ "venue": {
+  "name": "Polo Road Park",
+  "address": "730 Polo Road",
+  "city": "Columbia, SC 29229",
+  "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=730+Polo+Road%2C+Columbia%2C+SC+29229",
+  "assigned": true
+ },
+ "hotels": [
+  {
+   "name": "Hampton Inn Columbia Northeast–Fort Jackson",
+   "chain": "Hilton",
+   "tier": "pick",
+   "distanceMi": 4.6,
+   "distanceMin": 8,
+   "distance": "4.6 mi &middot; ~8 min",
+   "band": "Primary",
+   "rate": "$337 per night · $674 for two nights",
+   "rateVerified": "2026-09-26",
+   "distanceChecked": "2026-09-26",
+   "distanceSrc": "google-routes-api",
+   "bookUrl": false,
+   "amenities": [
+    "Two-queen rooms",
+    "Free hot breakfast",
+    "Keeps Hilton points"
+   ],
+   "bestValue": false,
+   "drive": "4.6 mi &middot; ~8 min to Polo Road Park"
+  },
+  {
+   "name": "La Quinta Inn by Wyndham Columbia SE / Fort Jackson",
+   "chain": "Wyndham",
+   "tier": "pick",
+   "distanceMi": 11.1,
+   "distanceMin": 14,
+   "distance": "11.1 mi &middot; ~14 min",
+   "band": "Primary",
+   "rate": "$194 per night · $388 for two nights",
+   "rateVerified": "2026-09-26",
+   "distanceChecked": "2026-09-26",
+   "distanceSrc": "google-routes-api",
+   "bookUrl": true,
+   "amenities": [
+    "Free parking",
+    "Pet friendly",
+    "Breakfast included"
+   ],
+   "bestValue": false,
+   "drive": "11.1 mi &middot; ~14 min to Polo Road Park"
+  },
+  {
+   "name": "Country Inn & Suites by Radisson, Columbia SE (Exchange Blvd)",
+   "chain": "Choice",
+   "tier": "pick",
+   "distanceMi": 11.2,
+   "distanceMin": 14,
+   "distance": "11.2 mi &middot; ~14 min",
+   "band": "Primary",
+   "rate": "$122 per night · $244 for two nights",
+   "rateVerified": "2026-09-26",
+   "distanceChecked": "2026-09-26",
+   "distanceSrc": "google-routes-api",
+   "bookUrl": false,
+   "amenities": [
+    "Free breakfast",
+    "Free parking",
+    "Cheapest verified"
+   ],
+   "bestValue": false,
+   "drive": "11.2 mi &middot; ~14 min to Polo Road Park"
+  },
+  {
+   "name": "LivSmart Studios by Hilton Columbia Greystone",
+   "chain": "Hilton",
+   "tier": "pick",
+   "distanceMi": 14.0,
+   "distanceMin": 19,
+   "distance": "14.0 mi &middot; ~19 min",
+   "band": "Primary",
+   "rate": "$238 per night · $485 for two nights",
+   "rateVerified": "2026-09-26",
+   "distanceChecked": "2026-09-26",
+   "distanceSrc": "google-routes-api",
+   "bookUrl": false,
+   "amenities": [
+    "Apartment-style suites",
+    "Kitchen in room",
+    "Keeps Hilton points"
+   ],
+   "bestValue": false,
+   "drive": "14.0 mi &middot; ~19 min to Polo Road Park"
+  },
+  {
+   "name": "Hampton Inn Columbia I-26/Harbison Blvd",
+   "chain": "Hilton",
+   "tier": "pick",
+   "distanceMi": 18.1,
+   "distanceMin": 20,
+   "distance": "18.1 mi &middot; ~20 min",
+   "band": "Secondary",
+   "rate": "$309 per night · $618 for two nights",
+   "rateVerified": "2026-09-26",
+   "distanceChecked": "2026-09-26",
+   "distanceSrc": "google-routes-api",
+   "bookUrl": false,
+   "amenities": [
+    "Free hot breakfast",
+    "Pool",
+    "Keeps Hilton points"
+   ],
+   "bestValue": false,
+   "drive": "18.1 mi &middot; ~20 min to Polo Road Park"
+  }
+ ],
+ "hotelsRankedFor": "Polo Road Park",
+ "hotelsUpdated": "2026-09-26",
+ "breakPlan": {
+  "title": "Between-Games Rhythm",
+  "intro": "Saturday is a 9:15 AM and 1:00 PM double, both at Polo Road — about 1 hour 55 minutes between the final whistle and the next report time. Stay on site and treat it as a reset, not a break.",
+  "steps": [
+   {
+    "label": "Final whistle",
+    "time": "~10:20 AM",
+    "note": "After game #801 on Field 7."
+   },
+   {
+    "label": "Eat immediately",
+    "time": "10:30 AM",
+    "note": "Within 30 minutes of the whistle. Pack it — leaving the complex costs you the whole window."
+   },
+   {
+    "label": "Shade + dry kit",
+    "time": "10:50 AM",
+    "note": "Change shirt and socks, hat off, water and electrolytes."
+   },
+   {
+    "label": "Quiet sit",
+    "time": "11:15 AM",
+    "note": "Sit down properly. Late morning at Polo Road is hotter than the 9:15 kickoff felt."
+   },
+   {
+    "label": "Back for game #805",
+    "time": "12:15 PM",
+    "note": "Field 4. Short warm-up only — no chasing a ball for 40 minutes."
+   }
+  ]
+ },
+ "food": [
+  {
+   "name": "Luca's Wood Fire Pizza & Restaurant",
+   "kind": "Pizza Restaurant",
+   "addr": "843 Polo Rd suite 4, Columbia, SC 29223, USA",
+   "mi": 0.3,
+   "min": 1,
+   "rating": 4.6,
+   "reviews": 559,
+   "price": "Moderate",
+   "goodForChildren": true,
+   "why": "Closest food to the park — wood-fired pizza, walk-in friendly."
+  },
+  {
+   "name": "Little Pigs Barbecue",
+   "kind": "Barbecue Restaurant",
+   "addr": "4927 Alpine Rd, Columbia, SC 29223, USA",
+   "mi": 2.7,
+   "min": 6,
+   "rating": 4.5,
+   "reviews": 3147,
+   "price": "Moderate",
+   "goodForChildren": true,
+   "why": "South Carolina barbecue institution; fast counter service, big local favourite."
+  },
+  {
+   "name": "Pho Viet",
+   "kind": "Vietnamese Restaurant",
+   "addr": "9308 Two Notch Rd, Columbia, SC 29223, USA",
+   "mi": 2.9,
+   "min": 5,
+   "rating": 4.2,
+   "reviews": 901,
+   "price": "Inexpensive",
+   "goodForChildren": true,
+   "why": "Quick noodle bowls, not fried — good between games and easy on the stomach."
+  },
+  {
+   "name": "J.R. Cash's Grill and Bar",
+   "kind": "Bar & Grill",
+   "addr": "111 Sparkleberry Crossing Rd #11, Columbia, SC 29229, USA",
+   "mi": 2.9,
+   "min": 7,
+   "rating": 4.3,
+   "reviews": 2379,
+   "price": "Moderate",
+   "goodForChildren": true,
+   "why": "Family grill for a sit-down meal when there is time to spare."
+  },
+  {
+   "name": "Tacos Nayarit",
+   "kind": "Mexican Restaurant",
+   "addr": "1531 Percival Rd, Columbia, SC 29223, USA",
+   "mi": 4.4,
+   "min": 8,
+   "rating": 4.6,
+   "reviews": 3217,
+   "price": "Inexpensive",
+   "goodForChildren": true,
+   "why": "Best-reviewed Mexican near the park; quick, cheap, kid-friendly."
+  }
+ ],
+ "foodRankedFor": "Polo Road Park",
+ "foodUpdated": "2026-09-28",
+ "foodNote": "The gap between Saturday games is about 1h55m, so keep it close and quick: Luca's is 0.3 mi from the gate and Little Pigs is counter service.",
+ "foodSrc": "google-places-api + google-routes-api"
 }
