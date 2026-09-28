@@ -398,7 +398,7 @@ let TOURNAMENT = {
     { name:"Tournament HQ", role:"SCUFC · Tripp Miller", phone:"8774572832", initial:"H" },
     { name:"Team Updates", role:"PlayMetrics", url:"https://playmetrics.com", initial:"P" }
   ],
-  rules:{ quick:[], full:[], tiebreakers:[], tiebreakersPending:"", fullRulesUrl:"" },
+  rules:{ quick:[], full:[], tiebreakers:[], tiebreakersPending:"", tiebreakProcess:"", fullRulesUrl:"", standingsUrl:"" },
   packing:{ alert:"Pack both kits. Also pack a warm layer — early October mornings run about 63°F.", groups:[] },
   needs:{
     before:[["Book hotel","rates: checked Sep 26"],["Save the guide PDF","works offline"],["Charge phones","both days"],["Pack both kits","+ warm layer"]],
@@ -573,6 +573,8 @@ function adaptData(d, team){
       }
       if(Array.isArray(d.rules.tiebreakers)) T.rules.tiebreakers=d.rules.tiebreakers;
       if(d.rules.tiebreakersPending) T.rules.tiebreakersPending=d.rules.tiebreakersPending;
+      if(d.rules.tiebreakProcess) T.rules.tiebreakProcess=d.rules.tiebreakProcess;
+      if(d.rules.standingsLink) T.rules.standingsUrl=d.rules.standingsLink;
       if(d.rules.fullLink) T.rules.fullRulesUrl=d.rules.fullLink;
     }
 
@@ -1027,7 +1029,7 @@ function renderVenue(){
     document.getElementById('venueInfoCard').innerHTML='<div class="card"><div class="label" style="margin-bottom:6px">Parking &amp; Amenities</div><p class="small" style="margin:0 0 10px;line-height:1.55">'+v.parking+'</p><div class="amenities">'+amen0+'</div><p class="small muted" style="margin:12px 0 0">'+v.bring+'</p></div>';
     return;
   }
-  document.getElementById('venueCard').innerHTML='<div class="card" style="border-top:4px solid var(--su)"><div class="label">'+v.name+'</div><div style="font-size:16px;font-weight:700;margin:2px 0 2px">'+v.address+'</div><div class="muted" style="margin-bottom:12px">'+v.city+'</div><a class="btn" style="flex-direction:row;font-size:14px;gap:8px" href="'+v.mapsUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Directions</a>'+((v.assigned===false)?'<div style="margin-top:12px;padding:10px 12px;background:var(--amber-bg);border-radius:10px"><div style="font-size:12.5px;font-weight:700;color:var(--amber);line-height:1.5">Complex not yet assigned. The Carolina Cup is played across five SCUFC complexes — ours is confirmed when the schedule posts on Sep 26.</div><div style="margin-top:8px"><a href="'+TOURNAMENT.rules.fullRulesUrl+'" target="_blank" rel="noopener" style="font-size:12px;font-weight:800;color:var(--link)">Official tournament page &rsaquo;</a></div></div>':'')+'</div>';
+  document.getElementById('venueCard').innerHTML='<div class="card" style="border-top:4px solid var(--su)"><div class="label">'+v.name+'</div><div style="font-size:16px;font-weight:700;margin:2px 0 2px">'+v.address+'</div><div class="muted" style="margin-bottom:12px">'+v.city+'</div><a class="btn" style="flex-direction:row;font-size:14px;gap:8px" href="'+v.mapsUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Directions</a>'+((v.assigned===false)?'<div style="margin-top:12px;padding:10px 12px;background:var(--amber-bg);border-radius:10px"><div style="font-size:12.5px;font-weight:700;color:var(--amber);line-height:1.5">Complex not yet assigned. The Carolina Cup is played across five SCUFC complexes — ours is confirmed when the schedule posts on Sep 26.</div><div style="margin-top:8px"><a href="'+TOURNAMENT.rules.fullRulesUrl+'" target="_blank" rel="noopener" style="font-size:12px;font-weight:800;color:var(--link)">Tournament info (SincSports) &rsaquo;</a></div></div>':'')+'</div>';
   // fields grid — only render once fields are actually assigned by the tournament
   const hasFields=(v.fieldCount>0 && v.ourFields && v.ourFields.length>0);
   let grid='';
@@ -1072,8 +1074,13 @@ function renderContacts(){
 function renderRules(){
   const quick=TOURNAMENT.rules.quick.map(q=>'<div class="qr"><div class="qrv num">'+q.v+'</div><div class="qrl">'+q.l+'</div></div>').join('');
   const full=TOURNAMENT.rules.full.map(r=>'<div class="ruleline"><b>'+r.k+'</b><span>'+r.v+'</span></div>').join('');
-  const tb=TOURNAMENT.rules.tiebreakers.map((t,i)=>'<div class="ruleline"><b>'+(i+1)+'</b><span>'+t+'</span></div>').join('');
-  document.getElementById('rulesSection').innerHTML='<div class="section-title"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M12 21 8 9l4-6 4 6z"/></svg>Parents Should Know</div><div class="card"><div class="quickrules">'+quick+'</div><details class="acc"><summary>View all tournament rules <span>＋</span></summary><div class="accbody">'+full+'</div></details><details class="acc"><summary>Tiebreakers — in order <span>＋</span></summary><div class="accbody">'+tb+'</div></details><a class="btn ghost" style="margin-top:12px;flex-direction:row;gap:7px" href="'+TOURNAMENT.rules.fullRulesUrl+'" target="_blank" rel="noopener">Official rules document</a></div>';
+  const tb=TOURNAMENT.rules.tiebreakers.length
+    ? TOURNAMENT.rules.tiebreakers.map((t,i)=>'<div class="ruleline"><b>'+(i+1)+'</b><span>'+t+'</span></div>').join('')
+    : '<div class="ruleline"><b>&mdash;</b><span>'+(TOURNAMENT.rules.tiebreakersPending||'Not published by the tournament yet.')+'</span></div>';
+  const tbNote=TOURNAMENT.rules.tiebreakProcess
+    ? '<div style="margin:12px 0 0;padding:10px 12px;background:var(--amber-bg);border-radius:10px"><div style="font-size:12px;font-weight:700;color:var(--amber);line-height:1.55">What the event does say</div><div style="font-size:12.5px;color:var(--text);line-height:1.6;margin-top:4px">'+TOURNAMENT.rules.tiebreakProcess+'</div></div>'
+    : '';
+  document.getElementById('rulesSection').innerHTML='<div class="section-title"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M12 21 8 9l4-6 4 6z"/></svg>Parents Should Know</div><div class="card"><div class="quickrules">'+quick+'</div><details class="acc"><summary>View all tournament rules <span>＋</span></summary><div class="accbody">'+full+'</div></details><details class="acc"><summary>Tiebreakers — in order <span>＋</span></summary><div class="accbody">'+tb+'</div></details>'+tbNote+'<a class="btn ghost" style="margin-top:12px;flex-direction:row;gap:7px" href="'+TOURNAMENT.rules.fullRulesUrl+'" target="_blank" rel="noopener">Tournament info &amp; rules (SincSports)</a>'+((TOURNAMENT.rules.standingsUrl)?'<a class="btn ghost" style="margin-top:8px;flex-direction:row;gap:7px" href="'+TOURNAMENT.rules.standingsUrl+'" target="_blank" rel="noopener">Live standings &amp; tiebreak page</a>':'')+'</div>';
 }
 function renderChanges(){
   const rows=TOURNAMENT.changes.map(c=>'<p style="margin:0 0 6px"><b>'+c.k+':</b> '+c.v+'</p>').join('');
