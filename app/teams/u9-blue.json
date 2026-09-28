@@ -316,7 +316,8 @@
    "reviews": 1094,
    "price": "Moderate",
    "goodForChildren": true,
-   "why": "Breakfast and brunch — the one that matters before a morning kickoff."
+   "why": "Breakfast and brunch — the one that matters before a morning kickoff.",
+   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.127200800000004,-81.22389419999999&travelmode=driving"
   },
   {
    "name": "Chick-fil-A",
@@ -328,7 +329,8 @@
    "reviews": 3202,
    "price": "Inexpensive",
    "goodForChildren": true,
-   "why": "Quickest reliable stop; order in the app on the way."
+   "why": "Quickest reliable stop; order in the app on the way.",
+   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1233778,-81.2152725&travelmode=driving"
   },
   {
    "name": "Tonella's Pizza Kitchen",
@@ -340,7 +342,8 @@
    "reviews": 639,
    "price": "Moderate",
    "goodForChildren": true,
-   "why": "Local pizza, quick with kids, easy to order ahead."
+   "why": "Local pizza, quick with kids, easy to order ahead.",
+   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1231064,-81.23609090000001&travelmode=driving"
   },
   {
    "name": "Carolina Wings & Ribhouse",
@@ -352,7 +355,8 @@
    "reviews": 768,
    "price": "Moderate",
    "goodForChildren": true,
-   "why": "Fastest sit-down meal to the fields — the obvious pick if the break is short."
+   "why": "Fastest sit-down meal to the fields — the obvious pick if the break is short.",
+   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1240038,-81.2391033&travelmode=driving"
   },
   {
    "name": "Konnichiwa of Irmo, SC",
@@ -364,7 +368,8 @@
    "reviews": 517,
    "price": "Moderate",
    "goodForChildren": true,
-   "why": "Japanese/hibachi — the change-of-pace dinner, kids usually like the show."
+   "why": "Japanese/hibachi — the change-of-pace dinner, kids usually like the show.",
+   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.0974637,-81.1618543&travelmode=driving"
   }
  ],
  "foodRankedFor": "Dutch Fork High School",

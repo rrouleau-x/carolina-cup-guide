@@ -319,7 +319,8 @@
    "reviews": 559,
    "price": "Moderate",
    "goodForChildren": true,
-   "why": "Closest food to the park — wood-fired pizza, walk-in friendly."
+   "why": "Closest food to the park — wood-fired pizza, walk-in friendly.",
+   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.083478899999996,-80.8898035&travelmode=driving"
   },
   {
    "name": "Little Pigs Barbecue",
@@ -331,7 +332,8 @@
    "reviews": 3147,
    "price": "Moderate",
    "goodForChildren": true,
-   "why": "South Carolina barbecue institution; fast counter service, big local favourite."
+   "why": "South Carolina barbecue institution; fast counter service, big local favourite.",
+   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.0646021,-80.90697440000001&travelmode=driving"
   },
   {
    "name": "J.R. Cash's Grill and Bar",
@@ -343,7 +345,8 @@
    "reviews": 2379,
    "price": "Moderate",
    "goodForChildren": true,
-   "why": "Family grill for a sit-down meal when there is time to spare."
+   "why": "Family grill for a sit-down meal when there is time to spare.",
+   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.10144150000001,-80.8549661&travelmode=driving"
   },
   {
    "name": "Tacos Nayarit",
@@ -355,7 +358,8 @@
    "reviews": 3217,
    "price": "Inexpensive",
    "goodForChildren": true,
-   "why": "Best-reviewed Mexican near the park; quick, cheap, kid-friendly."
+   "why": "Best-reviewed Mexican near the park; quick, cheap, kid-friendly.",
+   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.0473761,-80.9305481&travelmode=driving"
   },
   {
    "name": "Pho Viet",
@@ -367,7 +371,8 @@
    "reviews": 901,
    "price": "Inexpensive",
    "goodForChildren": true,
-   "why": "Quick noodle bowls, not fried — good between games and easy on the stomach."
+   "why": "Quick noodle bowls, not fried — good between games and easy on the stomach.",
+   "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.0974797,-80.9202985&travelmode=driving"
   }
  ],
  "foodRankedFor": "Polo Road Park",
