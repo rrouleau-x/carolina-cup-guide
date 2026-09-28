@@ -1149,17 +1149,17 @@ function renderFood(){
   var rows=f.map(function(x,i){
     return '<div class="ruleline"><b>'+(i+1)+'</b><span><strong>'+x.name+'</strong>'
       +'<span class="muted"> \u00b7 '+x.kind+'</span>'
-      +'<div class="muted" style="font-size:12.5px;margin-top:2px">'+x.mi+' mi \u00b7 ~'+x.min+' min from '+TOURNAMENTOURNAMENT.foodRankedFor
+      +'<div class="muted" style="font-size:12.5px;margin-top:2px">'+x.mi+' mi \u00b7 ~'+x.min+' min from '+TOURNAMENT.foodRankedFor
       +(x.rating? (' \u00b7 '+x.rating+'\u2605 ('+x.reviews+' reviews)'):'')+'</div>'
       +(x.why? ('<div style="font-size:12.5px;margin-top:3px">'+x.why+'</div>'):'')
       +'</span></div>';
   }).join('');
   el.innerHTML='<div class="section-title"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v7a2 2 0 0 0 4 0V3M7 10v11M17 3c-1.5 2-2 3.5-2 5.5 0 1.5.7 2.5 2 2.5v10"/></svg>Where to Eat</div>'
     +'<div class="card">'
-    +(TOURNAMENTOURNAMENT.foodNote? ('<div class="muted" style="margin-bottom:10px;font-size:13px;line-height:1.55">'+TOURNAMENTOURNAMENT.foodNote+'</div>'):'')
+    +(TOURNAMENT.foodNote? ('<div class="muted" style="margin-bottom:10px;font-size:13px;line-height:1.55">'+TOURNAMENT.foodNote+'</div>'):'')
     +rows
-    +'<div class="muted" style="margin-top:10px;font-size:12px;line-height:1.5">Five restaurants for '+TOURNAMENTOURNAMENT.foodRankedFor
-    +', each distance measured to that complex with the Google Routes API and checked '+TOURNAMENTOURNAMENT.foodUpdated+'. Ratings are Google&#39;s at the time of checking.</div>'
+    +'<div class="muted" style="margin-top:10px;font-size:12px;line-height:1.5">Five restaurants for '+TOURNAMENT.foodRankedFor
+    +', each distance measured to that complex with the Google Routes API and checked '+TOURNAMENT.foodUpdated+'. Ratings are Google&#39;s at the time of checking.</div>'
     +'</div>';
 }
 
