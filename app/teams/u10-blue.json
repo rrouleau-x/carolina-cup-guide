@@ -161,8 +161,8 @@
  "venue": {
   "name": "Polo Road Park",
   "address": "730 Polo Road",
-  "city": "Columbia, SC 29229",
-  "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=730+Polo+Road%2C+Columbia%2C+SC+29229",
+  "city": "Columbia, SC 29223",
+  "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=730+Polo+Road%2C+Columbia%2C+SC+29223",
   "assigned": true
  },
  "hotels": [
