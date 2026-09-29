@@ -15,7 +15,7 @@
       "start": "2026-10-02",
       "end": "2026-10-04"
     },
-    "build": "v53"
+    "build": "v54"
   },
   "venue": {
     "assigned": false,
@@ -989,14 +989,14 @@
       {
         "name": "Carson Gray",
         "role": "Coach",
-        "phone": "770-757-1617",
-        "email": "carson.gray@savannahunited.com"
+        "phone": "912-856-9442",
+        "email": "carsonzgray@gmail.com"
       },
       {
         "name": "Mitchell Heath",
         "role": "Coach",
-        "phone": "859-445-2028",
-        "email": "mitchell.heath@savannahunited.com"
+        "phone": "",
+        "email": "m.heath@savannahunited.com"
       }
     ],
     "tournamentDirector": {
