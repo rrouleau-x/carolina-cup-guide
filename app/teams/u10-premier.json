@@ -388,5 +388,94 @@
   "foodRankedFor": "Polo Road Park",
   "foodUpdated": "2026-09-28",
   "foodNote": "Saturday's break is about 4h25m, the longest of the four teams, so the sit-down options are realistic — Luca's is a minute from the park if you want the fast version instead.",
-  "foodSrc": "google-places-api + google-routes-api"
+  "foodSrc": "google-places-api + google-routes-api",
+  "nearby": {
+    "rankedFor": "Polo Road Park (730 Polo Road)",
+    "checked": "2026-09-28",
+    "src": "Google Places (POI + rating) and Google Routes (drive distance) from this team's own complex",
+    "groups": [
+      {
+        "label": "Urgent care",
+        "name": "Novant Health Urgent Care – Northeast (Formerly Doctors Care)",
+        "address": "10040 Two Notch Rd, Columbia, SC 29223",
+        "phone": "(803) 788-1153",
+        "mi": 2.5,
+        "min": 5,
+        "rating": 4.4,
+        "reviews": 877,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1135348,-80.8903115&travelmode=driving",
+        "note": "Walk-in clinic on Two Notch Rd with X-ray on site."
+      },
+      {
+        "label": "Pharmacy",
+        "name": "Walmart Pharmacy",
+        "address": "10060 Two Notch Rd, Columbia, SC 29223",
+        "phone": "(803) 699-1100",
+        "mi": 3.0,
+        "min": 7,
+        "rating": 3.8,
+        "reviews": 28,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1103281,-80.8865775&travelmode=driving",
+        "note": "Walmart Pharmacy inside the Two Notch Rd store; Walgreens (9001 Two Notch Rd) is 3.6 mi."
+      },
+      {
+        "label": "Grocery",
+        "name": "Publix Super Market at North Pointe Shopping Center",
+        "address": "10128 Two Notch Rd, Columbia, SC 29223",
+        "phone": "(803) 788-9484",
+        "mi": 3.0,
+        "min": 7,
+        "rating": 4.5,
+        "reviews": 1686,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1144652,-80.884605&travelmode=driving"
+      },
+      {
+        "label": "Big-box store",
+        "name": "Walmart Supercenter",
+        "address": "10060 Two Notch Rd, Columbia, SC 29223",
+        "phone": "(803) 736-8123",
+        "mi": 3.0,
+        "min": 7,
+        "rating": 3.8,
+        "reviews": 5857,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1103281,-80.8865775&travelmode=driving",
+        "note": "Walmart also covers pharmacy and sporting-goods basics."
+      },
+      {
+        "label": "Coffee",
+        "name": "Dutch Bros Coffee",
+        "address": "9349 Two Notch Rd, Columbia, SC 29223",
+        "phone": "(877) 899-2767",
+        "mi": 2.9,
+        "min": 5,
+        "rating": 4,
+        "reviews": 89,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.098129,-80.920907&travelmode=driving"
+      },
+      {
+        "label": "Sporting goods",
+        "name": "Academy Sports + Outdoors",
+        "address": "730 Fashion Dr, Columbia, SC 29229",
+        "phone": "(803) 462-6340",
+        "mi": 4.3,
+        "min": 10,
+        "rating": 4.3,
+        "reviews": 2024,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.126426699999996,-80.8776194&travelmode=driving",
+        "note": "Full sporting-goods store across from the Village at Sandhill."
+      },
+      {
+        "label": "Hospital ER",
+        "name": "MUSC Health Columbia Medical Center Northeast",
+        "address": "120 Gateway Corporate Blvd, Columbia, SC 29203",
+        "phone": "(803) 865-4500",
+        "mi": 6.3,
+        "min": 10,
+        "rating": 2.8,
+        "reviews": 221,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.103922499999996,-80.9583358&travelmode=driving",
+        "note": "MUSC Northeast emergency department - use this, not an urgent care, for anything serious."
+      }
+    ]
+  }
 }

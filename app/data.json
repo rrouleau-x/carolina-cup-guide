@@ -1055,37 +1055,49 @@
     ]
   },
   "nearby": {
+    "note": "Club-wide fallback only. Every team in this guide carries its own per-complex list; these figures are measured from Ballentine Park and are NOT valid for a team playing at another complex.",
+    "checked": "2026-09-28",
     "urgentCare": {
+      "name": "Prisma Health Urgent Care - Ballentine",
+      "address": "1085 Dutch Fork Rd, Irmo, SC 29063",
+      "phone": "(803) 971-5410",
+      "drive": "1.2 mi from Ballentine Park",
+      "maps": "https://www.google.com/maps/dir/?api=1&destination=34.1247948,-81.22041709999999&travelmode=driving"
+    },
+    "pharmacy": {
       "name": "CVS Pharmacy",
-      "address": "Closest pharmacy to the venue",
-      "phone": "",
-      "drive": "0.3 mi from Ballentine Park",
-      "maps": "https://www.google.com/maps/search/pharmacy+near+Ballentine+Park+Irmo+SC"
+      "address": "1330 Dutch Fork Rd, Irmo, SC 29063",
+      "phone": "(803) 749-1666",
+      "drive": "0.2 mi from Ballentine Park",
+      "maps": "https://www.google.com/maps/dir/?api=1&destination=34.124881300000006,-81.2359663&travelmode=driving"
     },
     "target": {
       "name": "Walmart Supercenter",
-      "address": "1180 Dutch Fork Road, Irmo, SC",
-      "drive": "1.1 mi from the venue",
-      "maps": "https://www.google.com/maps/search/Walmart+1180+Dutch+Fork+Road+Irmo+SC"
-    },
-    "dicks": {
-      "name": "Dick's Sporting Goods",
-      "address": "1110 Bower Parkway, Columbia, SC",
-      "drive": "6.2 mi from the venue",
-      "maps": "https://www.google.com/maps/search/Dicks+Sporting+Goods+1110+Bower+Parkway+Columbia+SC"
-    },
-    "pharmacy": {
-      "name": "Publix",
-      "address": "2732 North Lake Drive, Columbia, SC",
-      "phone": "",
-      "drive": "2.3 mi from the venue",
-      "maps": "https://www.google.com/maps/search/Publix+2732+North+Lake+Drive+Columbia+SC"
+      "address": "1180 Dutch Fork Rd, Irmo, SC 29063",
+      "phone": "(803) 781-7775",
+      "drive": "1.0 mi from Ballentine Park",
+      "maps": "https://www.google.com/maps/dir/?api=1&destination=34.1272515,-81.2204186&travelmode=driving"
     },
     "coffee": {
+      "name": "Starbucks Coffee Company",
+      "address": "1185 Dutch Fork Rd, Irmo, SC 29063",
+      "phone": "(803) 233-4992",
+      "drive": "0.8 mi from Ballentine Park",
+      "maps": "https://www.google.com/maps/dir/?api=1&destination=34.125667,-81.2250756&travelmode=driving"
+    },
+    "dicks": {
       "name": "Academy Sports + Outdoors",
-      "address": "Columbia, SC",
-      "drive": "6.2 mi from the venue",
-      "maps": "https://www.google.com/maps/search/Academy+Sports+Outdoors+Columbia+SC"
+      "address": "237 Park Terrace Dr, Columbia, SC 29212",
+      "phone": "(803) 749-5255",
+      "drive": "8.7 mi from Ballentine Park",
+      "maps": "https://www.google.com/maps/dir/?api=1&destination=34.0712,-81.1543483&travelmode=driving"
+    },
+    "er": {
+      "name": "Prisma Health Baptist Parkridge Hospital",
+      "address": "400 Palmetto Health Pkwy, Columbia, SC 29212",
+      "phone": "(803) 907-7000",
+      "drive": "7.8 mi from Ballentine Park",
+      "maps": "https://www.google.com/maps/dir/?api=1&destination=34.0873276,-81.1600112&travelmode=driving"
     }
   },
   "offline": {

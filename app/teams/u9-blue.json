@@ -385,5 +385,94 @@
   "foodRankedFor": "Dutch Fork High School",
   "foodUpdated": "2026-09-28",
   "foodNote": "Saturday starts at 8:00 AM and the gap between games is about 1h55m — breakfast before the first whistle and something quick in between. Nothing here is more than a 10-minute drive of Dutch Fork.",
-  "foodSrc": "google-places-api + google-routes-api"
+  "foodSrc": "google-places-api + google-routes-api",
+  "nearby": {
+    "rankedFor": "Dutch Fork High School (1400 Old Tamah Road)",
+    "checked": "2026-09-28",
+    "src": "Google Places (POI + rating) and Google Routes (drive distance) from this team's own complex",
+    "groups": [
+      {
+        "label": "Urgent care",
+        "name": "Prisma Health Urgent Care - Ballentine",
+        "address": "1085 Dutch Fork Rd, Irmo, SC 29063",
+        "phone": "(803) 971-5410",
+        "mi": 2.8,
+        "min": 6,
+        "rating": 4.8,
+        "reviews": 385,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1247948,-81.22041709999999&travelmode=driving",
+        "note": "Walk-in clinic with X-ray; nearest to the complex."
+      },
+      {
+        "label": "Pharmacy",
+        "name": "CVS Pharmacy",
+        "address": "1330 Dutch Fork Rd, Irmo, SC 29063",
+        "phone": "(803) 749-1666",
+        "mi": 3.7,
+        "min": 8,
+        "rating": 3.6,
+        "reviews": 40,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.124881300000006,-81.2359663&travelmode=driving",
+        "note": "Open late; Walgreens is 0.3 mi further up Dutch Fork Rd."
+      },
+      {
+        "label": "Grocery",
+        "name": "Food Lion",
+        "address": "1339 Dutch Fork Rd, Ballentine, SC 29002",
+        "phone": "(803) 749-1600",
+        "mi": 3.9,
+        "min": 9,
+        "rating": 4.4,
+        "reviews": 326,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1229472,-81.2355169&travelmode=driving"
+      },
+      {
+        "label": "Big-box store",
+        "name": "Walmart Supercenter",
+        "address": "1180 Dutch Fork Rd, Irmo, SC 29063",
+        "phone": "(803) 781-7775",
+        "mi": 3.1,
+        "min": 7,
+        "rating": 4,
+        "reviews": 3601,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.1272515,-81.2204186&travelmode=driving",
+        "note": "Walmart also covers pharmacy and sporting-goods basics."
+      },
+      {
+        "label": "Coffee",
+        "name": "Starbucks Coffee Company",
+        "address": "1185 Dutch Fork Rd, Irmo, SC 29063",
+        "phone": "(803) 233-4992",
+        "mi": 3.7,
+        "min": 8,
+        "rating": 4.3,
+        "reviews": 91,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.125667,-81.2250756&travelmode=driving"
+      },
+      {
+        "label": "Sporting goods",
+        "name": "Academy Sports + Outdoors",
+        "address": "237 Park Terrace Dr, Columbia, SC 29212",
+        "phone": "(803) 749-5255",
+        "mi": 8.4,
+        "min": 14,
+        "rating": 4.4,
+        "reviews": 2615,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.0712,-81.1543483&travelmode=driving",
+        "note": "Closest full sporting-goods store if a boot, ball or shin guard is missing."
+      },
+      {
+        "label": "Hospital ER",
+        "name": "Prisma Health Baptist Parkridge Hospital",
+        "address": "400 Palmetto Health Pkwy, Columbia, SC 29212",
+        "phone": "(803) 907-7000",
+        "mi": 6.3,
+        "min": 11,
+        "rating": 2.8,
+        "reviews": 482,
+        "mapsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.0873276,-81.1600112&travelmode=driving",
+        "note": "Full emergency department - use this, not an urgent care, for anything serious."
+      }
+    ]
+  }
 }

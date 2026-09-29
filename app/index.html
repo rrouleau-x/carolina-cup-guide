@@ -564,16 +564,28 @@ function adaptData(d, team){
       }
     }
 
-    // nearby
-    if(d.nearby){
+    // nearby - each team carries its OWN list, measured from its own complex
+    if(team.nearby && team.nearby.groups && team.nearby.groups.length){
+      T.nearby.groups=[{ label:'Closest to '+(team.nearby.rankedFor||'this complex'),
+        items: team.nearby.groups.map(function(i){
+          return { name:i.name+' \u00b7 '+i.label,
+                   note:(i.address||'')+(i.phone? ' \u00b7 '+i.phone : ''),
+                   dist:(i.mi!=null? i.mi+' mi' : '')+(i.min!=null? ' \u00b7 '+i.min+' min' : ''),
+                   sub:'', url:(i.mapsUrl||'#'), icon:'shop' };
+        })}];
+      T.nearby.checked=team.nearby.checked||'';
+      T.nearby.src=team.nearby.src||'';
+    } else if(d.nearby){
       var groups=[]; var cur=[];
-      ['urgentCare','target','dicks','pharmacy','coffee'].forEach(function(k){
-        var v=d.nearby[k]; if(!v||!v.name) return;
-        cur.push({ name:v.name, note:(v.address||v.drive||''), dist:(v.drive||''), sub:'', url:(v.maps||'#'), icon:'shop' });
+      [['urgentCare','Essentials'],['target','Big-box store'],['dicks','Sporting goods'],
+       ['pharmacy','Pharmacy'],['coffee','Coffee']].forEach(function(pair){
+        var v=d.nearby[pair[0]]; if(!v||!v.name) return;
+        cur.push({ name:v.name+' \u00b7 '+pair[1], note:(v.address||v.drive||''), dist:(v.drive||''), sub:'',
+                   url:(v.maps||'#'), icon:'shop' });
       });
-      if(cur.length) groups.push({label:'Essentials & Emergency', items:cur});
-      if(T.nearby.groups && T.nearby.groups.length) groups=groups.concat(T.nearby.groups.slice(2));
+      if(cur.length) groups.push({label:'Essentials & Emergency (club-wide, not per-team)', items:cur});
       T.nearby.groups=groups;
+      T.nearby.checked=''; T.nearby.src='';
     }
 
     // rules
@@ -1014,6 +1026,14 @@ function renderSchedule(state){
 // ---- VENUE ----
 // Per-complex official field layouts (SCUFC publishes one per complex).
 // Using the Ballentine map for a team playing elsewhere would be wrong.
+var CLUB_FACILITIES_URL='https://www.southcarolinaunitedfc.com/facilities';
+var COMPLEX_MAP_LABELS={
+  'Ballentine Park Complex':'Official Ballentine Park layout, 2025 edition (latest published)',
+  'Polo Road Park':'Official Polo Road Park layout, 2026 edition',
+  'SCUFC West Soccer Complex':'Official SCUFC West layout',
+  'Southeastern Freight Lines Soccer Center':'Official Southeastern Freight Lines layout',
+  'SV Presbyterian Church Fields':'Official SV Presbyterian fields layout'
+};
 var COMPLEX_MAPS={
   'Ballentine Park Complex':'https://irp.cdn-website.com/44ba685a/files/uploaded/Ballentine_Park_field_layout_2025.pdf',
   'SCUFC West Soccer Complex':'https://irp.cdn-website.com/44ba685a/files/uploaded/SCUFC%20West%20all%2011v11AB%20practice.pdf',
@@ -1055,13 +1075,15 @@ function renderVenue(){
   grid+='</div><div class="ourwk" style="margin-top:14px">';
   grid+=v.ourFields.map(f=>'<div><div class="ow num">'+f.f+'</div><div class="owl">'+f.label+'</div></div>').join('<span class="arr">→</span>');
   grid+='</div><p class="small" style="margin:10px 0 0;text-align:center;color:var(--su);font-weight:800;letter-spacing:.5px">'+v.ourFields.map(f=>f.f).join(' → ')+'</p>';
-  grid+='<a class="btn ghost" style="margin-top:10px;flex-direction:row;gap:7px" href="'+v.fieldMapUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-4 9a3 3 0 0 0 2.6 1.5h6.8A3 3 0 0 0 18 18l-4-9V3"/></svg>Official field map</a>';
+  grid+='<a class="btn ghost" style="margin-top:10px;flex-direction:row;gap:7px" href="'+(COMPLEX_MAPS[v.name]||v.fieldMapUrl)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-4 9a3 3 0 0 0 2.6 1.5h6.8A3 3 0 0 0 18 18l-4-9V3"/></svg>Official field map</a>';
   } else {
     var fmsg=(v.assigned===false)
       ? 'Field and complex assignments are published with the schedule on September 26.'
       : 'Field numbers for our games are on the Schedule tab.';
-    var fmap=COMPLEX_MAPS[v.name]||v.fieldMapUrl;
-    grid='<div class="card" style="text-align:center;padding:22px"><div class="label" style="margin-bottom:6px">Field map</div><p class="small muted" style="margin:0">'+fmsg+'</p>'+(fmap?'<a class="btn ghost" style="margin-top:12px;flex-direction:row;gap:7px" href="'+fmap+'" target="_blank" rel="noopener">'+(v.assigned===false?'Official Ballentine Park layout (PDF)':(v.name+' layout (PDF)'))+'</a>':'')+'</div>';
+    var fmap=COMPLEX_MAPS[v.name]||'';
+    var fLabel=(COMPLEX_MAP_LABELS[v.name]||((v.name||'Complex')+' layout'));
+    var fno=(!fmap && v.name)?'<p class="small muted" style="margin:8px 0 0">'+v.name+' is a school site, not an SCUFC complex, so the club publishes no field layout for it. The field labels on the Schedule tab match the signs on site.</p><a class="btn ghost" style="margin-top:10px;flex-direction:row;gap:7px" href="'+CLUB_FACILITIES_URL+'" target="_blank" rel="noopener">SCUFC facilities page</a>':'';
+grid='<div class="card" style="text-align:center;padding:22px"><div class="label" style="margin-bottom:6px">Field map</div><p class="small muted" style="margin:0">'+fmsg+'</p>'+(fmap?'<a class="btn ghost" style="margin-top:12px;flex-direction:row;gap:7px" href="'+fmap+'" target="_blank" rel="noopener">'+fLabel+' (PDF)</a>':'')+fno+'</div>';
   }
   document.getElementById('fieldsCard').innerHTML=grid;
   // amenities
@@ -1076,8 +1098,12 @@ function renderBreak(){
   document.getElementById('breakSection').innerHTML='<div class="section-title"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>'+b.title+'</div><div class="card"><p class="small muted" style="margin:0 0 8px">'+b.intro+'</p><div class="tl">'+steps+'</div></div>';
 }
 function renderNearby(){
+  const nbNote=TOURNAMENT.nearby.checked
+    ? '<p class="small muted" style="margin:0 0 10px">Measured from this team&rsquo;s own complex address on '
+      +TOURNAMENT.nearby.checked+' with the Google Routes API - door-to-door driving miles, not estimates.</p>'
+    : '';
   const groups=TOURNAMENT.nearby.groups.map(g=>'<div class="card"><div class="label" style="margin-bottom:4px">'+g.label+'</div>'+g.items.map(i=>'<a class="tap" href="'+i.url+'" '+(i.url.indexOf('tel:')===0?'':'target="_blank" rel="noopener"')+'><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16M4 19h16M4 11v4a5 5 0 0 0 8 3M4 11V8l4-4h9l3 3v4"/></svg></span><div class="tt"><div class="tl">'+i.name+'</div><div class="ts">'+i.note+'</div></div><span class="dist">'+i.dist+'<div class="d">'+i.sub+'</div></span></a>').join('')+'</div>').join('');
-  document.getElementById('nearbySection').innerHTML='<div class="section-title"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16M4 19h16M4 11v4a5 5 0 0 0 8 3M4 11V8l4-4h9l3 3v4"/></svg>Nearby · During the Break</div>'+groups;
+  document.getElementById('nearbySection').innerHTML='<div class="section-title"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16M4 19h16M4 11v4a5 5 0 0 0 8 3M4 11V8l4-4h9l3 3v4"/></svg>Nearby · During the Break</div>'+nbNote+groups;
 }
 function renderContacts(){
   const rows=TOURNAMENT.contacts.map(c=>'<div class="contact"><span class="ci">'+c.initial+'</span><div class="cn"><div class="cnm">'+c.name+'</div><div class="crl">'+c.role+'</div></div>'+(c.phone?'<a href="tel:'+c.phone+'">Call</a>':(c.url?'<a href="'+c.url+'" target="_blank" rel="noopener">Open</a>':''))+'</div>').join('');
