@@ -15,7 +15,7 @@
       "start": "2026-10-02",
       "end": "2026-10-04"
     },
-    "build": "v57"
+    "build": "v58"
   },
   "venue": {
     "assigned": false,
@@ -988,13 +988,13 @@
       },
       {
         "name": "Carson Gray",
-        "role": "Assistant Coach",
+        "role": "Coach",
         "phone": "",
         "email": "carsonzgray@gmail.com"
       },
       {
         "name": "Mitchell Heath",
-        "role": "Assistant Coach",
+        "role": "Coach",
         "phone": "",
         "email": "m.heath@savannahunited.com"
       }
