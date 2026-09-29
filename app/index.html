@@ -826,7 +826,7 @@ function renderNextMatch(state){
     '<div class="wx-mini"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg> '+TOURNAMENT.weather.mini.day+' '+TOURNAMENT.weather.mini.temp+' · '+TOURNAMENT.weather.mini.feels+' · '+TOURNAMENT.weather.mini.storm+'</span><span class="exp" data-wxopen>Weekend forecast ›</span></div>'+
     '<div class="btn-row">'+
       '<a class="btn" href="'+venue.mapsUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Directions</a>'+
-      '<a class="btn ghost" href="'+(complexMapFor(venue)||complexMapsFallbackUrl())+'" target="_blank" rel="noopener" title="'+complexMapLabel(venue)+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-4 9a3 3 0 0 0 2.6 1.5h6.8A3 3 0 0 0 18 18l-4-9V3"/></svg>Field Map<br></a>'+
+      '<a class="btn ghost" href="'+(complexMapFor(venue)||complexMapsFallbackUrl())+'" target="_blank" rel="noopener" title="'+complexMapLabel(venue)+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-4 9a3 3 0 0 0 2.6 1.5h6.8A3 3 0 0 0 18 18l-4-9V3"/></svg>'+complexMapBtnText(venue)+'<br></a>'+
       '<a class="btn ghost" href="https://playmetrics.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.6A8.4 8.4 0 0 1 3 11.5a8.5 8.5 0 0 1 18 0z"/></svg>Message Team</a>'+
     '</div>'+
     (nextMatch&&nextMatch.id!==g.id?'<div style="margin-top:12px;padding-top:11px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)">Next: <b style="color:var(--su)">'+nextMatch.label+'</b> · '+nextMatch.time+' · Field '+nextMatch.field+'</div>':'');
@@ -1032,7 +1032,11 @@ var CLUB_FACILITIES_URL='https://www.southcarolinaunitedfc.com/facilities';
 function complexMapFor(v){ return COMPLEX_MAPS[(v&&v.name)||'']||''; }
 function complexMapLabel(v){
   var nm=(v&&v.name)||'';
-  return COMPLEX_MAP_LABELS[nm]||(nm? nm+' layout' : 'Field layout');
+  if(!COMPLEX_MAPS[nm]) return (nm? nm+' has no published field layout - this opens the SCUFC facilities page' : 'Field info');
+  return COMPLEX_MAP_LABELS[nm]||(nm+' layout');
+}
+function complexMapBtnText(v){
+  return COMPLEX_MAPS[(v&&v.name)||''] ? 'Field Map' : 'Field Info';
 }
 function complexMapsFallbackUrl(){ return CLUB_FACILITIES_URL; }
 var COMPLEX_MAP_LABELS={
