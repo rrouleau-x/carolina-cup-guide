@@ -663,7 +663,7 @@ document.getElementById('crestMark').innerHTML='<svg viewBox="0 0 100 100"><path
 renderHero();
 document.documentElement.style.setProperty('--su',TOURNAMENT.brand.primary);
 document.documentElement.style.setProperty('--su-dark',TOURNAMENT.brand.dark);
-document.getElementById('updBanner').innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span><b>Updated '+TOURNAMENT.tournament.updatesUpdated+'.</b> See what changed &nbsp;<a href="#scr-more" data-goto="more">here</a>.</span>';
+document.getElementById('updBanner').innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span><b>Updated '+TOURNAMENT.tournament.updatesUpdated+(TOURNAMENT.tournament.build? ' &middot; build '+TOURNAMENT.tournament.build : '')+'.</b> See what changed &nbsp;<a href="#scr-more" data-goto="more">here</a>.</span>';
 
 // ---- TOURNAMENT STATE RESOLVER (single source of truth for time) ----
 const TZ=TOURNAMENT.timezone;

@@ -14,7 +14,8 @@
     "dates": {
       "start": "2026-10-02",
       "end": "2026-10-04"
-    }
+    },
+    "build": "v48"
   },
   "venue": {
     "assigned": false,
