@@ -85,7 +85,7 @@
   .next .arrive b{color:var(--ink)}
   .next .arrive .pend{color:var(--amber);font-weight:600}
   .next .wx-mini{margin-top:10px;padding:10px 12px;background:var(--amber-bg);border-radius:10px;font-size:12.5px;font-weight:600;color:var(--amber);display:flex;justify-content:space-between;align-items:center;gap:8px}
-  .next .wx-mini .exp{color:var(--link);font-weight:700;white-space:nowrap}
+  .next .wx-mini .exp{color:var(--link);font-weight:700;white-space:nowrap;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
 
   .btn-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:12px}
   .btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:13px 6px;border-radius:12px;background:var(--su);color:#fff;text-decoration:none;font-size:11px;font-weight:700;text-align:center}
@@ -328,7 +328,7 @@ let TOURNAMENT = {
   tournament: {
     name: "26th Annual Carolina Cup",
     kick: "Savannah United",
-    team: "17/18B Travel · U9 · 7v7",
+    team: "SU 17/18B Premier · U9 · 7v7",
     meta: "OCT 2–4 · IRMO, SC",
     homeBase: "Savannah, GA",
     fullGuideUrl: "../guide.pdf",
@@ -887,7 +887,26 @@ function renderWeather(){
   const watch=TOURNAMENT.weather.watch.map(w=>'<div class="wcell"><div class="wt">'+w.title+'</div><div class="wv num">'+w.value+'</div><div class="ws">'+w.sub+'</div></div>').join('');
   document.getElementById('watchCard').innerHTML='<div class="wh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/><circle cx="12" cy="12" r="4"/></svg>Weather Watch</div><div class="wb">'+watch+'</div><div class="wfoot"><a href="'+TOURNAMENT.weather.forecastUrl+'" target="_blank" rel="noopener">View forecast ›</a></div>';
 }
-document.querySelectorAll('[data-wxopen]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();wxFull.classList.toggle('open');}));
+// Delegated on purpose: [data-wxopen] lives inside the Next Match card, which renderNext() rewrites on
+// every state change. A one-shot querySelectorAll binding here was lost on the first re-render, so the
+// "Weekend forecast >" tap did nothing at all - silently, with no console error.
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-wxopen]');
+  if(!t) return;
+  e.preventDefault();
+  const panel=document.getElementById('wxFull');
+  if(!panel) return;
+  // The panel lives on THIS screen (Home / #scr-today), immediately below the Next Match card.
+  // Do NOT navigate: an earlier revision called go('schedule') here, which switched screens and
+  // hid the panel it had just opened, so the tap looked like it did nothing at all.
+  if(!panel.classList.contains('open')){
+    if(!panel.innerHTML.trim() && typeof renderWeather==='function') renderWeather();
+    panel.classList.add('open');
+    setTimeout(()=>{try{panel.scrollIntoView({behavior:'smooth',block:'start'});}catch(_){}},60);
+  } else {
+    panel.classList.remove('open');
+  }
+});
 
 // ---- LIVE WEATHER (fetches fresh forecast for the game dates) ----
 // Throttled: this is the slowest request on the page (~480ms) and it fires on
