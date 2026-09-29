@@ -1,4 +1,4 @@
-const CACHE = 'carolina-cup-v55';
+const CACHE = 'carolina-cup-v56';
 
 self.addEventListener('install', e => {
   self.skipWaiting();

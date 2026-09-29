@@ -193,7 +193,9 @@
   .contact .cn{flex:1}
   .contact .cn .cnm{font-size:14px;font-weight:700}
   .contact .cn .crl{font-size:11.5px;color:var(--muted)}
-  .contact a{background:var(--su);color:#fff;text-decoration:none;font-size:11px;font-weight:700;padding:6px 12px;border-radius:9px;flex-shrink:0}
+  .contact>a{background:var(--su);color:#fff;text-decoration:none;font-size:11px;font-weight:700;padding:6px 12px;border-radius:9px;flex-shrink:0}
+  .contact .cn .cmail{font-size:11.5px;padding-top:2px;word-break:break-all}
+  .contact .cn .cmail a{color:var(--link);font-weight:600;text-decoration:none}
 
   .quickrules{display:grid;grid-template-columns:1fr 1fr;gap:8px}
   .qr{background:var(--bg);border-radius:10px;padding:10px 12px}
@@ -406,11 +408,10 @@ let TOURNAMENT = {
         ]}
     ] },
   contacts:[
-    { name:"Keith Gunn", role:"Director of Coaching", phone:"", initial:"K" },
-    { name:"Victoria", role:"Parent Team Manager · logistics", phone:"", initial:"V" },
-    { name:"Jenn", role:"Parent Team Manager · logistics", phone:"", initial:"J" },
-    { name:"Tournament HQ", role:"SCUFC · Tripp Miller", phone:"8774572832", initial:"H" },
-    { name:"Team Updates", role:"PlayMetrics", url:"https://playmetrics.com", initial:"P" }
+    { name:"Keith Gunn", role:"Director of Coaching", phone:"", email:"k.gunn@savannahunited.com", initial:"K" },
+    { name:"Carson Gray", role:"Assistant Coach", phone:"9128569442", email:"carsonzgray@gmail.com", initial:"C" },
+    { name:"Mitchell Heath", role:"Assistant Coach", phone:"", email:"m.heath@savannahunited.com", initial:"M" },
+    { name:"Tripp Miller", role:"Tournament Director · SCUFC", phone:"8774572832", email:"tripp@scufc.com", initial:"T" }
   ],
   rules:{ quick:[], full:[], tiebreakers:[], tiebreakersPending:"", tiebreakProcess:"", fullRulesUrl:"", standingsUrl:"", docsUrl:"" },
   packing:{ alert:"Pack both kits. Also pack a warm layer — early October mornings run about 63°F.", groups:[] },
@@ -627,15 +628,30 @@ function adaptData(d, team){
       if(G.length) T.packing.groups=G;
     }
 
-    // contacts
-    if(d.contacts || team.coach || team.manager){
-      var C=[]; var c=team.coach, mgr=team.manager;
-      if(c&&c.name) C.push({name:c.name, role:(c.role||'Head Coach'), phone:(c.phone||'').replace(/[^0-9]/g,''), initial:c.name.charAt(0)});
-      if(mgr&&mgr.name) C.push({name:mgr.name, role:mgr.role||'Parent Team Manager', phone:(mgr.phone||'').replace(/[^0-9]/g,''), initial:mgr.name.charAt(0)});
-      (d.contacts.teamManagers||[]).forEach(function(m){ C.push({name:m.name, role:(m.role||'Team Manager'), phone:(m.phone||'').replace(/[^0-9]/g,''), initial:m.name.charAt(0)}); });
+    // contacts — COACHES + TOURNAMENT CONTACTS ONLY.
+    // Parent team managers are deliberately NOT published here (Rich, 2026-09-29), and the
+    // PlayMetrics "Team Updates" row was dropped at the same time. Phones come from PlayMetrics,
+    // where only ONE coach has a number on file; the rest are email-only.
+    if(d.contacts){
+      var C=[]; var seen={};
+      function addContact(p, fallbackRole){
+        if(!p||!p.name) return;
+        var key=String(p.name).toLowerCase();
+        if(seen[key]) return;          // the per-team coach repeats Keith Gunn across all four teams
+        seen[key]=1;
+        C.push({ name:p.name,
+                 role:(p.role||fallbackRole||'Coach'),
+                 phone:(p.phone||'').replace(/[^0-9]/g,''),
+                 email:(p.email||''),
+                 initial:p.name.charAt(0) });
+      }
+      (d.contacts.coaches||[]).forEach(function(c){ addContact(c,'Coach'); });
       var td=d.contacts.tournamentDirector;
-      if(td&&(td.name||td.email)) C.push({name:td.name||'Tournament HQ', role:(td.email||'')+' · lost kid / injury / venue emergency', phone:(td.phone||'').replace(/[^0-9]/g,''), initial:'H'});
-      C.push({name:'Team Updates', role:'PlayMetrics', url:'https://playmetrics.com', initial:'P'});
+      if(td&&(td.name||td.email)){
+        addContact({name:td.name||'Tournament HQ',
+                    role:'Tournament Director · SCUFC',
+                    phone:td.phone, email:td.email},'Tournament HQ');
+      }
       T.contacts=C;
     }
 
@@ -1152,7 +1168,7 @@ function renderNearby(){
   document.getElementById('nearbySection').innerHTML='<div class="section-title"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16M4 19h16M4 11v4a5 5 0 0 0 8 3M4 11V8l4-4h9l3 3v4"/></svg>Nearby · During the Break</div>'+nbNote+groups;
 }
 function renderContacts(){
-  const rows=TOURNAMENT.contacts.map(c=>'<div class="contact"><span class="ci">'+c.initial+'</span><div class="cn"><div class="cnm">'+c.name+'</div><div class="crl">'+c.role+'</div></div>'+(c.phone?'<a href="tel:'+c.phone+'">Call</a>':(c.url?'<a href="'+c.url+'" target="_blank" rel="noopener">Open</a>':''))+'</div>').join('');
+  const rows=TOURNAMENT.contacts.map(c=>'<div class="contact"><span class="ci">'+c.initial+'</span><div class="cn"><div class="cnm">'+c.name+'</div><div class="crl">'+c.role+'</div>'+(c.email?'<div class="cmail"><a href="mailto:'+c.email+'">'+c.email+'</a></div>':'')+'</div>'+(c.phone?'<a href="tel:'+c.phone+'">Call</a>':(c.url?'<a href="'+c.url+'" target="_blank" rel="noopener">Open</a>':''))+'</div>').join('');
   document.getElementById('contactsSection').innerHTML='<div class="section-title"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0z"/></svg>Need Help?</div><div class="card" style="padding:6px 14px">'+rows+'</div>';
 }
 function renderRules(){

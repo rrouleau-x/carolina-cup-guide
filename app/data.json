@@ -15,7 +15,7 @@
       "start": "2026-10-02",
       "end": "2026-10-04"
     },
-    "build": "v55"
+    "build": "v56"
   },
   "venue": {
     "assigned": false,
@@ -979,28 +979,29 @@
     }
   ],
   "contacts": {
-    "teamManagers": [
+    "coaches": [
       {
-        "name": "Jenn",
-        "role": "Parent Team Manager",
+        "name": "Keith Gunn",
+        "role": "Director of Coaching",
         "phone": "",
-        "email": ""
+        "email": "k.gunn@savannahunited.com"
       },
       {
         "name": "Carson Gray",
-        "role": "Coach",
+        "role": "Assistant Coach",
         "phone": "912-856-9442",
         "email": "carsonzgray@gmail.com"
       },
       {
         "name": "Mitchell Heath",
-        "role": "Coach",
+        "role": "Assistant Coach",
         "phone": "",
         "email": "m.heath@savannahunited.com"
       }
     ],
     "tournamentDirector": {
       "name": "Tripp Miller",
+      "role": "Tournament Director · SCUFC",
       "email": "tripp@scufc.com",
       "phone": "877-457-2832"
     },
