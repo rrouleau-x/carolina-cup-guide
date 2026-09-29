@@ -348,12 +348,12 @@ let TOURNAMENT = {
     complexes:[
       { name:"Ballentine Park Complex", address:"1009 Bickley Road, Irmo, SC 29063" },
       { name:"SCUFC West Soccer Complex", address:"1053 Bird Road, Irmo, SC 29063" },
-      { name:"Polo Road Park", address:"730 Polo Road, Columbia, SC 29229" },
+      { name:"Polo Road Park", address:"730 Polo Road, Columbia, SC 29223" },
       { name:"Southeastern Freight Lines Soccer Center", address:"115 Sunbelt Blvd, Columbia, SC 29203" },
       { name:"SV Presbyterian Church Fields", address:"125 Sparkleberry Lane, Columbia, SC 29229" }
     ],
     complexListUrl:"https://www.southcarolinaunitedfc.com/facilities",
-    fieldMapUrl:"https://irp.cdn-website.com/44ba685a/files/uploaded/Ballentine_Park_field_layout_2025.pdf",
+    fieldMapUrl:"",   // resolved per team from COMPLEX_MAPS - never a club-wide default
     fieldCount:0, ourFields:[],
     parking:"Free on-site · arrive 30–45 min early (complexes are large and spread out)",
     amenities:[ "Restrooms","Concessions","Fields: grass" ],
@@ -498,7 +498,9 @@ function adaptData(d, team){
       }
       if(d.venue.mapsUrl) T.venue.mapsUrl=d.venue.mapsUrl;
       if(d.venue.parking) T.venue.parking=d.venue.parking;
-      if(d.venue.fields && d.venue.fields.map) T.venue.fieldMapUrl=d.venue.fields.map;
+      // NOTE: d.venue.fields.map is the club-wide Ballentine layout. It must NEVER be assigned
+      // here - that is what put Ballentine's map on every team's homepage. Resolve per team instead.
+      if(d.venue.fields && d.venue.fields.map && !T.venue.fieldMapUrl) T.venue.fieldMapUrl='';
       if(d.venue.amenities){
         var a=d.venue.amenities, out=[];
         if(a.restrooms) out.push('Restrooms');
@@ -824,7 +826,7 @@ function renderNextMatch(state){
     '<div class="wx-mini"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg> '+TOURNAMENT.weather.mini.day+' '+TOURNAMENT.weather.mini.temp+' · '+TOURNAMENT.weather.mini.feels+' · '+TOURNAMENT.weather.mini.storm+'</span><span class="exp" data-wxopen>Weekend forecast ›</span></div>'+
     '<div class="btn-row">'+
       '<a class="btn" href="'+venue.mapsUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Directions</a>'+
-      '<a class="btn ghost" href="'+venue.fieldMapUrl+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-4 9a3 3 0 0 0 2.6 1.5h6.8A3 3 0 0 0 18 18l-4-9V3"/></svg>Field Map</a>'+
+      '<a class="btn ghost" href="'+(complexMapFor(venue)||complexMapsFallbackUrl())+'" target="_blank" rel="noopener" title="'+complexMapLabel(venue)+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-4 9a3 3 0 0 0 2.6 1.5h6.8A3 3 0 0 0 18 18l-4-9V3"/></svg>Field Map<br></a>'+
       '<a class="btn ghost" href="https://playmetrics.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.4-.7L3 21l1.8-5.6A8.4 8.4 0 0 1 3 11.5a8.5 8.5 0 0 1 18 0z"/></svg>Message Team</a>'+
     '</div>'+
     (nextMatch&&nextMatch.id!==g.id?'<div style="margin-top:12px;padding-top:11px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)">Next: <b style="color:var(--su)">'+nextMatch.label+'</b> · '+nextMatch.time+' · Field '+nextMatch.field+'</div>':'');
@@ -1027,6 +1029,12 @@ function renderSchedule(state){
 // Per-complex official field layouts (SCUFC publishes one per complex).
 // Using the Ballentine map for a team playing elsewhere would be wrong.
 var CLUB_FACILITIES_URL='https://www.southcarolinaunitedfc.com/facilities';
+function complexMapFor(v){ return COMPLEX_MAPS[(v&&v.name)||'']||''; }
+function complexMapLabel(v){
+  var nm=(v&&v.name)||'';
+  return COMPLEX_MAP_LABELS[nm]||(nm? nm+' layout' : 'Field layout');
+}
+function complexMapsFallbackUrl(){ return CLUB_FACILITIES_URL; }
 var COMPLEX_MAP_LABELS={
   'Ballentine Park Complex':'Official Ballentine Park layout, 2025 edition (latest published)',
   'Polo Road Park':'Official Polo Road Park layout, 2026 edition',
