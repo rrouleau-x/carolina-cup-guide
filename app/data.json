@@ -15,7 +15,7 @@
       "start": "2026-10-02",
       "end": "2026-10-04"
     },
-    "build": "v54"
+    "build": "v55"
   },
   "venue": {
     "assigned": false,
@@ -849,17 +849,17 @@
     }
   },
   "weather": {
-    "summary": "Live National Weather Service outlook for Irmo / Columbia (fetched Sep 27, 2026): Friday Oct 2 - mostly sunny, high 87&deg;F, a 16% chance of rain showers mainly after 2 PM, 69&deg;F overnight. Saturday Oct 3 - high 84&deg;F with a 42% chance of rain showers (a 43% chance that evening), 67&deg;F overnight. Sunday Oct 4 falls beyond the seven-day window, so plan on early-October normals: about 80&deg;F afternoon and 63&deg;F morning.",
-    "details": "Saturday carries the only real rain signal of the weekend, and our teams kick off between 8:00 AM and 6:00 PM that day. Bring a light rain layer and a dry spare kit in a plastic bag for every player — a wet morning game followed by an afternoon game is exactly when a second set of socks matters. Mornings are genuinely cool (mid-60s), afternoons are hot and humid. Hydrate the day before travel; electrolytes on the double-game days (all four teams play two on Saturday).",
+    "summary": "Live National Weather Service outlook for Irmo / Columbia (fetched Sep 29, 2026): Friday Oct 2 - mostly sunny, high 89&deg;F, a 14% chance of rain showers, 70&deg;F overnight with a slight chance of showers and thunderstorms after 8 PM. Saturday Oct 3 - high 84&deg;F with a 57% chance of showers and thunderstorms (our busiest day, every team plays twice), 68&deg;F overnight. Sunday Oct 4 is now inside the forecast window: high 79&deg;F with a 59% chance of showers and thunderstorms, 64&deg;F overnight.",
+    "details": "Both weekend days now carry a real storm signal, and our teams kick off between 8:00 AM and 6:00 PM on Saturday. Bring a light rain layer and a dry spare kit in a plastic bag for every player - a wet morning game followed by an afternoon game is exactly when a second set of socks matters. Mornings are genuinely cool (mid-60s), afternoons are hot and humid. Hydrate the day before travel; electrolytes on the double-game days (all four teams play two on Saturday).",
     "forecastLink": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
     "source": "Open-Meteo historical archive (2016–2025) + NWS Columbia",
     "sourceApiUrl": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
-    "updatedAt": "2026-09-28",
+    "updatedAt": "2026-09-29",
     "mini": {
       "day": "Saturday",
       "temp": "84°",
-      "feels": "chance rain showers",
-      "storm": "rain 42%"
+      "feels": "showers & storms likely",
+      "storm": "rain 57%"
     }
   },
   "rules": {
