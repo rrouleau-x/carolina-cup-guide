@@ -762,15 +762,11 @@ function refreshContext(state){
   let txt,chip,need='before';
   switch(phase){
     case 'pre-tournament':
-      // Derived from the SAME remaining-time maths as the countdown below, so the badge and the
-      // countdown can never disagree (they used to: "5 DAYS TO KICKOFF" over "4D · 13HR · 25MIN").
-      const msLeft=Math.max(0,tzTime(g1.datetime).getTime()-now.getTime());
-      const dLeft=Math.floor(msLeft/86400000), hLeft=Math.floor((msLeft%86400000)/3600000), mLeft=Math.floor((msLeft%3600000)/60000);
+      // The countdown below owns "how long until kickoff" - one clock, said once. This strip states
+      // the DATE (that team's own first kickoff) and the travel context, nothing that counts down.
+      const kd=new Date(tzTime(g1.datetime));
       const wd=travel?new Date(travel.start.getTime()).toLocaleDateString('en-US',{weekday:'long',timeZone:TZ}):'';
-      txt=(dLeft>0?dLeft+' DAYS '+hLeft+' HRS TO KICKOFF'
-           :hLeft>0?hLeft+' HRS '+mLeft+' MIN TO KICKOFF'
-           :mLeft>0?'KICKOFF IN '+mLeft+' MIN'
-           :'TODAY · GAME DAY');
+      txt='KICKOFF '+kd.toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric',timeZone:TZ}).toUpperCase();
       chip=(travel?travel.label+' · '+wd:'Game Day'); need='before'; break;
     case 'travel': txt='TRAVEL DAY'; chip=travel.detail||travel.label; need='travel'; break;
     case 'in-match': txt='HAPPENING NOW'; chip=currentMatch.label+' · '+currentMatch.time+' · Field '+currentMatch.field; need='game1'; break;
