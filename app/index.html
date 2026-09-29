@@ -96,6 +96,12 @@
   .wx-full.open{display:block}
   .wx{display:grid;grid-template-columns:1fr 1fr;gap:10px}
   .wxcard{border-radius:14px;padding:14px;color:#fff}
+  /* Backgrounds for the day variants the renderer emits. Without these the cards keep
+     .wxcard's color:#fff on the white .card, so every value renders white-on-white and the
+     whole forecast reads as a blank white box. Keep this list in step with the className
+     values renderWeather()/loadWeather() emit ('sat' | 'sun'). */
+  .wxcard.sat{background:linear-gradient(150deg,var(--su),var(--su-dark))}
+  .wxcard.sun{background:linear-gradient(150deg,#3f7cba,#2b5d92)}
   .wxcard .wd{font-size:12px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;opacity:.85}
   .wxcard .wt{font-size:34px;font-weight:800;letter-spacing:-1.5px;margin:2px 0 0}
   .wxcard .wf{font-size:12px;font-weight:600;opacity:.9;margin-bottom:8px}
@@ -122,6 +128,10 @@
   .need li::before{content:"";width:5px;height:5px;border-radius:50%;background:#fff;opacity:.6;flex-shrink:0}
 
   .daycard{border-radius:18px;overflow:hidden;background:var(--card);box-shadow:var(--shadow);margin-bottom:14px}
+  /* Same trap as the weather cards: .dh sets color:#fff but the sat/sun variants were never
+     written, so the day headers rendered white-on-white and the schedule lost its day labels. */
+  .daycard.sat .dh{background:linear-gradient(150deg,var(--su),var(--su-dark))}
+  .daycard.sun .dh{background:linear-gradient(150deg,#3f7cba,#2b5d92)}
   .daycard .dh{padding:11px 16px;color:#fff;font-weight:800;font-size:15px;display:flex;justify-content:space-between;align-items:center}
   .daycard .dh .dd{font-size:11px;font-weight:600;opacity:.85}
   .daycard .g{padding:14px 16px;border-top:1px solid var(--line)}
