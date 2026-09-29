@@ -15,7 +15,7 @@
       "start": "2026-10-02",
       "end": "2026-10-04"
     },
-    "build": "v56"
+    "build": "v57"
   },
   "venue": {
     "assigned": false,
@@ -989,7 +989,7 @@
       {
         "name": "Carson Gray",
         "role": "Assistant Coach",
-        "phone": "912-856-9442",
+        "phone": "",
         "email": "carsonzgray@gmail.com"
       },
       {

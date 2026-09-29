@@ -9,18 +9,6 @@
   "sincTeamId": "GAM18001F6",
   "sincTeamUrl": "https://soccer.sincsports.com/team/default.aspx?tid=CARCUP&year=2026&teamid=GAM18001F6",
   "accepted": true,
-  "coach": {
-    "name": "Keith Gunn",
-    "role": "Director of Coaching",
-    "phone": "",
-    "email": "k.gunn@savannahunited.com"
-  },
-  "manager": {
-    "name": "Victoria",
-    "role": "Parent Team Manager",
-    "phone": "",
-    "email": ""
-  },
   "games": [
     {
       "id": "703",
