@@ -15,7 +15,7 @@
       "start": "2026-10-02",
       "end": "2026-10-04"
     },
-    "build": "v60"
+    "build": "v61"
   },
   "venue": {
     "assigned": false,
@@ -859,7 +859,7 @@
       "day": "Saturday",
       "temp": "84°",
       "feels": "showers & storms likely",
-      "storm": "rain 80%"
+      "storm": "rain 82%"
     }
   },
   "rules": {
