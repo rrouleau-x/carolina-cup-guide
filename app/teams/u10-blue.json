@@ -14,7 +14,7 @@
       "id": "801",
       "date": "2026-10-03",
       "time": "9:15 AM EDT",
-      "opponent": "JIYSC U10 Black Leon",
+      "opponent": "JIYSC U10 Black Batge",
       "venue": "Polo Road Park",
       "field": "Field 7",
       "arrival": "8:30 AM EDT",
@@ -45,11 +45,11 @@
     {
       "id": "808",
       "date": "2026-10-04",
-      "time": "9:15 AM EDT",
+      "time": "10:30 AM EDT",
       "opponent": "SCUFC U10 Boys Amber",
       "venue": "Polo Road Park",
       "field": "Field 4",
-      "arrival": "8:30 AM EDT",
+      "arrival": "9:45 AM EDT",
       "uniform": "TBD - pack both kits",
       "status": "scheduled",
       "type": "group",
@@ -60,7 +60,7 @@
     }
   ],
   "scheduleStatus": "confirmed",
-  "scheduleExpected": "Published and confirmed. 3 group games: SAT Oct 3 9:15 AM vs JIYSC U10 Black Leon; SAT Oct 3 1:00 PM vs BU10 Grey; SUN Oct 4 9:15 AM vs SCUFC U10 Boys Amber. All at Polo Road Park.",
+  "scheduleExpected": "Published and confirmed. 3 group games: SAT Oct 3 9:15 AM vs JIYSC U10 Black Batge; SAT Oct 3 1:00 PM vs BU10 Grey; SUN Oct 4 10:30 AM vs SCUFC U10 Boys Amber. All at Polo Road Park.",
   "updates": [
     {
       "type": "info",
