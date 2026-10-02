@@ -81,6 +81,7 @@
   .pill{font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;background:var(--su-soft);color:var(--su)}
   .pill.field{background:var(--su);color:#fff}
   .pill.away{background:var(--bg);color:var(--muted)}
+  .pill.home{background:var(--green-bg);color:#146c34}
   .next .arrive{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);font-size:13px;color:var(--muted)}
   .next .arrive b{color:var(--ink)}
   .next .arrive .pend{color:var(--amber);font-weight:600}
@@ -482,7 +483,9 @@ function adaptData(d, team){
           /* keep any trailing letter - "Field 2A" is field 2A, not field 2.
              fieldNum() alone drops the letter and the family walks to the wrong pitch. */
           field:(function(f){var m=String(f||'').match(/([A-Za-z]?\d+[A-Za-z]?|[A-Za-z])\s*$/);return (m?m[1]:'TBD').toUpperCase();})(g.field),
-          home:null,
+          /* the source distinguishes home/away per game; a null here rendered every
+             game as AWAY (5 of our 12 are actually HOME). Pass it through verbatim. */
+          home:(typeof g.home==='boolean')?g.home:null,
           arrival:g.arrival||'',
           arrivalStatus:'confirmed',
           status:g.status||'scheduled',
@@ -851,7 +854,7 @@ function renderNextMatch(state){
     '<div class="day" style="color:'+(isLive?'var(--red)':'var(--su)')+'">'+(isLive?'HAPPENING NOW · ':'NEXT MATCH · ')+g.dayLabel+'</div>'+
     '<div class="time num">'+g.time+'</div>'+
     '<div class="vs">vs '+g.opponent+'</div>'+
-    '<div class="meta-line"><span class="pill field">FIELD '+g.field+'</span><span class="pill away">'+(g.home?'HOME':'AWAY')+'</span></div>'+
+    '<div class="meta-line"><span class="pill field">FIELD '+g.field+'</span>'+(g.home===true?'<span class="pill home">HOME</span>':g.home===false?'<span class="pill away">AWAY</span>':'')+'</div>'+
     (g.arrival&&!isLive?'<div class="arrive"><span class="dot" style="width:9px;height:9px;background:'+(g.arrivalStatus==='pending-coach'?'var(--amber)':'var(--green)')+'"></span> Player arrival <b>'+g.arrival+'</b>'+(g.arrivalStatus==='pending-coach'?' <span class="pend">· awaiting coach confirmation</span>':'')+'</div>':'')+
     '<div class="arrive" style="border-top:none;margin-top:6px;padding-top:0"><span class="dot" style="width:9px;height:9px;background:var(--link)"></span> '+venue.name+(venue.address?' &middot; '+venue.address:'')+(venue.city?', '+venue.city:'')+'</div>'+
     '<div class="wx-mini"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg> '+TOURNAMENT.weather.mini.day+' '+TOURNAMENT.weather.mini.temp+' · '+TOURNAMENT.weather.mini.feels+' · '+TOURNAMENT.weather.mini.storm+'</span><span class="exp" data-wxopen>Weekend forecast ›</span></div>'+
@@ -1049,7 +1052,7 @@ function renderSchedule(state){
       if(g.type==='final'){
         out+='<div class="final" style="'+(g.id===nextId?'border-color:var(--su);background:var(--su-soft)':'')+'"><div class="ftag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0z"/></svg>Potential Final · Not Guaranteed'+badge+'</div><div class="ftime num">'+g.time+'</div><div class="ftag" style="color:var(--su)">'+g.opponent+' · Field '+g.field+'</div><div class="fnote">'+g.note+'</div></div>';return;
       }
-      out+='<div class="g" style="'+(g.id===currentId?'background:var(--red-bg);border-left:4px solid var(--red)':(g.id===nextId?'background:var(--su-soft);border-left:4px solid var(--su)':''))+'"><div class="ghome">'+(g.home?'Home':'Away')+'</div><div class="grow"><span class="gtime num">'+g.time+'</span><span class="pill field">Field '+g.field+'</span></div><div class="gvs">vs '+g.opponent+'</div>'+badge+'</div>';
+      out+='<div class="g" style="'+(g.id===currentId?'background:var(--red-bg);border-left:4px solid var(--red)':(g.id===nextId?'background:var(--su-soft);border-left:4px solid var(--su)':''))+'"><div class="ghome">'+(g.home===true?'Home':g.home===false?'Away':'')+'</div><div class="grow"><span class="gtime num">'+g.time+'</span><span class="pill field">Field '+g.field+'</span></div><div class="gvs">vs '+g.opponent+'</div>'+badge+'</div>';
       // gap between games
       const next=games[i+1];
       if(next&&next.type!=='final'){
