@@ -132,16 +132,17 @@
   "division": "Under 09 Boys Red Division",
   "bracket": {
     "division": "Under 09 Boys Red Division",
-    "teamCount": 5,
+    "teamCount": 6,
     "opponents": [
       "CESA U9B Pre ECNL-RL Summit 1",
+      "CFA 17/18 Red",
       "FC Revival U9 Boys Navy",
       "JIYSC U9 Boys Red Chambers",
       "SCUFC U9 Boys Blue"
     ],
-    "verified": "2026-09-18",
+    "verified": "2026-10-02",
     "source": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
-    "note": "Our bracket is confirmed. The tournament lists these teams in our division; the actual game-by-game pairings, times and fields arrive with the full schedule on September 26, 2026."
+    "note": "Our bracket is confirmed at the source on the tournament site. The full schedule is published and the game-by-game pairings, kickoff times and fields are listed in this guide's schedule section."
   },
   "venue": {
     "name": "Ballentine Park Complex",
@@ -464,5 +465,6 @@
         "note": "Full emergency department - use this, not an urgent care, for anything serious."
       }
     ]
-  }
+  },
+  "scheduleVerified": "2026-10-02"
 }

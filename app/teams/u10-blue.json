@@ -63,6 +63,11 @@
   "scheduleExpected": "Published and confirmed. 3 group games: SAT Oct 3 9:15 AM vs JIYSC U10 Black Batge; SAT Oct 3 1:00 PM vs BU10 Grey; SUN Oct 4 10:30 AM vs SCUFC U10 Boys Amber. All at Polo Road Park.",
   "updates": [
     {
+      "type": "warning",
+      "title": "Saturday opponent renamed and Sunday kickoff moved to 10:30 AM",
+      "description": "Two changes at the source on October 2, 2026. Saturday's 9:15 AM opponent is now listed as JIYSC U10 Black Batge (it appeared as JIYSC U10 Black Leon when the schedule was published; the tournament team list now shows Batge only). Sunday's game against SCUFC U10 Boys Amber moved from 9:15 AM to 10:30 AM - arrival is now 9:45 AM, Field 4, Polo Road Park. Saturday's 1:00 PM game is unchanged."
+    },
+    {
       "type": "info",
       "title": "Lodging cut to the 5 closest verified hotels for Polo Road Park — rates checked today",
       "description": "Five hotels, in distance order from Polo Road Park. Live rates pulled from Booking.com on Sep 26, 2026 for Oct 2-4 (two nights, 2 adults + 1 child). Anything we could not re-verify live keeps its last-verified figure and says so.",
@@ -137,14 +142,14 @@
       "BU10 Grey (SC Surf)",
       "Coast 16/17 White",
       "FCC U10 Boys Navy 2 GT",
-      "JIYSC U10 Black Leon",
+      "JIYSC U10 Black Batge",
       "SCUFC U10 Boys Amber",
       "SCUFC U10 Boys Green",
-      "Spartanburg United U10 Boys Green"
+      "Spartanburg United U10 Boys White"
     ],
-    "verified": "2026-09-18",
+    "verified": "2026-10-02",
     "source": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
-    "note": "Our bracket is confirmed. The tournament lists these teams in our division; the actual game-by-game pairings, times and fields arrive with the full schedule on September 26, 2026."
+    "note": "Our bracket is confirmed at the source on the tournament site. The full schedule is published and the game-by-game pairings, kickoff times and fields are listed in this guide's schedule section."
   },
   "venue": {
     "name": "Polo Road Park",
@@ -462,5 +467,6 @@
         "note": "MUSC Northeast emergency department - use this, not an urgent care, for anything serious."
       }
     ]
-  }
+  },
+  "scheduleVerified": "2026-10-02"
 }

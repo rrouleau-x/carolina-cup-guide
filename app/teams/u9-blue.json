@@ -142,9 +142,9 @@
       "SCUFC U9 Boys Green",
       "Spartanburg United U9 Boys White"
     ],
-    "verified": "2026-09-18",
+    "verified": "2026-10-02",
     "source": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
-    "note": "Our bracket is confirmed. The tournament lists these teams in our division; the actual game-by-game pairings, times and fields arrive with the full schedule on September 26, 2026."
+    "note": "Our bracket is confirmed at the source on the tournament site. The full schedule is published and the game-by-game pairings, kickoff times and fields are listed in this guide's schedule section."
   },
   "venue": {
     "name": "Dutch Fork High School",
@@ -462,5 +462,6 @@
         "note": "Full emergency department - use this, not an urgent care, for anything serious."
       }
     ]
-  }
+  },
+  "scheduleVerified": "2026-10-02"
 }

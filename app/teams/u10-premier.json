@@ -63,6 +63,11 @@
   "scheduleExpected": "Published and confirmed. 3 group games: SAT Oct 3 11:45 AM vs Willex Football Academy U10; SAT Oct 3 6:00 PM vs Queen City Mutiny U10 Gold; SUN Oct 4 9:15 AM vs TFC 16/17B Ibis I GA. All at Polo Road Park.",
   "updates": [
     {
+      "type": "warning",
+      "title": "Division corrected to Under 10 Boys Blue Division",
+      "description": "Our division was carried as Under 10 Boys Red Division, which is not our bracket. Re-checked at the source on October 2, 2026: Savannah United 16/17B Premier plays in Under 10 Boys Blue Division (4 teams) with Queen City Mutiny U10 Gold, TFC 16/17B Ibis I GA and Willex Football Academy U10. The three opponents already listed against our games were correct - only the division name was wrong. If you quoted the division to anyone, this is the corrected name."
+    },
+    {
       "type": "info",
       "title": "Lodging cut to the 5 closest verified hotels for Polo Road Park — rates checked today",
       "description": "Five hotels, in distance order from Polo Road Park. Live rates pulled from Booking.com on Sep 26, 2026 for Oct 2-4 (two nights, 2 adults + 1 child). Anything we could not re-verify live keeps its last-verified figure and says so.",
@@ -129,20 +134,18 @@
   ],
   "pdfUrl": "https://rrouleau-x.github.io/carolina-cup-guide/guide-u10-premier.pdf",
   "guideUrl": "https://rrouleau-x.github.io/tournament-guide-studio/sample/u10-premier/",
-  "division": "Under 10 Boys Red Division",
+  "division": "Under 10 Boys Blue Division",
   "bracket": {
-    "division": "Under 10 Boys Red Division",
-    "teamCount": 6,
+    "division": "Under 10 Boys Blue Division",
+    "teamCount": 4,
     "opponents": [
-      "BU10 Black (SC Surf)",
-      "CESA U10B Pre ECNL-RL Summit-1",
-      "JIYSC U10 Boys Red Roncancio",
-      "SCUFC U10 Boys Blue",
-      "SCUFC U10 Boys Red"
+      "Queen City Mutiny U10 Gold",
+      "TFC 16/17B Ibis I GA",
+      "Willex Football Academy U10"
     ],
-    "verified": "2026-09-18",
+    "verified": "2026-10-02",
     "source": "https://soccer.sincsports.com/TTTeamList.aspx?tid=CARCUP",
-    "note": "Our bracket is confirmed. The tournament lists these teams in our division; the actual game-by-game pairings, times and fields arrive with the full schedule on September 26, 2026."
+    "note": "Our bracket is confirmed at the source on the tournament site. The full schedule is published and the game-by-game pairings, kickoff times and fields are listed in this guide's schedule section."
   },
   "venue": {
     "name": "Polo Road Park",
@@ -465,5 +468,6 @@
         "note": "MUSC Northeast emergency department - use this, not an urgent care, for anything serious."
       }
     ]
-  }
+  },
+  "scheduleVerified": "2026-10-02"
 }
