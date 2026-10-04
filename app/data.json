@@ -15,7 +15,7 @@
       "start": "2026-10-02",
       "end": "2026-10-04"
     },
-    "build": "v66"
+    "build": "v67"
   },
   "venue": {
     "assigned": false,
@@ -849,17 +849,17 @@
     }
   },
   "weather": {
-    "summary": "Live National Weather Service outlook for Irmo / Columbia (fetched Oct 3, 2026, game day): Saturday Oct 3 - high 80&deg;F with a 72% chance of showers and thunderstorms (our busiest day - every team plays twice today), 68&deg;F overnight with storms likely. Sunday Oct 4 - high 73&deg;F with an 89% chance of showers and thunderstorms, 65&deg;F overnight.",
-    "details": "Showers and thunderstorms are likely across both game days. Saturday carries a 72% chance of storms, climbing to 78% overnight; Sunday is the wetter day at 89%. Every team plays twice today, Saturday, between 8:00 AM and 6:00 PM, so plan to play in the rain. Bring a rain layer, a dry spare kit and extra socks in a plastic bag for every player - a wet morning game followed by an afternoon game is exactly when a second set of socks matters. Mornings are cool (mid-60s). Hydrate hard and pack electrolytes for the double-game day.",
+    "summary": "Live National Weather Service outlook for Irmo / Columbia (fetched Oct 4, 2026, final day): Sunday Oct 4 - high 72&deg;F with a 61% chance of showers and patchy fog early, 64&deg;F overnight. Saturday's games are done. Today plays noticeably drier than the wettest outlook of the weekend - 61% rather than yesterday's 89% - but keep a rain layer for the morning fog and any passing showers.",
+    "details": "Sunday carries a 61% chance of showers with patchy fog to start, easing to a 73% chance by night - meaningfully drier than Saturday's storm risk. Each of the four teams plays its final game this morning, kickoffs between 9:15 AM and 1:00 PM. Bring the rain layer and a dry spare kit with extra socks for every player, but the heaviest storm threat has moved out.",
     "forecastLink": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
     "source": "Open-Meteo historical archive (2016–2025) + NWS Columbia",
     "sourceApiUrl": "https://forecast.weather.gov/MapClick.php?lat=34.1269&lon=-81.2404",
-    "updatedAt": "2026-10-03",
+    "updatedAt": "2026-10-04",
     "mini": {
-      "day": "Saturday",
-      "temp": "80°",
-      "feels": "chance of storms",
-      "storm": "rain 72%"
+      "day": "Sunday",
+      "temp": "72°",
+      "feels": "patchy fog · showers",
+      "storm": "rain 61%"
     }
   },
   "rules": {
